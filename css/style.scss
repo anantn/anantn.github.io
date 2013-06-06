@@ -18,9 +18,9 @@ $cyan    : #2aa198;
 $green   : #859900;
 
 @mixin rounded-corners {
+  border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px;
 }
 
 a {
@@ -37,11 +37,11 @@ a:visited:hover {
 }
 
 body {
-  font-weight: 300;
-  font-size  : 22px;
-  line-height: 1.4;
-  background : $base3;
-  font-family: 'Neuton', serif;
+  line-height : 1.4;
+  font-weight : 300;
+  font-size   : 22px;
+  background  : $base3;
+  font-family : 'Neuton', serif;
 }
 
 h1, h2, h3 {
@@ -61,12 +61,12 @@ p > code {
 }
 
 div.highlight {
-  width   : 90%;
+  width   : 95%;
   margin  : auto;
   display : block;
   pre {
     padding   : 10px;
-    font-size : 18px;
+    font-size : 14px;
   }
   @include rounded-corners;
 }
