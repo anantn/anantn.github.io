@@ -1,4 +1,4 @@
 name: Binary Sunrise
 author: Anant Narayanan
-markdown: rdiscount
-permalink: :year/:month/:day/:title
+permalink: :year/:month/:day/:title/
+markdown: redcarpet
