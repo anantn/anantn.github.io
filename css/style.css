@@ -12,9 +12,9 @@ a:visited:hover {
   color: #586e75; }
 
 body {
+  line-height: 1.4;
   font-weight: 300;
   font-size: 22px;
-  line-height: 1.4;
   background: #fdf6e3;
   font-family: 'Neuton', serif; }
 
@@ -32,15 +32,15 @@ p > code {
   font-family: monospace; }
 
 div.highlight {
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: block;
+  border-radius: 5px;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; }
+  -webkit-border-radius: 5px; }
   div.highlight pre {
     padding: 10px;
-    font-size: 18px; }
+    font-size: 14px; }
 
 blockquote {
   font-style: italic; }
