@@ -16,7 +16,7 @@ body {
   font-weight: 300;
   font-size: 22px;
   background: #fdf6e3;
-  font-family: 'Neuton', serif; }
+  font-family: "Neuton",Georgia,Cambria,"Times New Roman",Times,serif; }
 
 h1, h2, h3 {
   font-size: 36px;
@@ -26,10 +26,11 @@ td {
   padding: 8px; }
 
 p > code {
+  font-weight: 400;
   padding: 3px;
-  font-size: 18px;
+  font-size: 15px;
   background: #eee8d5;
-  font-family: monospace; }
+  font-family: "Source Code Pro",monospace; }
 
 div.highlight {
   width: 95%;
@@ -39,8 +40,11 @@ div.highlight {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
   div.highlight pre {
-    padding: 10px;
-    font-size: 14px; }
+    padding: 10px; }
+    div.highlight pre code {
+      font-weight: 400;
+      font-size: 15px;
+      font-family: "Source Code Pro",monospace; }
 
 blockquote {
   font-style: italic; }

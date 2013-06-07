@@ -41,7 +41,7 @@ body {
   font-weight : 300;
   font-size   : 22px;
   background  : $base3;
-  font-family : 'Neuton', serif;
+  font-family : "Neuton",Georgia,Cambria,"Times New Roman",Times,serif;
 }
 
 h1, h2, h3 {
@@ -54,19 +54,24 @@ td {
 }
 
 p > code {
+  font-weight : 400;
   padding     : 3px;
-  font-size   : 18px;
+  font-size   : 15px;
   background  : $base2;
-  font-family : monospace;
+  font-family : "Source Code Pro",monospace;
 }
 
 div.highlight {
-  width   : 95%;
-  margin  : auto;
-  display : block;
+  width       : 95%;
+  margin      : auto;
+  display     : block;
   pre {
     padding   : 10px;
-    font-size : 14px;
+    code {
+      font-weight : 400;
+      font-size   : 15px;
+      font-family : "Source Code Pro",monospace;
+    }
   }
   @include rounded-corners;
 }
