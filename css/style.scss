@@ -36,6 +36,10 @@ a:visited:hover {
   color : $base01;
 }
 
+sup > a {
+  text-decoration : none;
+}
+
 body {
   line-height : 1.4;
   font-weight : 300;
