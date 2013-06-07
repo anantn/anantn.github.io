@@ -22,8 +22,10 @@ more things before you can start using the service.
 1. Change the first 2 define lines in validate/index.php:
 
 ``` php
+<?php
 define('HTDOCS', '/path/to/htdocs');
 define('REPODOC', '/path/to/repodoc/executable');
+?>
 ```
 
 2. Please note that the service will work well only with the latest GIT

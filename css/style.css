@@ -11,6 +11,10 @@ a:visited {
 a:visited:hover {
   color: #586e75; }
 
+sup > a {
+  color: #268bd2;
+  text-decoration: none; }
+
 body {
   line-height: 1.4;
   font-weight: 300;

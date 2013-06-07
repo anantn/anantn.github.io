@@ -29,7 +29,7 @@ IxpConn *ixp_listen(IxpServer *s, int fd, void *aux,
   void (*read)(IxpConn *c), void (*close)(IxpConn *c));
 ```
 
-Now how do we wrap this functionality in PHP land? The `aux` functionality must be passed on the 9P developers using PHP, while stillbeing able to extract the `zval` that we need to invoke the appropriatecallback. Thanks to the marshaller method, we can mangle struct valuesas much as we like before passing the values into their PHP counterparts. We simply create a struct to wrap both our callback values and the `aux` element from the user:
+Now how do we wrap this functionality in PHP land? The `aux` functionality must be passed on the 9P developers using PHP, while still being able to extract the `zval` that we need to invoke the appropriate callback. Thanks to the marshaller method, we can mangle struct values as much as we like before passing the values into their PHP counterparts. We simply create a struct to wrap both our callback values and the `aux` element from the user:
 
 ``` cpp
 typedef struct _IxpAux {
