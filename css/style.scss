@@ -61,6 +61,15 @@ td {
   padding : 8px;
 }
 
+
+blockquote {
+  font-style : italic;
+  background : $base2;
+  padding    : 5px 20px;
+  @include rounded-corners;
+}
+
+
 p > code {
   padding     : 3px;
   font-size   : 15px;
@@ -84,14 +93,6 @@ div.highlight {
       font-family : "Source Code Pro",monospace;
     }
   }
-  @include rounded-corners;
-}
-
-blockquote {
-  color      : $base0;
-  font-style : italic;
-  background : $base2;
-  padding    : 5px 20px;
   @include rounded-corners;
 }
 
