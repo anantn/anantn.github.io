@@ -53,7 +53,13 @@ div.highlight {
       font-family: "Source Code Pro",monospace; }
 
 blockquote {
-  font-style: italic; }
+  color: #839496;
+  font-style: italic;
+  background: #eee8d5;
+  padding: 5px 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
 
 .container {
   margin: 10px;
