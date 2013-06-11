@@ -5,36 +5,31 @@ a {
 a:hover {
   color: #586e75; }
 
-a:visited {
-  color: #839496; }
-
-a:visited:hover {
-  color: #586e75; }
-
 sup > a {
-  color: #268bd2;
   text-decoration: none; }
 
 body {
-  line-height: 1.4;
-  font-weight: 300;
+  line-height: 1.5;
   font-size: 22px;
   background: #fdf6e3;
-  font-family: "Neuton",Georgia,Cambria,"Times New Roman",Times,serif; }
+  font-family: "Gentium Book Basic",Georgia,"Times New Roman",Times,serif; }
 
 h1, h2, h3 {
-  font-size: 36px;
-  font-weight: 700; }
+  font-size: 30px;
+  font-family: "Abril Fatface",serif; }
 
 td {
   padding: 8px; }
 
 p > code {
-  font-weight: 400;
   padding: 3px;
   font-size: 15px;
   background: #eee8d5;
   font-family: "Source Code Pro",monospace; }
+
+div.meta {
+  font-size: 18px;
+  margin-top: -24px; }
 
 div.highlight {
   width: 95%;
@@ -46,7 +41,6 @@ div.highlight {
   div.highlight pre {
     padding: 10px; }
     div.highlight pre code {
-      font-weight: 400;
       font-size: 15px;
       font-family: "Source Code Pro",monospace; }
 
@@ -55,19 +49,24 @@ blockquote {
 
 .container {
   margin: 10px;
+  padding-bottom: 50px;
   color: #657b83; }
 
 .header {
   margin: auto;
+  font-size: 24px;
   display: block;
-  font-size: 1.1em;
-  text-align: center; }
+  text-align: center;
+  font-family: "Abril Fatface",serif; }
 
 .pure-menu.pure-menu-open {
   background: #eee8d5; }
 
+.pure-menu li a {
+  color: #93a1a1; }
+
 .pure-menu li a:hover {
-  background: #93a1a1; }
+  background: #002b36; }
 
 .content {
   margin: auto;

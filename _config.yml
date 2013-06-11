@@ -2,3 +2,5 @@ name: Binary Sunrise
 author: Anant Narayanan
 permalink: :year/:month/:day/:title/
 markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "no_intra_emphasis", "fenced_code_blocks"]

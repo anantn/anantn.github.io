@@ -29,28 +29,21 @@ a {
 a:hover {
   color : $base01;
 }
-a:visited {
-  color : $base0;
-}
-a:visited:hover {
-  color : $base01;
-}
 
 sup > a {
   text-decoration : none;
 }
 
 body {
-  line-height : 1.4;
-  font-weight : 300;
+  line-height : 1.5;
   font-size   : 22px;
   background  : $base3;
-  font-family : "Neuton",Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family : "Gentium Book Basic",Georgia,"Times New Roman",Times,serif;
 }
 
 h1, h2, h3 {
-  font-size   : 36px;
-  font-weight : 700;
+  font-size   : 30px;
+  font-family : "Abril Fatface",serif;
 }
 
 td {
@@ -58,11 +51,15 @@ td {
 }
 
 p > code {
-  font-weight : 400;
   padding     : 3px;
   font-size   : 15px;
   background  : $base2;
   font-family : "Source Code Pro",monospace;
+}
+
+div.meta {
+  font-size  : 18px;
+  margin-top : -24px;
 }
 
 div.highlight {
@@ -72,7 +69,6 @@ div.highlight {
   pre {
     padding   : 10px;
     code {
-      font-weight : 400;
       font-size   : 15px;
       font-family : "Source Code Pro",monospace;
     }
@@ -85,23 +81,29 @@ blockquote {
 }
 
 .container {
-  margin : 10px;
-  color  : $base00;
+  margin         : 10px;
+  padding-bottom : 50px;
+  color          : $base00;
 }
 
 .header {
-  margin     : auto;
-  display    : block;
-  font-size  : 1.1em;
-  text-align : center;
+  margin      : auto;
+  font-size   : 24px;
+  display     : block;
+  text-align  : center;
+  font-family : "Abril Fatface",serif;
 }
 
 .pure-menu.pure-menu-open {
   background : $base2;
 }
 
+.pure-menu li a {
+  color      : $base1;
+}
+
 .pure-menu li a:hover {
-  background : $base1;
+  background : $base03;
 }
 
 .content {
