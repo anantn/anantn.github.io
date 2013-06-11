@@ -20,7 +20,7 @@ Writing the code for this part turned out to be a little tricky, since: a) Linux
 
 So, till now, each of the two modules were working as expected when tested individually. I tested the first module by assembling a program using Linux conventions in Plan 9:
 
-``` gas
+{% highlight gas %}
 DATA  string<>+0(SB)/8, $"Linux\n\z\z"
 GLOBL string<>+0(SB), $8
 
@@ -41,11 +41,11 @@ MOVL $0, BX
 # Number for sys_exit is 1
 MOVL $1, AX
 INT  $0x80
-```
+{% endhighlight %}
 
 After running `8a hello.s; 8l hello.8`, copying the executable to Linux and running it, it worked. The other module, I tested by writing a program for [nasm](http://replay.waybackmachine.org/20080603015642/http://nasm.sourceforge.net/) in Linux, but this time using Plan 9 conventions:
 
-``` gas
+{% highlight gas %}
 section .data
     hello: db 'Hello World!', 10
     hlen: equ $-hello
@@ -69,11 +69,11 @@ _start:
     # sycall number for exit is 8
     mov eax, 8
     int 64
-```
+{% endhighlight %}
 
 After running `nasm -f elf hello.asm; ld -o hello hello.o; ./hello`, the output came onto the screen as expected. Now, the moment of truth, the ultimate test, was to combine the two portions of the project and run a Plan 9 executable directly on Linux!
 
-``` bash
+{% highlight bash %}
 $ ./convert 8.out
 P9: 1eb 4af9 94c 314 1034
 P9: Padding 4b19 bytes from 4af9
@@ -82,7 +82,7 @@ $ ./linux.out
 Segmentation fault
 $ dmesg | tail -n 1
 linux.out[7762]: segfault at c0000000 eip 00001051 esp bfffffb8 error 5
-```
+{% endhighlight %}
 
 Damn, what went wrong? The first step was to find out what `error 5` meant. The _[strerror](http://replay.waybackmachine.org/20080603015642/http://www.opengroup.org/onlinepubs/000095399/functions/strerror.html)_ function is supposed to be used for returning meaningful strings corresponding to cryptic error numbers, but all I got as output, a small program later, was 'Input/output error'. Big help that was.
 

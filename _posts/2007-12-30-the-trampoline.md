@@ -41,7 +41,7 @@ the name!). The recursive function doesn't recurse anymore, but instead just
 returns a true/false value that determines if there's more work to be done or
 not:
 
-``` java
+{% highlight java %}
 boolean F(/* notice we don't have arguments to save more stack space */) {
     /* we load them from the class variables instead */
     arg1 = this.arg1;
@@ -66,7 +66,7 @@ int trampoline(arg1, ...) {
     }
     return this.finalVal;
 }
-```
+{% endhighlight %}
 
 This way, we never reach a nesting level of more than 2, saving stack space by
 drastic amounts, with only a minimal addition to the heap load. The code

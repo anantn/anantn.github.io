@@ -21,12 +21,12 @@ more things before you can start using the service.
 
 1. Change the first 2 define lines in validate/index.php:
 
-``` php
+{% highlight php %}
 <?php
 define('HTDOCS', '/path/to/htdocs');
 define('REPODOC', '/path/to/repodoc/executable');
 ?>
-```
+{% endhighlight %}
 
 2. Please note that the service will work well only with the latest GIT
 checkout of repodoc from Ferdy's repository. The repodoc-0.0.1_beta ebuild

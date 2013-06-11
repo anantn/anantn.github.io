@@ -1,6 +1,6 @@
 name: Binary Sunrise
 author: Anant Narayanan
 permalink: :year/:month/:day/:title/
-markdown: redcarpet
-redcarpet:
+markdown: rdiscount
+rdiscount:
   extensions: [smart]

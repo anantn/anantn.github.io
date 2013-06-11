@@ -12,12 +12,12 @@ Since ordinary JavaScript cannot directly communicate with a 9P server (over TCP
 
 All 9P messages are just binary sequences, which means I need some way of representing a 9P message in JavaScript. A character is always 1 byte, so representing characters is not a problem. For representing integers in binary I use the following snippet of code:
 
-``` js
+{% highlight js %}
 while (num) {
   str[str.length] = String.fromCharCode(num % 256);
   num = Math.floor(num / 256);
 }
-```
+{% endhighlight %}
 
 where `num` is the number to be encoded, and `str` is returned as:
 `str + join('')`.

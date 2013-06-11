@@ -14,30 +14,30 @@ The plugin is called Angled (an anagram of [Glenda](http://replay.waybackmachine
 
 First I startup [Inferno](http://replay.waybackmachine.org/20070911164007/http://www.vitanuova.com/inferno/) to start a 9P server. `${INFERNO}/usr/anant/home` is symlinked to my actual home directory, `/Users/anant`:
 
-``` bash
+{% highlight bash %}
 $ emu
 ; runas nobody {listen -A tcp!localhost!1564 {export /usr/anant/home &}}
-```
+{% endhighlight %}
 
 Let's see what files are actually there:
 
-``` bash
+{% highlight bash %}
 [theghost web9]$ pwd
 /Users/anant/Plan9/web9
 [theghost web9]$ ls
 README TODO js9p php9p
-```
+{% endhighlight %}
 
 Alright, I open my browser window and type `ninep://localhost!1564/Plan9/web9/README` into the address bar. I could also say `tcp!localhost!1564`, but TCP is the only protocol available for Angled, so it would be redundant.
 
 Cool! But wait, Angled also displays binary files right in the browser. There's a catch though, it will only work for binary files that can be viewed directly in the browser window. Certain types of files (.doc for example) do trigger a download request, but then become corrupted for some reason.
 
-``` bash
+{% highlight bash %}
 [theghost content]$ pwd
 /Users/anant/Plan9/web9/js9p/angled/content
 [theghost content]$ ls
 angled.png firefoxOverlay.xul glenda-error.png overlay.js
-```
+{% endhighlight %}
 
 Let's say I want to view `angled.png`. Here's what I get:
 
