@@ -10,6 +10,8 @@ wordpress_id: 1017
 
 ZOMG. [Parallels](http://replay.waybackmachine.org/20070219120114/http://www.parallels.com/)' latest build brings along with it some nifty features. Which ultimately leads your desktop to look something like this:
 
+![ZOMG](/images/2007/zomg.png)
+
 No, that's not some fabricated image made in GIMP. It's for real; you can now run all the big 3 OSes side by side, just as if they've known each other for years!
 
 Here's how you do it:
