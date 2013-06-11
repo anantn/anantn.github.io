@@ -12,6 +12,8 @@ I needed a decent [UML](http://replay.waybackmachine.org/20070713072718/http://e
 
 Check out this yummy screenshot (click for the full version):
 
+![Umbrello on Mac](/images/2007/umbrello-mac.png)
+
 That's Umbrello on Mac OS X, complete with an Apple style menu and a Dock Icon! Read on for compilation instructions…
 
 [This](http://replay.waybackmachine.org/20070713072718/http://techbase.kde.org/Getting_Started/Build/KDE4/Mac_OS_X) page provided lots of useful info to get started. I downloaded the Qt/Mac Open Source edition, version 4.3. After applying the patches mentioned in the KDE for Mac OS X build page (not all of them applied cleanly, but I guess those patches were for a older version of Qt) I began compiling Qt. Here are the exact steps:
