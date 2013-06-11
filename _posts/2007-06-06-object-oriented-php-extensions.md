@@ -26,7 +26,7 @@ I've been working with the [PHP-GTK](http://replay.waybackmachine.org/2007063007
 
 Cool, I could do the same thing with libixp! Except libixp doesn't allow me pass custom data to callbacks:
 
-``` cpp
+{% highlight cpp %}
 typedef struct Ixp9Srv {
   void (*attach)(Ixp9Req *r);
   void (*clunk)(Ixp9Req *r);
@@ -40,7 +40,7 @@ typedef struct Ixp9Srv {
   void (*write)(Ixp9Req *r);
   void (*freefid)(Fid *f);
 } Ixp9Srv;
-```
+{% endhighlight %}
 
 Hmm. Luckily, I'm bundling the libixp sources with the extension; it's a `--with` extension, not a `--enable` one. I guess I can hack up the libixp sources to allow for passing this extra data around to the callbacks. Let's see how this goes!
 

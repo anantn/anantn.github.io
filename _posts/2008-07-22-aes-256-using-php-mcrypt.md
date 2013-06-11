@@ -16,7 +16,7 @@ The best (and fastest) method would be to use PHP's mcrypt extension,  but mcryp
 
 Weave uses AES-256, which means we have a 32 byte key, and a 16 byte IV. mcrypt implements Rijndael, so my first try:
 
-``` php
+{% highlight php %}
 <?php
 // $key is 32 bytes long
 $iv = 'sixteenbyteslong';
@@ -25,25 +25,25 @@ $td = mcrypt_module_open(
 );
 mcrypt_generic_init($td, $key, $iv);
 ?>
-```
+{% endhighlight %}
 
 failed with:
 
-``` bash
+{% highlight bash %}
 Warning: mcrypt_generic_init(): Iv size incorrect;
 supplied length: 16, needed: 32 in aes.php on line 26
-```
+{% endhighlight %}
 
 Here's the workaround:
 
-``` php
+{% highlight php %}
 <?php
 $td = mcrypt_module_open(
   MCRYPT_RIJNDAEL_128, '', MCRYPT_MODE_CBC, ''
 );
 mcrypt_generic_init($td, $key, $iv);
 ?>
-```
+{% endhighlight %}
 
 That's right - you call `mcrypt_module_open` with Rijndael-128 instead of 256, but still pass a 32 byte key to `mcrypt_generic_init` and be on your merry way.
 

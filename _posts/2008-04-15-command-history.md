@@ -10,14 +10,14 @@ wordpress_id: 195
 
 Looks like everyone's doing one of these around the blogosphere lately, so I'm joining in the fun:
 
-``` bash
+{% highlight bash %}
 [theghost ~]$ uname -a
 Darwin theghost.local 9.2.2 Darwin Kernel Version 9.2.2:
 Tue Mar 4 21:17:34 PST 2008;
 root:xnu-1228.4.31~1/RELEASE_I386 i386
-```
+{% endhighlight %}
 
-``` bash
+{% highlight bash %}
 [theghost ~]$ history|awk \
   '{a[$2]++ } END{for(i in a){print a[i] " " i}}'|sort -rn|head
 118 ls
@@ -30,11 +30,11 @@ root:xnu-1228.4.31~1/RELEASE_I386 i386
 23 grep
 19 rm
 9 wget
-```
+{% endhighlight %}
 
 And for the Linux virtual machine:
 
-``` bash
+{% highlight bash %}
 anant@tg-nix ~ $ uname -a
 Linux tg-nix 2.6.24-gentoo-r1
 #32 SMP Sun Apr 13 09:15:20 IST 2008
@@ -52,6 +52,6 @@ anant@tg-nix ~ $ history|awk \
 8 mv
 7 startx
 7 cmake
-```
+{% endhighlight %}
 
 I'm going to leave it for you to figure out what `mate` is ;)
