@@ -8,7 +8,7 @@ title: Miscellaneous
 wordpress_id: 1157
 ---
 
-I've been keeping quite busy the last few months, thanks to the extremely time-consuming but fun masters program I'm enrolled in. Sure, I've also ensured that I enjoy Europe while I'm at it, but that makes my blog posts much less frequent and further apart. Between "[micro-blogging](http://replay.waybackmachine.org/20090619010317/http://twitter.com/anantn)" and frequent facebook updates, there is much less time for blogging these days.
+I've been keeping quite busy the last few months, thanks to the extremely time-consuming but fun masters program I'm enrolled in. Sure, I've also ensured that I enjoy Europe while I'm at it, but that makes my blog posts much less frequent and further apart. Between "[micro-blogging](http://twitter.com/anantn)" and frequent facebook updates, there is much less time for blogging these days.
 
 It's spring now and we can all stop complaining about the Dutch weather. The temperature stays around a pleasant 10 to 15 degrees. One of the more recent trips I made to take advantage of the season was to [Keukenhof](http://replay.waybackmachine.org/20090619010317/http://www.keukenhof.com/), the famous flower garden. Check out selected pictures [here](http://replay.waybackmachine.org/20090619010317/http://www.flickr.com/photos/an_ant/sets/72157617123665821/).
 
