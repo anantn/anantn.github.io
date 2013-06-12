@@ -10,7 +10,7 @@ wordpress_id: 1603
 
 After a nice relaxing thanksgiving week, with almost no e-mail to read (I can't stress enough _how nice_ this was) - I'm incredibly excited to start my first day at [Firebase](http://www.firebase.com) tomorrow! If you haven't heard of them before, it's because they're a startup :) And they're in the business of building a scalable, real-time backend for apps.
 
-[![Firebase](/images/2012/firebase.png)](http://www.firebase.com)
+-> [![Firebase](/images/2012/firebase.png)](http://www.firebase.com) <-
 
 When I joined Mozilla, it was very hard for me to envision any better job than the one I had. In fact, I still think that's true, but when I met and spoke with the folks from Firebase, I knew I had found another job that could be just as good! The team is small (7 including me), consists of really intelligent and likeable people, all of whom are engineers, and they're working in a space I have a deep academic and professional interest in.
 

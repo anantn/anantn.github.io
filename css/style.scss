@@ -96,6 +96,25 @@ div.highlight {
   @include rounded-corners;
 }
 
+.title {
+  text-align : center;
+}
+
+.large {
+  font-size  : 5em;
+}
+
+.seperator {
+  border-top   : 1px dotted $base1;
+  div {
+    color      : $base1;
+    display    : table;
+    background : $base3;
+    padding    : 0 10px;
+    margin     : -0.80em auto 0 auto;
+  }
+}
+
 .container {
   margin         : 10px;
   padding-bottom : 50px;
