@@ -91,10 +91,11 @@ div.highlight {
   background: #eee8d5; }
 
 .pure-menu li a {
-  color: #93a1a1; }
-
+  color: #839496; }
 .pure-menu li a:hover {
-  background: #002b36; }
+  background: #fdf6e3; }
+.pure-menu li img {
+  vertical-align: middle; }
 
 .content {
   margin: auto;

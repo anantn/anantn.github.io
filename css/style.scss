@@ -61,14 +61,12 @@ td {
   padding : 8px;
 }
 
-
 blockquote {
   font-style : italic;
   background : $base2;
   padding    : 5px 20px;
   @include rounded-corners;
 }
-
 
 p > code {
   padding     : 3px;
@@ -133,12 +131,16 @@ div.highlight {
   background : $base2;
 }
 
-.pure-menu li a {
-  color      : $base1;
-}
-
-.pure-menu li a:hover {
-  background : $base03;
+.pure-menu li {
+  a {
+    color          : $base0;
+  }
+  a:hover {
+    background     : $base3;
+  }
+  img {
+    vertical-align : middle;
+  }
 }
 
 .content {
