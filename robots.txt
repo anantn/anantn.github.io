@@ -1,0 +1,4 @@
+Sitemap: http://kix.in/sitemap.xml
+
+User-agent: IRLbot
+Crawl-delay: 3600
