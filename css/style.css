@@ -60,6 +60,21 @@ div.highlight {
       font-size: 15px;
       font-family: "Source Code Pro",monospace; }
 
+.title {
+  text-align: center; }
+
+.large {
+  font-size: 5em; }
+
+.seperator {
+  border-top: 1px dotted #93a1a1; }
+  .seperator div {
+    color: #93a1a1;
+    display: table;
+    background: #fdf6e3;
+    padding: 0 10px;
+    margin: -0.80em auto 0 auto; }
+
 .container {
   margin: 10px;
   padding-bottom: 50px;
