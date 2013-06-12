@@ -4,7 +4,9 @@ layout: default
 <div>
   <h1 class="title">{{ page.title }}</h1>
   <div class="seperator">
-    <div class="meta"><em>{{ page.date | date_to_string }}</em></div>
+    <div class="meta">
+      <em>{{ page.date | date_to_string }} &#183; By {{ site.author }}</em>
+    </div>
   </div>
 </div>
 
