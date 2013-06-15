@@ -17,7 +17,7 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 * [Server-less Apps](http://proness.kix.in/talks/denverjs13-serverless.pdf) <br> DenverJS, Denver, February
 
-# 2012
+## 2012
 
 * [Error Handling in WebRTC](http://proness.kix.in/talks/tpac12-webrtc.pdf) <br> W3C TPAC, Lyon, October
 
@@ -25,17 +25,17 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 * [Apps for Firefox OS](http://proness.kix.in/talks/campus12-apps.pdf) <br> Campus Party EU, Berlin, August
 
-# 2011
+## 2011
 
 * [WebRTC: User Security &amp; Privacy](http://proness.kix.in/talks/tpac11-webrtc.pdf) <br> W3C TPAC, San Jose, October
 
 * [Firefox Architecture Overview](http://proness.kix.in/talks/cisco11-fxarch.pdf) <br> Cisco, San Jose, June
 
-# 2010
+## 2010
 
 * [πp](http://proness.kix.in/talks/bell10-piep.pdf) <br> Alcatel-Lucent, Antwerp, August
 
-# 2009
+## 2009
 
 * [Next Generation Addons](http://proness.kix.in/talks/foss.in09-jetpack.pdf) <br> FOSS.IN, Bangalore, December
 
@@ -49,7 +49,7 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 * [Distributed File Systems: An Overview](http://proness.kix.in/talks/cgc09-dfs.pdf) <br> Vrije Universiteit, Amsterdam, March
 
-# 2008
+## 2008
 
 * [Innovating with Mozilla Labs](http://proness.kix.in/talks/foss.in08-mozilla-labs.pdf) <br> FOSS.IN, Bangalore, December
 
@@ -61,7 +61,7 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 * [What is FOSS?](http://proness.kix.in/talks/blitz08-foss.pdf) <br> Blitzschlag, Jaipur, February
 
-# 2007
+## 2007
 
 * [Making Gentoo Tick](http://proness.kix.in/talks/foss.in07-making-gentoo-tick.pdf) <br> FOSS.IN, Bangalore, December
 
@@ -75,7 +75,7 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 * [Extending Python with ctypes](http://proness.kix.in/talks/gnunify07-ctypes.pdf) <br> Gnunify, Pune, January
 
-# 2006
+## 2006
 
 * Webapps with Javascript [[part1]](http://proness.kix.in/talks/webapps/part1.html) [[part2]](http://proness.kix.in/talks/webapps/part2.html) [[part3]](http://proness.kix.in/talks/webapps/part3.html) [[part4]](http://proness.kix.in/talks/webapps/part4.html) <br> Freedel, New Delhi, February
 
