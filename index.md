@@ -11,6 +11,6 @@ Hello there and thanks for stopping by my little corner of the internet!
 My name is Anant, and I'm a hacker ([of the good variety](http://en.wikipedia.org/wiki/Hacker_%28programmer_subculture%29)). I have a special affinity towards free software in particular. I've participated in several such projects since 2004 and [continue to](http://github.com/anantn) [do so](http://www.ohloh.net/accounts/anant).
 
 I currently work at [Firebase](http://firebase.com), a real-time scalable
-application backend. Previously, I worked on a wide range of experimental projects to better the web at [Mozilla Labs](http://mozillalabs.com/). I studied Parallel and Distributed Computer Systems at the [Vrije Universiteit](http://vu.nl/) in [Amsterdam](http://en.wikipedia.org/wiki/Amsterdam), and hold a Bachelors in Computer Engineering from [MNIT](http://www.mnit.ac.in/), [Jaipur](http://en.wikipedia.org/wiki/Jaipur).
+application backend. Previously, I worked on a wide range of experimental projects to better the web at [Mozilla Labs](http://mozillalabs.com/). I studied Parallel and Distributed Computer Systems at the [Vrije Universiteit](http://www.vu.nl/en/programmes/international-masters/programmes/n-q/parallel-and-distributed-computer-systems-msc/index.asp) in [Amsterdam](http://en.wikipedia.org/wiki/Amsterdam), and hold a Bachelors in Computer Engineering from [MNIT](http://www.mnit.ac.in/), [Jaipur](http://en.wikipedia.org/wiki/Jaipur).
 
 The opinions expressed on this website are mine alone and nobody, including my employer, necessarily agrees with them.
