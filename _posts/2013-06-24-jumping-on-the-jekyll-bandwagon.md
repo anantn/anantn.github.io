@@ -144,7 +144,7 @@ for (var key in toRedirect) {
 }
 {% endhighlight %}
 
-One caveat with approach is that Github only recognizes a static
+One caveat with this approach is that Github only recognizes a static
 `404.html` as a valid custom 404 page - it won't run Jekyll on it. You'll
 need to run `jekyll build` yourself to generate the HTML file locally, *before*
 checking it in.
