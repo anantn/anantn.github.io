@@ -67,7 +67,7 @@ $ mv exitwp/build/jekyll/kix.in/_posts/* kix/_posts/
 $ cd kix && jekyll serve
 {% endhighlight %}
 
-Access you brand new site at `http://localhost:4000`. Jekyll comes with a
+Access your brand new site at `http://localhost:4000`. Jekyll comes with a
 simple default theme (the one used by [Tom Preston-Werner](http://tom.preston-werner.com/)),
 so you can see if your posts were all imported correctly striaght away. You
 may want to customize the look and feel of your website. Just start editing
