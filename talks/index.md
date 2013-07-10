@@ -7,6 +7,8 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 ## 2013
 
+* [Realtime Web Apps with Firebase and AngularJS](http://proness.kix.in/talks/angular13-firebase/) <br> AngularJS Meetup, Mountain View, July
+
 * [WebRTC: A Practical Introduction](http://proness.kix.in/talks/fluent13-webrtc/) <br> FluentConf, San Francisco, May
 
 * [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/pivotal13-datasync.pdf) <br> Pivotal Labs, San Francisco, May
