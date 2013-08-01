@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet"
           href="http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic|Source+Code+Pro:400|Abril+Fatface">
     <link rel="stylesheet"
@@ -20,44 +20,40 @@
   </head>
   <body>
   <div class="container pure-g-r">
-
-  <!-- Header -->
-  <div class="header pure-u-2-3">
-    <div class="pure-menu pure-menu-open pure-menu-horizontal">
-      <a href="/" class="pure-menu-heading">{{ site.name }}</a>
-      <ul>
-        <li><a href="/archives/index.html">Blog</a></li>
-        <li><a href="/talks/index.html">Talks</a></li>
-        <li>
-          <a href="mailto:anant@kix.in">
-            <img src="/images/email.svg"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/anantn">
-            <img src="/images/twitter.svg"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/anantn">
-            <img src="/images/github.svg"/>
-          </a>
-        </li>
-        <li>
-          <a href="/feed.xml">
-            <img src="/images/rss.svg"/>
-          </a>
-        </li>
-      </ul>
+    <!-- Header -->
+    <div class="header pure-u-1">
+      <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <a href="/" class="pure-menu-heading">{{ site.name }}</a>
+        <ul>
+          <li><a href="/archives/index.html">Blog</a></li>
+          <li><a href="/talks/index.html">Talks</a></li>
+          <li>
+            <a href="mailto:anant@kix.in">
+              <img src="/images/email.svg"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/anantn">
+              <img src="/images/twitter.svg"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/anantn">
+              <img src="/images/github.svg"/>
+            </a>
+          </li>
+          <li>
+            <a href="/feed.xml">
+              <img src="/images/rss.svg"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="content pure-u-1">
+      {{ content }}
     </div>
   </div>
-
-  <!-- Content -->
-  <div class="content pure-u-2-3">
-    {{ content }}
-  </div>
-
-  </div>
-
   </body>
 </html>
