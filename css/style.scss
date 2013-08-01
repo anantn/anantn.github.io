@@ -55,7 +55,7 @@ h3 {
 
 h1, h2, h3 {
   font-weight : normal;
-  font-family : "Abril Fatface",serif;
+  font-family : "Abril Fatface",Georgia,"Times New Roman",Times,serif;
 }
 
 td {
@@ -125,7 +125,25 @@ div.highlight {
   font-size   : 24px;
   display     : block;
   text-align  : center;
-  font-family : "Abril Fatface",serif;
+  font-family : "Abril Fatface",Georgia,"Times New Roman",Times,serif;
+}
+
+.content {
+  width   : 60%;
+  margin  : 0 auto;
+  display : block;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width     : 95%;
+    font-size : 80%;
+  }
+  div.highlight {
+    pre > code {
+      font-size : 60%;
+    }
+  }
 }
 
 .pure-menu.pure-menu-open {
@@ -142,11 +160,6 @@ div.highlight {
   img {
     vertical-align : middle;
   }
-}
-
-.content {
-  margin  : auto;
-  display : block;
 }
 
 /* Solarized Dark CSS */
