@@ -110,6 +110,11 @@ div.highlight {
 .pure-menu li img {
   vertical-align: middle; }
 
+#cse-search-box {
+  padding: 10px; }
+  #cse-search-box input[type="submit"] {
+    display: none; }
+
 /* Solarized Dark CSS */
 .highlight {
   background-color: #073642;
