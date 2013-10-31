@@ -169,6 +169,12 @@ div.ad, .responsive {
   }
 }
 
+@media (max-width: 320px) {
+  div.ad, .responsive {
+    margin-left : -5px;
+  }
+}
+
 .pure-menu.pure-menu-open {
   background : $base2;
 }
