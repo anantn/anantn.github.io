@@ -13,10 +13,6 @@
           href="/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}"
           href="http://kix.in/feed.xml">
-    <script type="text/javascript">
-    var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
-    analytics.load("elhjxxg0ex");
-    </script>
   </head>
   <body>
   <div class="container pure-g-r">
@@ -47,6 +43,17 @@
               <img src="/images/rss.svg"/>
             </a>
           </li>
+          <li>
+            <!-- Search box -->
+            <form action="http://www.google.com" id="cse-search-box">
+              <div>
+                <input type="hidden" name="cx" value="partner-pub-1571625703943363:4857045536" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="text" name="q" size="18" />
+                <input type="submit" name="sa" value="Search" />
+              </div>
+            </form>
+          </li>
         </ul>
       </div>
     </div>
@@ -54,32 +61,20 @@
     <div class="content pure-u-1">
       {{ content }}
     </div>
-    <div class="content pure-u-1">
-      <div>
-        <!-- Search box -->
-        <form action="http://www.google.com" id="cse-search-box">
-          <div>
-            <input type="hidden" name="cx" value="partner-pub-1571625703943363:4857045536" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="text" name="q" size="55" />
-            <input type="submit" name="sa" value="Search" />
-          </div>
-        </form>
-        <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
-      </div>
-      <div>
-        <!-- Ad -->
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- Leaderboard -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:728px;height:90px"
-             data-ad-client="ca-pub-1571625703943363"
-             data-ad-slot="7950112734"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
+    <div class="ad pure-u-1">
+      <!-- Responsive -->
+      <ins class="adsbygoogle responsive"
+           style="display:inline-block"
+           data-ad-client="ca-pub-1571625703943363"
+           data-ad-slot="2667131936"></ins>
     </div>
   </div>
+  <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+    analytics.load("elhjxxg0ex");
+  </script>
   </body>
 </html>
