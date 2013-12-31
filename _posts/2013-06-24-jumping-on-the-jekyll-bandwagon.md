@@ -1,6 +1,7 @@
 ---
 author: anant
 layout: post
+slug: jumping-on-the-jekyll-bandwagon
 title: Jumping on the Jekyll Bandwagon
 ---
 
