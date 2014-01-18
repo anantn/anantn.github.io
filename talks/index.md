@@ -5,13 +5,17 @@ title: Talks by Anant Narayanan
 
 This page lists all the talks I've given, in reverse chronological order, along with links to slide decks. The slides maybe less useful if you didn't attend the talk itself, but if you did, I hope you enjoyed it! I gladly accept all forms of feedback by [email](mailto:anant@kix.in).
 
+## 2014
+
+* [Building Realtime Apps with Angular and Firebase](http://proness.kix.in/talks/ngconf14-firebase.pdf) - [Video](http://www.youtube.com/watch?v=e4yUTkva_FM) <br> ng-conf, Salt Lake City, January
+
 ## 2013
 
 * [Building JS APIs for Browsers](http://proness.kix.in/talks/devconf13-browsers/) <br> HTML5DevConf, San Francisco, October
 
 * [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/realtimeconf13-datasync.pdf) <br> RealtimeConf, Portland, October
 
-* [Realtime Web Apps with Firebase and AngularJS](http://proness.kix.in/talks/angular13-firebase/) <br> AngularJS Meetup, Mountain View, July
+* [Realtime Web Apps with Firebase and AngularJS](http://proness.kix.in/talks/angular13-firebase/) - [Video](http://www.youtube.com/watch?v=C7ZI7z7qnHU) <br> AngularJS Meetup, Mountain View, July
 
 * [WebRTC: A Practical Introduction](http://proness.kix.in/talks/fluent13-webrtc/) <br> FluentConf, San Francisco, May
 
