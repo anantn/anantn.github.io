@@ -13,7 +13,7 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 * [Building JS APIs for Browsers](http://proness.kix.in/talks/devconf13-browsers/) - [Video](http://www.youtube.com/watch?v=Jo4DttCcL7w) <br> HTML5DevConf, San Francisco, October
 
-* [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/realtimeconf13-datasync.pdf) <br> RealtimeConf, Portland, October
+* [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/realtimeconf13-datasync.pdf) - [Video](http://vimeo.com/77352415) <br> RealtimeConf, Portland, October
 
 * [Realtime Web Apps with Firebase and AngularJS](http://proness.kix.in/talks/angular13-firebase/) - [Video](http://www.youtube.com/watch?v=C7ZI7z7qnHU) <br> AngularJS Meetup, Mountain View, July
 
