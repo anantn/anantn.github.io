@@ -11,7 +11,7 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 ## 2013
 
-* [Building JS APIs for Browsers](http://proness.kix.in/talks/devconf13-browsers/) <br> HTML5DevConf, San Francisco, October
+* [Building JS APIs for Browsers](http://proness.kix.in/talks/devconf13-browsers/) - [Video](http://www.youtube.com/watch?v=Jo4DttCcL7w) <br> HTML5DevConf, San Francisco, October
 
 * [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/realtimeconf13-datasync.pdf) <br> RealtimeConf, Portland, October
 
