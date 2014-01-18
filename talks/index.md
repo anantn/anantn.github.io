@@ -19,7 +19,7 @@ This page lists all the talks I've given, in reverse chronological order, along 
 
 * [WebRTC: A Practical Introduction](http://proness.kix.in/talks/fluent13-webrtc/) <br> FluentConf, San Francisco, May
 
-* [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/pivotal13-datasync.pdf) <br> Pivotal Labs, San Francisco, May
+* [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/pivotal13-datasync.pdf) - [Video](http://pivotallabs.com/anant-narayanan-firebase/) <br> Pivotal Labs, San Francisco, May
 
 * [Firebase: Tales from the Trenches](http://proness.kix.in/talks/geeklist13-firebase) <br> Geekli.st, San Francisco, May
 
