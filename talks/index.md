@@ -3,7 +3,14 @@ layout: default
 title: Talks by Anant Narayanan
 ---
 
-This page lists all the talks I've given, in reverse chronological order, along with links to slide decks. The slides maybe less useful if you didn't attend the talk itself, but if you did, I hope you enjoyed it! I gladly accept all forms of feedback by [email](mailto:anant@kix.in).
+This page lists all the talks I've given, in reverse chronological order, along with links to slide decks.
+[Skip down](#articles) to see the list of technical articles I've published.
+
+The slides maybe less useful if you didn't attend the talk itself, but if you did, I hope you enjoyed it!
+I also post slides for (most of) these presentations on [SlideShare](http://www.slideshare.net/anantn/) and
+[SpeakerDeck](https://speakerdeck.com/anantn), if you prefer using them.
+
+I gladly accept all forms of feedback by [email](mailto:anant@kix.in).
 
 ## 2014
 
@@ -88,6 +95,11 @@ This page lists all the talks I've given, in reverse chronological order, along 
 ## 2006
 
 * Webapps with Javascript [[part1]](http://proness.kix.in/talks/webapps/part1.html) [[part2]](http://proness.kix.in/talks/webapps/part2.html) [[part3]](http://proness.kix.in/talks/webapps/part3.html) [[part4]](http://proness.kix.in/talks/webapps/part4.html) <br> Freedel, New Delhi, February
+
+<div class="seperator"></div>
+<a name="articles"></a>
+
+# Articles
 
 I've previously published a few technical articles for magazines. I don't have as much time as I'd like to continue writing tutorials and articles, which is unfortunate, but I hope these were useful to someone:
 
