@@ -44,7 +44,7 @@ In summary, here's what you have to do after grabbing the SystemC sources (requi
 {% highlight bash %}
 $ tar xvzf systemc-2.1.v1.tgz
 $ cd systemc-2.1.v1
-$ wget http://www.kix.in/misc/patch_systemc-2.1.v1-gcc4-osx
+$ wget http://proness.kix.in/misc/patch_systemc-2.1.v1-gcc4-osx
 $ patch -p0 < patch_systemc-2.1.v1-gcc4-osx
 {% endhighlight %}
 
