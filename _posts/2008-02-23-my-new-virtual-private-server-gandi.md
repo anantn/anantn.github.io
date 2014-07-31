@@ -78,8 +78,8 @@ $ postconf -e 'smtpd_sasl_security_options = noanonymous'
 $ postconf -e 'broken_sasl_auth_clients = yes'
 $ postconf -e 'smtpd_recipient_restrictions = permit_sasl_authenticated,permit_mynetworks,reject_unauth_destination'
 $ postconf -e 'inet_interfaces = all'
-$ echo 'pwcheck_method: saslauthd' &gt;&gt; /etc/postfix/sasl/smtpd.conf
-$ echo 'mech_list: plain login' &gt;&gt; /etc/postfix/sasl/smtpd.conf
+$ echo 'pwcheck_method: saslauthd' >> /etc/postfix/sasl/smtpd.conf
+$ echo 'mech_list: plain login' >> /etc/postfix/sasl/smtpd.conf
 {% endhighlight %}
 
 Since postfix on Debian runs in a chroot, you need to make sure it can access saslauthd:
