@@ -25,7 +25,7 @@ $ wget ftp://ftp.trolltech.com/qt/source/qt-mac-opensource-src-4.3.0.tar.gz
 $ tar xvzf qt-mac-opensource-src-4.3.0.tar.gz
 $ svn co svn://anonsvn.kde.org/home/kde/trunk/qt-copy/patches/
 $ cd qt-mac-opensource-src-4.3.0
-$ for patch in ../patches/*.diff; do patch -p0 &lt; $patch; done
+$ for patch in ../patches/*.diff; do patch -p0 < $patch; done
 $ ./configure –prefix=/opt/qt4 -qt-gif -fast -qdbus
 $ make all
 $ sudo make install
