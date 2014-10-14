@@ -6,6 +6,7 @@ layout: post
 slug: my-new-virtual-private-server-gandi
 title: 'My new virtual private server: Gandi'
 wordpress_id: 192
+category: favorite
 ---
 
 I've been contemplating switching to a virtual private server for quite some time. The cheapest one I could find was [SliceHost](http://www.slicehost.com/). While their services seem to be great, $20 a month was too steep a price. A few weeks ago, I stumbled upon Gandi.

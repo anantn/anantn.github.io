@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Blog Archives
+title: Blog Favorites
 ---
 
 <p>
-All my blog posts, sorted by year.
+Here you'll find some of my favorite and popular blog posts, ordered by year.
+For a full listing of all my blog posts, take a look at <a href="/archives/">archives</a>.
 </p>
 
-{% for post in site.posts %}
+{% for post in site.categories.favorite %}
   {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
   {% if currentyear != year %}
     {% unless forloop.first %}</ul>{% endunless %}

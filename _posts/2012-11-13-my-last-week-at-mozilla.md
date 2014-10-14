@@ -6,6 +6,7 @@ layout: post
 slug: my-last-week-at-mozilla
 title: My last week at Mozilla
 wordpress_id: 1568
+category: favorite
 ---
 
 *tl;dr: My last day as a full-time employee of the Mozilla Corporation will be Friday, November 16.*

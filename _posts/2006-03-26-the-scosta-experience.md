@@ -6,6 +6,7 @@ layout: post
 slug: the-scosta-experience
 title: The SCOSTA Experience
 wordpress_id: 58
+category: favorite
 ---
 
 Prof. [Rajat Moona](http://www.cse.iitk.ac.in/~moona/index.php) had visited

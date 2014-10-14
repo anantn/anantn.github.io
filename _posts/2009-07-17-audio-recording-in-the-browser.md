@@ -5,6 +5,7 @@ date: 2009-07-17 05:43:54-07:00
 layout: post
 slug: audio-recording-in-the-browser
 title: Audio Recording in the Browser
+category: favorite
 ---
 
 I'm really excited to announce a new feature in [Jetpack 0.4](http://web.archive.org/web/20090720113039/https://addons.mozilla.org/en-US/firefox/addon/12025) – Audio Recording. "Jetpacks" can now access the microphone with just a few simple lines of Javascript:

@@ -6,6 +6,7 @@ layout: post
 slug: implementing-a-protocol-in-mozilla
 title: Implementing a Protocol in Mozilla
 wordpress_id: 1079
+category: favorite
 ---
 
 Creating a Firefox extension is nothing short of an adventure. I was able to get started pretty quickly, thanks to [this](http://replay.waybackmachine.org/20070818155809/http://ted.mielczarek.org/code/mozilla/extensionwiz/) web-based quick-start wizard, all the boilerplate code was generated in literally no time.

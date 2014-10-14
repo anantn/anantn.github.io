@@ -6,6 +6,7 @@ layout: post
 slug: the-joy-of-combination
 title: The joy of combination
 wordpress_id: 1118
+category: favorite
 ---
 
 As some of you may already know, I've been working on the [Glendix](http://www.glendix.org/) project for quite some time now. The basic idea is to combine the [Linux kernel](http://kernel.org/) with utilities from [Plan 9](http://plan9.bell-labs.com/plan9/), in order to create a developer-oriented operating system distribution. I say it would combine the best of both worlds, but there are those who disagree!

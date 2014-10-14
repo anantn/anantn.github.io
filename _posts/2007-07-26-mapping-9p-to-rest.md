@@ -6,6 +6,7 @@ layout: post
 slug: mapping-9p-to-rest
 title: Mapping 9P to REST
 wordpress_id: 1061
+category: favorite
 ---
 
 Now that the PHP bindings to libixp are somewhat usable, I've moved on to the JavaScript portion of my project. The first (and easier!) part of it is to map 9P to a RESTful scheme, so traditional web developers can use 9P without having to learn anything new.

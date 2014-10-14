@@ -6,6 +6,7 @@ layout: post
 slug: identity-on-the-web-is-broken
 title: Identity on the web is broken
 wordpress_id: 554
+category: favorite
 ---
 
 The mere presence of systems like [OpenID](http://openid.net/), [Facebook Connect](http://developers.facebook.com/connect.php) and a host of other identity services on the web today is attestation to the fact.
