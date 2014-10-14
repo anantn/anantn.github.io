@@ -6,6 +6,7 @@ layout: post
 slug: go-why-i-♥-google
 title: 'Go: Why I ♥ Google'
 wordpress_id: 561
+category: favorite
 ---
 
 Christmas came early this year.

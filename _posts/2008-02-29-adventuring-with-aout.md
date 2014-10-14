@@ -6,6 +6,7 @@ layout: post
 slug: adventuring-with-aout
 title: Adventuring with a.out
 wordpress_id: 193
+category: favorite
 ---
 
 The first step in the [Glendix](http://www.glendix.org/) project was to write a binary loader for the Plan 9 [a.out format](http://lsub.org/magic/man2html/6/a.out). Linux has a clean interface for registering new binary format handlers from a module. Basically, you define a structure of type [linux_binfmt](http://lxr.linux.no/linux+v2.6.24.3/include/linux/binfmts.h#L66) and call [register_binfmt](http://lxr.linux.no/linux+v2.6.24.3/include/linux/binfmts.h#L76) during initialization of the module. Now all that's left to do is implement the three functions that you pointed to in your structure: `load_binary`, `load_shlib` and `core_dump`.

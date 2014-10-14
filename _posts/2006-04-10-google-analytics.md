@@ -6,6 +6,7 @@ layout: post
 slug: google-analytics
 title: Google Analytics
 wordpress_id: 63
+category: favorite
 ---
 
 I was lucky enough to recieve an invitation code for Google's new
@@ -32,6 +33,6 @@ whether or not they have Java enabled and even their operating system!
 The service also has a section called "Conversion University" which gives
 tips on how to make your visitors click on advertisements (i.e. _convert_
 them!) and on how to utilize the information provided by the service to
-maximize your website effectiveness.
+maximize your website's effectiveness.
 
 Once again, go Google!

@@ -6,6 +6,7 @@ layout: post
 slug: behind-the-mozilla-apps-developer-preview
 title: Behind the Mozilla Apps Developer Preview
 wordpress_id: 1346
+category: favorite
 ---
 
 On Tuesday, we launched a [developer preview](https://awesomeness.mozilla.org/pub/sf/FormLink?_ri_=X0Gzc2X%3DUQpglLjHJlTQTtQyTQ7c8QABQHAzeQGQ2Q8GJVXMtX%3DUQpglLjHJlTQTtQyTQ7c8QUKQHAzeQzgQaQzg9X&_ei_=.) of the [Mozilla Apps](https://apps.mozillalabs.com/) project, something I've been working on for the better part of the year. We released a suite of tools and documentation aimed at helping developers write, deploy and sell apps built using modern web technologies like HTML5, CSS and JavaScript. Many others have already covered the question of _"why"_ we are doing this: all the major app ecosystems out there are closed, tied to a single vendor, and could certainly use a healthy dose of the openness. There are many great things about Apps, and many great things about the Web, and we want to [bring them together](http://blog.lizardwrangler.com/2011/08/09/the-app-model-and-the-web/).

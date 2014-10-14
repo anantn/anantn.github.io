@@ -6,6 +6,7 @@ layout: post
 slug: an-alternative-to-shared-libraries
 title: An alternative to shared libraries
 wordpress_id: 1137
+category: favorite
 ---
 
 There are few people I've met who found the experience of dealing with shared libraries pleasant. Personally, I really despise them. The whole idea of "shared code" is great and all, but the implementations in the Unix and Windows worlds are not something I would like to deal with. I would like to go as far as saying, "shared libraries suck", but that would mean a lot of people are going to flame me - just because they are extremely prevalent and that they're "working" for a vast majority of cases.

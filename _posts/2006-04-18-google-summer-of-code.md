@@ -6,6 +6,7 @@ layout: post
 slug: google-summer-of-code
 title: Google Summer of Code
 wordpress_id: 64
+category: favorite
 ---
 
 Another one of Google's excellent ideas. Continuing from last years Summer of

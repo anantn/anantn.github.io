@@ -6,21 +6,22 @@ layout: post
 slug: leopard-a-first-look
 title: 'Leopard: A first look'
 wordpress_id: 1111
+category: favorite
 ---
 
 I couldn't help but notice that close to 70% of developers who attended
-[foss.in](http://replay.waybackmachine.org/20071222125820/http://foss.in/) had 
+[foss.in](http://replay.waybackmachine.org/20071222125820/http://foss.in/) had
 Macs with them. And half of them had even upgraded to
 [Leopard](http://replay.waybackmachine.org/20071222125820/http://www.apple.com/macosx/),
 giving me a few glimpses of what Apple's new operating system looked like.
 
-I decided to upgrade to Leopard too, and got myself a copy from the iStore 
-on M.G. Road. It cost me Rs. 6,200 which is (suprisingly?) a little more than 
-the dollar-converted rate. Anyway, I decided to do a clean install after 
-backing up all my data - it was the perfect chance to remove all the cruft in 
+I decided to upgrade to Leopard too, and got myself a copy from the iStore
+on M.G. Road. It cost me Rs. 6,200 which is (suprisingly?) a little more than
+the dollar-converted rate. Anyway, I decided to do a clean install after
+backing up all my data - it was the perfect chance to remove all the cruft in
 the system.
 
-The installation went smoothly and the traditional multi-lingual 'Welcome' 
+The installation went smoothly and the traditional multi-lingual 'Welcome'
 was simply stunning. Now I began installing the applications one by one:
 
 * [QuickSilver](http://replay.waybackmachine.org/20071222125820/http://docs.blacktree.com/quicksilver/what_is_quicksilver): The first app that anyone would need. It worked with all the standard plug-ins on Leopard without any glitches. I did notice, however, that it wouldn't launch any applications that you just installed (specifically, those that you downloaded; yes, Leopard keeps track of that!). You have to manually launch the application once (you get a dialog asking you whether you really want to) before it appears in QuickSilver's catalog. Mildly irritating, but it's a one-time thing for every app.

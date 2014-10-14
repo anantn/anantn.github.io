@@ -3,6 +3,7 @@ author: anant
 layout: post
 slug: jumping-on-the-jekyll-bandwagon
 title: Jumping on the Jekyll Bandwagon
+category: favorite
 ---
 
 Regular readers of this blog may have noticed the new look and feel of the site

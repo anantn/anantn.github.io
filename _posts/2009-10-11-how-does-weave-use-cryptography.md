@@ -6,6 +6,7 @@ layout: post
 slug: how-does-weave-use-cryptography
 title: How does Weave use Cryptography?
 wordpress_id: 530
+category: favorite
 ---
 
 I'm back from the EU MozCamp in Prague and we all had a great time! Check out the slides from my talks: [Labs Overview](http://proness.kix.in/talks/mozcamp09-labs.pdf) and [Weave in Depth](http://proness.kix.in/talks/mozcamp09-weave.pdf).

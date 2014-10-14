@@ -6,6 +6,7 @@ layout: post
 slug: thoughts-on-writing-good-soc-applications
 title: Thoughts on Writing Good SoC Applications
 wordpress_id: 1027
+category: favorite
 ---
 
 Lately I've been spending some time on writing my SoC applications for this year's edition. I've applied to 3 organizations so far, mainly because of the fear that just one application isn't good enough to ensure a slot. A lot of students are frantic about how they must prepare their applications, and so I thought I'd give my 2 cents on the topic.

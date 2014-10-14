@@ -6,6 +6,7 @@ layout: post
 slug: week-2-crypto
 title: 'Week 2: Crypto'
 wordpress_id: 210
+category: favorite
 ---
 
 It's almost the end of my second week, and for the last 4 days I've been really frustrated trying to write some crypto code in Javascript. Just now, however, I got the 800-line beast to run successfully, and man, am I happy!
@@ -20,21 +21,16 @@ It took me about 2 days to find out which standards the component was actually u
 
 The Javascript decryption code is made of 5 basic parts:
 
-
-
-	
   * ASN.1 parser: I didn't write a real ASN.1 parser, it only understands a particular type of ASN.1 encoding that NSS outputs for the very specific case of PKCS#12-Triple-DES encryption. This portion simply reads out the value of the salt, number of iteration and the encrypted text.
 
-	
+
   * PKCS 12 Generator: This portion takes the salt and number of iterations to generate a 64 byte key and 8 byte initialization vector.
 
-	
+
   * [DES Decoder](http://www.tero.co.uk/des/): This one takes the initialization vector, key and encrypted text to output a decrypted message.
 
-	
+
   * [SHA-1 Hasher](http://snipplr.com/view/6175/javascript-implementation-of-the-sha1/) and [Base64-Encoder/Decoder](http://rumkin.com/tools/compression/base64.php): Self-explanatory.
-
-
 
 I only wrote the first two parts, but it took a whole week. That says something about the PKCS #12 and ASN.1 standards - like - they're not meant to be used ;)
 
