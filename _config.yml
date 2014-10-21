@@ -3,6 +3,4 @@ description: Garbage In -- Gospel Out
 url: http://kix.in
 author: Anant Narayanan
 permalink: :year/:month/:day/:title/
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
+markdown: kramdown
