@@ -10,13 +10,15 @@ wordpress_id: 1440
 
 The Mobile World Congress at Barcelona this year was the first trade show that Mozilla has participated in. This is new territory for us, but given that 2012 marks the year where mobile devices will far outnumber desktops & laptops, it was clear that Mozilla has to play a central role in promoting an open ecosystem for mobile devices. However, we're a small, community-driven software company, so putting on a professional face at a trade show like MWC to tell the world that we're serious about our enacting our mission in the mobile space can be very intimidating. Especially when you're sharing the floor with established industry giants; Huawei, for example, had a whole city block reserved for their "booth". Other carriers, OEMs, and hardware manufacturers had an equally large presence at the show. At the beginning of the week, what we mostly hoped for was to sneak in, show our wares and gauge interest. What we actually got exceeded our wildest expectations.
 
--> ![Moz booth at MWC](/images/2012/mozbooth-mwc.jpg) <-
+![Moz booth at MWC](/images/2012/mozbooth-mwc.jpg)
+{: .center}
 
 We setup our booth at [App Planet](http://www.mobileworldcongress.com/app-planet-overview.html) to showcase many of our products that are relevant to the mobile space: [Boot 2 Gecko](http://wiki.mozilla.org/B2G), [Firefox on Android](http://mozilla.org/mobile/), the [Mozilla Marketplace](http://mozilla.org/apps/), and [Mozilla Persona](http://mozilla.org/persona/). There was a continuous stream of people, on all four days, interested in checking out demos of our various products, which meant non-stop talking for booth staff! One of the things we're really proud of is that our booth was manned by Mozilla staff who directly work on the very same products we were show-casing. This made for some very authentic demos, and we left no question unanswered.
 
 ## Boot 2 Gecko
 
--> ![Open Web Devices](/images/2012/open-web-devices.jpg) <-
+![Open Web Devices](/images/2012/open-web-devices.jpg)
+{: .center}
 
 On the first day, we made an [announcement](https://blog.mozilla.com/blog/2012/02/27/mozilla-in-mobile-the-web-is-the-platform/) that we would be partnering with [Telefónica](http://www.forbes.com/companies/telefonica/) to release an _[open web device](http://openwebdevice.com/)_, a phone based fully on HTML5, powered by [Boot 2 Gecko](https://wiki.mozilla.org/B2G). This really resonated with almost everyone at the event, and set the tone for the following week. I had several people come up to me at our (rather modest, what I thought would be almost unfindable) booth and ask for a B2G demo, which kicked ass (and was only finished on Sunday night, most of us only saw the working phone on the first day of the show!). One gentleman from the press even commented that it was the only news worth writing about.
 
@@ -26,7 +28,8 @@ Everyone (including myself) was blown away with the performance of B2G on the de
 
 ## Mozilla Marketplace
 
--> ![Mozilla Marketplace](/images/2012/marketplace.jpg) <-
+![Mozilla Marketplace](/images/2012/marketplace.jpg)
+{: .center}
 
 The natural transition from the B2G demo happens when someone asks "how do users get apps on the phone?". Mozilla is going to be running a [marketplace](http://marketplace.mozilla.org/) for apps written using HTML5 technologies. Our marketplace is already open for developer submissions, and we hope to have a consumer beta ready sometime by the end of Q2 this year. We showcased some of our partner apps that have been submitted to the marketplace, running on a variety of different platforms: Android phones, tablets; Mac and Windows computers.
 
@@ -36,7 +39,8 @@ It's a really open eco-system, bringing the flexibility and distributed nature o
 
 ## Firefox on Android
 
--> ![Firefox on Android](/images/2012/ff-on-android.jpg) <-
+![Firefox on Android](/images/2012/ff-on-android.jpg)
+{: .center}
 
 We also had lots of visitors to our booth who were either fans of Firef
 ox and just wanted to say thanks (we love you all!) or were former Firefox users who now use a different browser (we love you too!).
