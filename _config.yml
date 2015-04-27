@@ -4,3 +4,5 @@ url: http://kix.in
 author: Anant Narayanan
 permalink: :year/:month/:day/:title/
 markdown: kramdown
+kramdown:
+  parse_block_html: true

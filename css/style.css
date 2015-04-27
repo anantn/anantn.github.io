@@ -1,7 +1,33 @@
-/* Center class for images */
-.center {
-  text-align: center;
-}
+/* Table Defaults */
+table {
+  border: 1px solid; }
+
+th {
+  font-weight: normal;
+  font-family: "Abril Fatface",Georgia,"Times New Roman",Times,serif; }
+
+th, tr, td {
+  padding: 8px;
+  border: 1px dotted; }
+
+/* Table + Caption */
+div.table {
+  clear: both;
+  overflow: auto; }
+
+div.table > p.caption {
+  margin: 0 auto;
+  font-style: italic; }
+
+div.table-left > table {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px; }
+
+div.table-right > table {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 5px; }
 
 /* Solarized */
 a {
@@ -363,3 +389,5 @@ div.ad, .responsive {
 .highlight div .gd, .highlight div .gd .x, .highlight div .gi, .highlight div .gi .x {
   display: inline-block;
   width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
