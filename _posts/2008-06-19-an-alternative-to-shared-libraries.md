@@ -26,9 +26,9 @@ and,
 > -Rob Pike
 
 
-I like static linking. But code these days is getting extremely complex and bloated, so people needed an alternative. Instead of focussing on making their code more cleaner and lean, they started thinking about they can share this huge piece of complex and bloated code across several applications. If you think about it, if your code is small and clean, you wouldn't feel the need for shared libraries.
+I like static linking. But code these days is getting extremely complex and bloated, so people needed an alternative. Instead of focusing on making their code more cleaner and lean, they started thinking about they can share this huge piece of complex and bloated code across several applications. If you think about it, if your code is small and clean, you wouldn't feel the need for shared libraries.
 
-Ulrich Drepper's famous page on why [static linking is considered harmful](http://replay.waybackmachine.org/20080702220300/http://people.redhat.com/drepper/no_static_linking.html) is worth a mention here. In point 1, he says 'fixes have to be applied to only place', but that also means that it takes only one "fix" to introduce two bugs that has wide-reaching consequences (imagine a "fix" that introduces two new bugs in a shared libc - this *has* happened!). The other points are probably valid, but his conclusion is certainly not:
+Ulrich Drepper's famous page on why [static linking is considered harmful](http://replay.waybackmachine.org/20080702220300/http://people.redhat.com/drepper/no_static_linking.html) is worth a mention here. In point 1, he says "fixes have to be applied to only place", but that also means that it takes only one "fix" to introduce two bugs that has wide-reaching consequences (imagine a "fix" that introduces two new bugs in a shared libc - this *has* happened!). The other points are probably valid, but his conclusion is certainly not:
 
 > The often used argument about statically linked apps being more portable (i.e., can be copied to other systems and simply used since there are no dependencies) is not true since every non trivial program needs dynamic linking at least for one of the reasons mentioned above.
 
