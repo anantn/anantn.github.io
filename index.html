@@ -1,13 +1,8 @@
 ---
 layout: default
-title: Blog Favorites
+title: Binary Sunrise, by Anant Narayanan
 ---
-
-<p>
-Here you'll find some of my favorite and popular blog posts, ordered by year.
-For a full listing of all my blog posts, take a look at <a href="/archives/">archives</a>.
-</p>
-
+<p>My most popular blog posts, ordered by year.</p>
 {% for post in site.categories.favorite %}
   {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
   {% if currentyear != year %}
@@ -18,7 +13,6 @@ For a full listing of all my blog posts, take a look at <a href="/archives/">arc
   {% endif %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a> &raquo;
-    <span>{{ post.date | date_to_string }}</span>
   </li>
 {% endfor %}
 </ul>

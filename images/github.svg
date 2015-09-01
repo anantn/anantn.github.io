@@ -8,8 +8,8 @@
 ]>
 <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="42px" height="42px" viewBox="0 0 42 42" xml:space="preserve">
-<g fill="#839496">
+	 x="0px" y="0px" width="32px" height="32px" viewBox="0 0 42 42" xml:space="preserve">
+<g fill="#111111">
 <path d="M21,1C9.954,1,1,9.954,1,21s8.954,20,20,20s20-8.954,20-20S32.046,1,21,1z M21,3.178c9.843,0,17.822,7.979,17.822,17.822
 	S30.843,38.822,21,38.822S3.178,30.843,3.178,21S11.157,3.178,21,3.178z M12.154,8.397c-0.507,1.476-0.684,3.077-0.229,4.476
 	c-0.549,0.608-0.975,1.308-1.279,2.1c-0.812,2.566-0.614,5.848,1.164,7.832c0.625,0.686,1.473,1.248,2.539,1.689
