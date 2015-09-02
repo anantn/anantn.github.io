@@ -11,7 +11,7 @@ category: favorite
 
 On Tuesday, we launched a [developer preview](https://awesomeness.mozilla.org/pub/sf/FormLink?_ri_=X0Gzc2X%3DUQpglLjHJlTQTtQyTQ7c8QABQHAzeQGQ2Q8GJVXMtX%3DUQpglLjHJlTQTtQyTQ7c8QUKQHAzeQzgQaQzg9X&_ei_=.) of the [Mozilla Apps](https://apps.mozillalabs.com/) project, something I've been working on for the better part of the year. We released a suite of tools and documentation aimed at helping developers write, deploy and sell apps built using modern web technologies like HTML5, CSS and JavaScript. Many others have already covered the question of _"why"_ we are doing this: all the major app ecosystems out there are closed, tied to a single vendor, and could certainly use a healthy dose of the openness. There are many great things about Apps, and many great things about the Web, and we want to [bring them together](http://blog.lizardwrangler.com/2011/08/09/the-app-model-and-the-web/).
 
-**UPDATE**: [Tim Berners-Lee agrees!](http://lists.w3.org/Archives/Public/public-webapps/2012JanMar/0464.html)
+[Tim Berners-Lee agrees!](http://lists.w3.org/Archives/Public/public-webapps/2012JanMar/0464.html)
 
 In this post, I want to cover the _"how"_. If you're interested in writing apps, I would point you to the [documentation](https://developer.mozilla.org/en/Apps) we have on how to build them. On the other hand, if you're curious to learn about how the system works as a whole, read on! A lot of different pieces of technology had to come together to get where we are today.
 
@@ -19,8 +19,9 @@ In this post, I want to cover the _"how"_. If you're interested in writing apps,
 
 A fundamental building block of the system is the app manifest. Every app in the system is represented by this JSON file, [documented here](https://developer.mozilla.org/en/Apps/The_Manifest), which essentially contains a set of metadata about your app: name, icons, localized descriptions and so on. This manifest file is hosted at the same domain as your app. An app is uniquely identified by the domain it is hosted at, and this manifest must be served off the very same domain (at any path), with the `Content-Type` header set to `application/x-web-app-manifest+json`. We've received a lot of feedback stating that this is limiting, but unfortunately almost every security knob in browsers is tuned to the domain of a given page. Because we anticipate that apps will, at some point, be able to request access to elevated privileges (to use the computer's web camera, for example), we must restrict ourselves to one app per domain. Note that `app1.example.org` and `app2.example.org` are different domains but `example.org/app1` and `example.org/app2` are not.
 
+<figure>
 ![App Manifest](/images/2011/manifest.png)
-{: .center}
+</figure>
 
 There are many other specifications that express ideas similar to this concept of a manifest (W3C Widgets, Chrome Web Store, etc.), and we are definitely very keen to standardize the format.
 
@@ -38,15 +39,17 @@ Now, what actually happens when somebody calls a function described in the _mozA
 
 Now, whenever the install method from the _mozApps_ API is invoked, the user is greeted with a dialog asking them to confirm if they'd like to install the app:
 
+<figure>
 ![HTML 5](/images/2011/html5.png)
-{: .center}
+</figure>
 
 ## The Dashboard
 
 Let's say the user confirms the installation, what next? After a set of sanity checks against the manifest of the app, it is officially installed into the users collection of apps, which we call a _repo_. A Dashboard is the piece of software that is responsible for letting the user manage their _repo_, by allowing them to launch and uninstall their apps. Recall that the `mozApps.mgmt` set of APIs allow a dashboard to do this, and currently the [myapps.mozillalabs.com](https://myapps.mozillalabs.com/) domain is white-listed. In the future we expect people to write dashboards (which is essentially an app to manage apps!) that users can authorize. When a user visits the default Mozilla Labs dashboard, they look at something like this:
 
+<figure>
 ![App Dashboard](/images/2011/dashboard.png)
-{: .center}
+</figure>
 
 We implemented a touch friendly dashboard that works on both mobile devices and the desktop, to let you re-arrange your app icons and organize them in pages. This part of the dashboard is implemented using the wonderful [icongrid](http://mozilla.github.com/icongrid/) library, which you are more than welcome to re-use while writing your own dashboard!
 
@@ -56,13 +59,15 @@ Clicking on an icon will _launch_ that app. What does launching mean? In the HTM
 
 For Firefox users, we have the opportunity to provide enhancements to the whole app installation and launch process while we wait for the API to get standardized. We've written an [add-on](https://addons.mozilla.org/en-US/firefox/addon/app-runtime/) that implements the _mozApps_ API, which will override the _include.js _HTML5 runtime version (so stores are encouraged to continue including the include.js version to provide the most portable experience for their users). If you have this add-on installed and install an app from any page or store, you will be greeted with a doorhanger that asks you confirm if you really intend to install this app:
 
+<figure>
 ![App Installation Confirmation](/images/2011/app-confirm.png)
-{: .center}
+</figure>
 
 Note that there's an extra option in there that asks if you want to install the "native" app version or not. On Windows and Mac, this means that we will automatically generate a .EXE or .APP that wraps your web application into a shell that looks and feels like a real app! For example, on the Mac, we will create a menu bar and dock icon for you:
 
+<figure>
 ![Roundball on Desktop](/images/2011/roundball-desktop.png)
-{: .center}
+</figure>
 
 Cool? Sounds pretty familiar to the [Prism](https://mozillalabs.com/prism/) experiment, right?
 
@@ -74,8 +79,10 @@ An important feature of Apps written using web technologies is that they can wor
 
 The App Runtime for Android is a native Android application that lets users install, launch and manage their apps just like on the desktop:
 
-![Mozilla App Marketplace on Android](/images/2011/store.png) ![Roundball on Android](/images/2011/roundball-android.png)
-{: .center}
+<figure>
+![Mozilla App Marketplace on Android](/images/2011/store.png)
+![Roundball on Android](/images/2011/roundball-android.png)
+</figure>
 
 Installing an app on Android using Soup will create an icon in your home screen, tapping on it will launch the app using our embedded web runtime. Well built web applications can now look and feel just like native android apps!
 
@@ -85,8 +92,9 @@ In addition, apps that you installed on the desktop can be automatically synchro
 
 Users shouldn't have to install apps on every device they own once they've purchased it. We've developed an AppSync solution for the HTML5 runtime, Firefox runtime as well as Android. In all three environments, you should be prompted to login with your [BrowserID ](https://browserid.org/)(Mozilla's new federated & distributed Identity system) when you visit the dashboard:
 
+<figure>
 ![Login for AppSync](/images/2011/appsync-login.png)
-{: .center}
+</figure>
 
 Once you've logged into your dashboard, your apps from all your devices should start automatically synchronizing!
 
@@ -130,7 +138,8 @@ Source code for the Android App Runtime (codenamed 'Soup') can be [found here](h
 
 On the server side of things, [Zamboni](https://github.com/mozilla/zamboni) is the code that powers [addons.mozilla.org](https://addons.mozilla.org/), and was extended to support [apps-preview.mozilla.org](https://apps-preview.mozilla.org). It is built on [Django](https://www.djangoproject.com/). The [AppSync ](https://github.com/mozilla/appsync)server is also written in Python (using [Cornice](https://github.com/mozilla-services/cornice)) and is what powers app synchronization across all three runtimes (HTML5, Firefox and Android). The AppSync server in turn talks to [Sauropod](https://github.com/mozilla/sauropod), written in node.js and backed by [HBase](https://hbase.apache.org/). Sauropod is a Mozilla Labs experiment aimed at building a [secure storage system](https://wiki.mozilla.org/Sauropod) for user data. Tarek Ziadé has a more [comprehensive overview](https://tarekziade.wordpress.com/2011/12/14/mozilla-apps-server-side/) of how all the server side pieces fit together, which you should go read!
 
+<figure>
 ![Apps Architecture Chart](/images/2011/apps-chart.png)
-{: .center}
+</figure>
 
 Don't hesitate to participate and ask questions on our [mailing list](https://groups.google.com/group/mozilla.dev.webapps/topics?pli=1). We encourage you to play around with the system and file any bugs that you may find [here](https://bugzilla.mozilla.org/enter_bug.cgi?product=Web%20Apps). Together, we can make an open, healthy app ecosystem for the web a reality. We look forward to hearing from you!

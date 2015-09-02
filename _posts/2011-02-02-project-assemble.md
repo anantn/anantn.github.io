@@ -41,39 +41,44 @@ You do need a couple more things before you can being assembling your computer. 
 
 ## Recipe
 
-* The first thing you'll want to do is to mount your CPU on your motherboard. For the LGA1366 this was as simple as gently placing the CPU over the socket to match the nudge and then pulling the lever to lock it in. I had to put some pressure to lock the lever, but I only did it after I was sure I placed the CPU in the right orientation.
+The first thing you'll want to do is to mount your CPU on your motherboard. For the LGA1366 this was as simple as gently placing the CPU over the socket to match the nudge and then pulling the lever to lock it in. I had to put some pressure to lock the lever, but I only did it after I was sure I placed the CPU in the right orientation.
 
+<figure>
 ![Mount CPU](/images/2011/cpu-mount.jpg)
-{: .center}
+</figure>
 
-* All the AMD/Intel CPUs will come with their own stock coolers. Mounting them on top of the CPU is very easy these days, as they come with pre-applied cooling paste. Just follow the instructions from the CPU box. I opted to get my own cooler and coolant, however, so mounting it was a little more involved.
+All the AMD/Intel CPUs will come with their own stock coolers. Mounting them on top of the CPU is very easy these days, as they come with pre-applied cooling paste. Just follow the instructions from the CPU box. I opted to get my own cooler and coolant, however, so mounting it was a little more involved.
 
+<figure>
 ![Cooling Paste](/images/2011/cpu-paste.jpg) ![CPU Heatsink](/images/2011/cpu-heatsink.jpg)
-{: .center}
+</figure>
 
-* Now you'll want to attach your power supply to your ATX tower. It usually goes in the extreme bottom or top of the tower.
+Now you'll want to attach your power supply to your ATX tower. It usually goes in the extreme bottom or top of the tower.
 
-* I prefer to attach RAM on the motherboard before mounting it on my tower so I have a better sense of where to place the PCIe cards. It's also easier because your hands are constricted once the motherboard goes inside, and RAM sticks typically need to be absolutely vertical to their slots before they'll go in.
+I prefer to attach RAM on the motherboard before mounting it on my tower so I have a better sense of where to place the PCIe cards. It's also easier because your hands are constricted once the motherboard goes inside, and RAM sticks typically need to be absolutely vertical to their slots before they'll go in.
 
+<figure>
 ![Attach RAM](/images/2011/attach-ram.jpg)
-{: .center}
+</figure>
 
-* Once you have the RAM in place, it is time to secure the motherboard onto the ATX tower. The most important step here is to first attach the double-edged screws that came with your motherboard. They raise your motherboard and provide screw sockets for the ATX to attach to. Do not try and attach your motherboard directly to the tower without putting these in between. There should be a half-inch gap between the metal casing and the lower side of the motherboard.
+Once you have the RAM in place, it is time to secure the motherboard onto the ATX tower. The most important step here is to first attach the double-edged screws that came with your motherboard. They raise your motherboard and provide screw sockets for the ATX to attach to. Do not try and attach your motherboard directly to the tower without putting these in between. There should be a half-inch gap between the metal casing and the lower side of the motherboard.
 
+<figure>
 ![Screw on Motherboard](/images/2011/motherboard-fix.jpg)
-{: .center}
+</figure>
 
-* The hardest part is now behind you. Plug-in your video card, RAM and drives. Most of these are pretty much "push-click" based these days, really nothing much to it!
+The hardest part is now behind you. Plug-in your video card, RAM and drives. Most of these are pretty much "push-click" based these days, really nothing much to it!
 
-* Done? Now all that remains is to tie everything together. This might actually be intimidating to some, but cables these days are designed not to fit in something they weren't meant to. The basic steps are to connect power to your motherboard, video card, fans, optical and disk drives. Then, connect SATA cables from your drives to the motherboard. Motherboard control pins go to the front of the ATX (for LEDs and power switch).
+Done? Now all that remains is to tie everything together. This might actually be intimidating to some, but cables these days are designed not to fit in something they weren't meant to. The basic steps are to connect power to your motherboard, video card, fans, optical and disk drives. Then, connect SATA cables from your drives to the motherboard. Motherboard control pins go to the front of the ATX (for LEDs and power switch).
 
-* Take a deep breath. Connect the monitor and a keyboard and flip the switch. If all goes well, the fans will start whirring; and you'll get a beep from the motherboard indicating POST succeeded. wOOt!
+Take a deep breath. Connect the monitor and a keyboard and flip the switch. If all goes well, the fans will start whirring; and you'll get a beep from the motherboard indicating POST succeeded. wOOt!
 
-  If that didn't happen, maybe you got something other than a single beep. Different kinds of beeps can mean different problems, go the Wikipedia page on [POST ](https://secure.wikimedia.org/wikipedia/en/wiki/Power-on_self-test)to troubleshoot. If you don't get any kind of beep at all, and the fans aren't spinning it means you missed a power supply cable somewhere. Double check to make sure the CPU cooler fan is running! If it isn't your CPU will heat up very quickly -- most processors will automatically shutdown when they overheat -- but there's a chance it may damage your computer, so double-check.
+If that didn't happen, maybe you got something other than a single beep. Different kinds of beeps can mean different problems, go the Wikipedia page on [POST ](https://secure.wikimedia.org/wikipedia/en/wiki/Power-on_self-test)to troubleshoot. If you don't get any kind of beep at all, and the fans aren't spinning it means you missed a power supply cable somewhere. Double check to make sure the CPU cooler fan is running! If it isn't your CPU will heat up very quickly -- most processors will automatically shutdown when they overheat -- but there's a chance it may damage your computer, so double-check.
 
+<figure>
 ![Turn it On!](/images/2011/turn-it-on.jpg)
-{: .center}
+</figure>
 
-* Get your installation media and put your favorite OS on your brand new computer. Give it a name, and learn to love it!
+Get your installation media and put your favorite OS on your brand new computer. Give it a name, and learn to love it!
 
 That's all there is to it. I certainly had a blast assembling my computer, it was a nice learning experience; not to mention very economical. Well, I'm off to play some HD-quality Starcraft2!
