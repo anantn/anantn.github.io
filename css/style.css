@@ -9,9 +9,10 @@ body {
     padding-bottom: 2rem;
 }
 
-.header span {
+.navigation {
+    padding-top: 0.5rem;
     padding-right: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1;
 }
 
@@ -25,8 +26,24 @@ body {
     border-bottom: none;
 }
 
+.links img {
+    width: 22px;
+}
+
+@media (max-width: 760px) {
+    img {
+        width: 90%;
+    }
+}
+
 ol, ul {
+    margin-left: -1rem;
     width: 50%;
+}
+
+ul.posts li {
+    padding-bottom: 1rem;
+    list-style-type: none;
 }
 
 ul {
@@ -34,6 +51,7 @@ ul {
 }
 
 li {
+    width: 150%;
     padding: 0px;
 }
 

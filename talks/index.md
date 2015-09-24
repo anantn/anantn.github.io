@@ -121,11 +121,10 @@ Slides for most of these presentations are also available on
 [Unix++: Plan 9 from Bell Labs](http://proness.kix.in/talks/foss.in07-plan9.pdf)
 <br><em>FOSS.IN, Bangalore, December</em>
 
-"FOSS Labs": A series<br>
+FOSS Labs series<br>
 [[bootcamp]](http://proness.kix.in/talks/itr07-bootcamp.pdf)
 [[linux]](http://proness.kix.in/talks/itr07-linux-basics.pdf)
 [[linux+]](http://proness.kix.in/talks/itr07-more-linux.pdf)
-<br>
 [[html-php]](http://proness.kix.in/talks/itr07-html-php.pdf)
 [[php-mysql]](http://proness.kix.in/talks/itr07-php-mysql.pdf)
 [[php+]](http://proness.kix.in/talks/itr07-php.pdf)
