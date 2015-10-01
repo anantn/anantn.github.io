@@ -90,7 +90,7 @@ hr {
  * Courtesy of GitHub.com
  */
 .highlight pre, pre, .highlight .hll {
-    margin-right: 5px; min-width: 55%;
+    margin-right: 5px; min-width: 55%; width: 55%; overflow: auto;
     display: inline-block; background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px;
 }
 
@@ -99,7 +99,7 @@ hr {
     .video { width: 90%; }
     .header { width: 90%; }
     .links { float: left; }
-    .highlight pre, pre { min-width: 90%; }
+    .highlight pre, pre { min-width: 85%; width: 85%; }
     #disqus_thread { width: 90%; }
 }
 
