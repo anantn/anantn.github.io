@@ -25,16 +25,20 @@ body {
 }
 
 ol, ul {
+    width: 90%;
+}
+
+ol {
     margin-left: -2.5rem;
+}
+
+ul {
+    list-style-type: circle;
 }
 
 ul.posts li {
     padding-bottom: 1rem;
     list-style-type: none;
-}
-
-ul {
-    list-style-type: circle;
 }
 
 li {
@@ -80,19 +84,24 @@ hr {
     margin-top: 4rem;
 }
 
+/*
+ * GitHub style for Pygments syntax highlighter, for use with Jekyll
+ * Courtesy of GitHub.com
+ */
+.highlight pre, pre, .highlight .hll {
+    margin-right: 5px; min-width: 55%;
+    display: inline-block; background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px;
+}
+
 @media screen and (max-width: 760px) {
     img { width: 90%; }
     .video { width: 90%; }
     .header { width: 90%; }
     .links { float: left; }
+    .highlight pre, pre { min-width: 90%; }
     #disqus_thread { width: 90%; }
 }
 
-/*
- * GitHub style for Pygments syntax highlighter, for use with Jekyll
- * Courtesy of GitHub.com
- */
-.highlight pre, pre, .highlight .hll { display: inline-block; min-width: 85%; background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
