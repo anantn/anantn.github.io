@@ -37,8 +37,7 @@ body {
 }
 
 ol, ul {
-    margin-left: -1rem;
-    width: 50%;
+    margin-left: -2.5rem;
 }
 
 ul.posts li {
@@ -51,12 +50,7 @@ ul {
 }
 
 li {
-    width: 150%;
     padding: 0px;
-}
-
-li p {
-    width: 100%;
 }
 
 figure {
@@ -76,11 +70,20 @@ p > code {
     font-size: 1.1rem;
 }
 
+#disqus_thread {
+    width: 55%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 760px) {
+    #disqus_thread { width: 90%; }
+}
+
 /*
  * GitHub style for Pygments syntax highlighter, for use with Jekyll
  * Courtesy of GitHub.com
  */
-.highlight pre, pre, .highlight .hll { width: 55%; background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
+.highlight pre, pre, .highlight .hll { display: inline-block; min-width: 85%; background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
