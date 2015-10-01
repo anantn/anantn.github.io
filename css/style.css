@@ -37,6 +37,7 @@ ul {
 }
 
 ul.posts li {
+    margin-left: -2.5rem;
     padding-bottom: 1rem;
     list-style-type: none;
 }
