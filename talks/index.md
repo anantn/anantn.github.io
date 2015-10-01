@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Talks by Anant Narayanan
+title: Talks I've Given
 ---
 
-This page lists all the talks I've given, in reverse chronological order,
-along with links to slide decks. Videos are embedded where available.
+Here's a list of talks I've given, in reverse chronological order.
+Links to slide decks and videos are linked where possible.
 
 Slides for most of these presentations are also available on
 [SlideShare](http://www.slideshare.net/anantn/) and
@@ -15,24 +15,24 @@ Slides for most of these presentations are also available on
 [Building Realtime Apps with Angular and Firebase](http://proness.kix.in/talks/ngconf14-firebase.pdf)
 <br><em>ng-conf, Salt Lake City, January</em>
 
-<iframe width="500" height="280" src="https://www.youtube.com/embed/e4yUTkva_FM" frameborder="0" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/e4yUTkva_FM" frameborder="0" allowfullscreen></iframe>
 
 ## 2013
 
 [Building JS APIs for Browsers](http://proness.kix.in/talks/devconf13-browsers/)
 <br><em>HTML5DevConf, San Francisco, October</em>
 
-<iframe width="500" height="280" src="https://www.youtube.com/embed/Jo4DttCcL7w" frameborder="0" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/Jo4DttCcL7w" frameborder="0" allowfullscreen></iframe>
 
 [Message Passing vs. Data Synchronization](http://proness.kix.in/talks/realtimeconf13-datasync.pdf)
 <br><em>RealtimeConf, Portland, October</em>
 
-<iframe src="https://player.vimeo.com/video/77352415" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/77352415" class="video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 [Realtime Web Apps with Firebase and AngularJS](http://proness.kix.in/talks/angular13-firebase/)
 <br><em>AngularJS Meetup, Mountain View, July</em>
 
-<iframe width="500" height="280" src="https://www.youtube.com/embed/C7ZI7z7qnHU" frameborder="0" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/C7ZI7z7qnHU" frameborder="0" allowfullscreen></iframe>
 
 [WebRTC: A Practical Introduction](http://proness.kix.in/talks/fluent13-webrtc/)
 <br><em>FluentConf, San Francisco, May</em>

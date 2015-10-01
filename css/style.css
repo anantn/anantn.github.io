@@ -6,34 +6,22 @@ body {
 .header {
     width: 55%;
     margin-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .navigation {
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 1rem 1rem 1rem 0;
     font-size: 1.2rem;
     line-height: 1;
 }
 
-.links {
-    float: right;
-    vertical-align: middle;
-}
-
 .links a {
-    padding: 0.5rem;
+    padding-right: 0.5rem;
     border-bottom: none;
 }
 
 .links img {
     width: 22px;
-}
-
-@media (max-width: 760px) {
-    img {
-        width: 90%;
-    }
 }
 
 ol, ul {
@@ -70,12 +58,33 @@ p > code {
     font-size: 1.1rem;
 }
 
+.video {
+    width: 40%;
+    height: 280px;
+}
+
+.large {
+    font-size: 5em;
+}
+
+hr {
+    width: 55%;
+    margin: 4rem 0 0 0;
+    padding: 0;
+    border: none;
+    border-top: 1px dotted #333;
+}
+
 #disqus_thread {
     width: 55%;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 @media screen and (max-width: 760px) {
+    img { width: 90%; }
+    .video { width: 90%; }
+    .header { width: 90%; }
+    .links { float: left; }
     #disqus_thread { width: 90%; }
 }
 
