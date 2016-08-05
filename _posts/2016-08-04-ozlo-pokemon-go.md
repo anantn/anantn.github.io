@@ -91,7 +91,7 @@ type of visual result format to use, based on the user's device.
 
 ![Ozlo learns about Pokémon GO](/images/2016/ozlo-pokemon-mpm.png)
 
-Ozlo's capabiltities aren't limited to just rendering maps though - he can choose between a variety of output formats -
+Ozlo's capabilities aren't limited to just rendering maps though - he can choose between a variety of output formats -
 and we pick the one that's best suited to the medium you're using to communicate with him.
 
 ## Why This Matters
