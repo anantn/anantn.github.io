@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/anant
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.kix.in
+  * I am anant (https://keybase.io/anant) on keybase.
+  * I have a public key with fingerprint 42DD 4F90 7C5F 4576 D6F4  2202 C31C 2D8C 7B4B 6B02
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101566ee24c56034c54b250aadea94fdfa6058895d6c7e111e6fd1bc9c9247a25c30a",
+            "fingerprint": "42dd4f907c5f4576d6f42202c31c2d8c7b4b6b02",
+            "host": "keybase.io",
+            "key_id": "c31c2d8c7b4b6b02",
+            "kid": "0101566ee24c56034c54b250aadea94fdfa6058895d6c7e111e6fd1bc9c9247a25c30a",
+            "uid": "d21acf505abcf11f3800e9f915d11800",
+            "username": "anant"
+        },
+        "revoke": {
+            "sig_ids": [
+                "1738f1a61cd8fbbf7afdc75da345b15316be90b55a538c0d0b3a654a7187293a0f"
+            ]
+        },
+        "service": {
+            "hostname": "www.kix.in",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486676192,
+    "expire_in": 157680000,
+    "prev": "f5ffe882af02ef795375f0101808747a3ed0ce42c66c5bc66a9bba7632eb505d",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMODAnicrVJrUFRlGF4gGSVJcJBBMLJTzji4rOf2ncuKNjGroqigXGIGFb5zzneW
+w8ou7i6XjRhxEhMC5FJRUWjacHE0MkBtRAc2KhpKJQOZZAAhnAaRjJxqQLFvGfvX
+z/58l3ee93mf93nfbn8fnZ/XV6siywpiLd5evV2/5ehSPhodLSAkm+IijAWEBS1c
+6ICCHM40i6YQRoKkSApwHEI0KwOOZPDJSjQgIVQQFFlVUSFHAkEQgcLJPKIoCnGq
+QkmyKIs0y0MayAwJCT2halYzsmfbNasT07K0orCqSPIyUFnAcwqnsjRN0jJDybQi
+yLzESpxE0jgxw+bwZGBxEnQgg2bDMfxJW5D3H/j/WXfOAp1CU1BWAQmgJKsUpTIC
+SSJRFSmgUBR+e4AOZLfCLITR0Apxl4V6wo5ybRbkMdWhmbFiB2FMJSieEVQKcpSs
+CKokqTxUFZkHCmRYIFGAoTgJiaQEAASMIJMKKTGQAyzkKYGnRQaSKrEPc+NyuZq8
+QO6x6GnpvLw8g0XLN2hWLCnbbnPaZNsBHM9wOrMdRo8mpyt7AYiktKcUaZJmVfB4
+cEYusjs0m5UwUhgpOzUPJ8UKHMdzlEjrCZSfrdlRmuZB4LHhzknSUwflYkoVqCoS
+BBqqJI1UXgQMD1TPIARS4LGnDFJIGbG0zHEykPAJRUmCPMfQSMLWKoSnqYNWG+YW
+sE5oxpzYNyt05tgRUeju2vuMzstP57vI27O3Or8lAf9u892pZXO+y/+85eo5qNYk
+G4Iv9RRnB0jsu1t8zumt68RdbvAB6nyUGuya3JFZfOR53dB+MX/p5tCPw1nTF+Mh
+3iMrZjdvfFL2qn8SPbFmvq/DbzHY0Dg4Xp4QHNM/szbU3zU38NajJDCrq22cu997
+6KVllSvs7+hLJk+JWbWGS5UhpZb2M3cy20df9kl8n6jvGx+6erjhkPvLo3EVp33f
++HsuMCQxomHs+wcQNomovXY6NMj6wynznr3+F+M2lO+7fqEtdSjsJnezL6IhPys8
+lk7/5Pj9E8rSgZ6ysJ/7Fz8UQ87uvDC1vcjrm8Giynz9+tlcPRHbfuT3/dHTXX3m
+1uoXhdLIqICrwbcrth4+f7HwaFt1flTpzInW46fDE6/UVT2XGR/f/UJCvd8aMWK7
+qWbl1z3bPtvpmt8U8eNsh/VMRU7BWPDtlmsnt9Ajxshhv2eTv1u0trwo3qmPIrdu
+qt92znjj7coYPmjYfezJjW9X3Yke+yli9+XmJPu9hHtBU3R3Z8M19npD4K2Z5Y93
+xDeTky3TjU3JVwpfL65e0vFL654ad86H2mvz/aOmFrnuQcCbZ1MG1//V2LwyZXfG
+45J6C/g0+tjQK+mFD7sGzGGGYeJuc7owVzdVXm2aAFV5q4vPj4mfu5suh/7RWbJu
+F4W6h9s2gpTULDdlMo5EVfV6vzex+mS6KTCu9dfWwph/AMUw2ek=
+=kTk0
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/anant
+
+==================================================================
+
