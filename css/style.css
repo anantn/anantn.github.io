@@ -63,6 +63,11 @@ p > code {
     font-size: 1.1rem;
 }
 
+blockquote p {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
 .video {
     width: 40%;
     height: 280px;
@@ -90,7 +95,7 @@ hr {
  * Courtesy of GitHub.com
  */
 .highlight pre, pre, .highlight .hll {
-    margin-right: 5px; min-width: 55%; width: 55%; overflow: auto;
+    margin-right: 5px; width: 90%; overflow: auto;
     display: inline-block; background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px;
 }
 
