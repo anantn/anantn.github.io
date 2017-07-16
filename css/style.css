@@ -85,9 +85,26 @@ hr {
     border-top: 1px dotted #333;
 }
 
-#disqus_thread {
+#isso-thread {
     width: 55%;
     margin-top: 4rem;
+}
+
+#isso-thread p {
+    width: auto;
+}
+
+#isso-thread div.isso-comment-header {
+    font-size: 1em;
+}
+
+#isso-thread div.text p {
+    font-size: 1.3em;
+}
+
+a.upvote, a.downvote, a.reply {
+    text-decoration: none;
+    border-bottom: none;
 }
 
 /*
