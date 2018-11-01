@@ -10,6 +10,11 @@ Slides for most of these presentations are also available on
 [SlideShare](https://www.slideshare.net/anantn/) and
 [SpeakerDeck](https://speakerdeck.com/anantn).
 
+## 2018
+
+[Enterprise Scale Knowledge Graphs](https://proness.kix.in/talks/iswc18-kg.pdf)
+<br><em>ISWC, Monterey, October</em>
+
 ## 2017
 
 [Building an Intelligent Assistant](https://proness.kix.in/talks/devweek17-ozlo.pdf)

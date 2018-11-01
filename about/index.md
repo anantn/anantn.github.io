@@ -5,12 +5,12 @@ title: About Me
 Hi.
 
 My name is Anant, and I'm a hacker ([of the good variety](http://en.wikipedia.org/wiki/Hacker_%28programmer_subculture%29)).
-The best way to reach me is [by email](mailto:anant@kix.in).
+The best way to reach me is [by email](mailto:anant@kix.in) or on [Twitter](https://twitter.com/anantn).
 
 I have a special affinity towards free software in particular. I've participated and contributed to several open source
 projects since 2004 and [continue to](http://github.com/anantn) [do so](http://www.ohloh.net/accounts/anant).
 
-I currently work at [Facebook](https://www.facebook.com) with a focus on building enterprise scale knowledge graphs.
+I currently work at [Facebook](https://www.facebook.com).
 My last job was at [Ozlo](https://www.ozlo.com), where we built an AI-powered digital assistant.
 Previously, at [Firebase](https://www.firebase.com/), I helped build a scalable realtime
 application backend. Before that, I worked on a wide range of experimental projects to improve the web at
