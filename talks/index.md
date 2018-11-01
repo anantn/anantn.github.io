@@ -13,7 +13,7 @@ Slides for most of these presentations are also available on
 ## 2018
 
 [Enterprise Scale Knowledge Graphs](https://proness.kix.in/talks/iswc18-kg.pdf)
-<br><em>ISWC, Monterey, October</em>
+<br><em><a href="http://iswc2018.semanticweb.org/panel-enterprise-scale-knowledge-graphs/">ISWC</a>, Monterey, October</em>
 
 ## 2017
 
