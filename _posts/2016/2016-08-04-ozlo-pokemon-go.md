@@ -1,10 +1,9 @@
 ---
 layout: post
 comments: true
-category: favorite
 slug: ozlo-pokemon-go
 title: Teaching Ozlo about Pokémon GO
-categories: [ozlo]
+categories: [ozlo, favorite]
 ---
 
 Pokémon GO is all the rage these days. [Ozlo](https://www.ozlo.com), your friendly AI sidekick,
