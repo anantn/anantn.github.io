@@ -7,6 +7,9 @@ title: Anant Narayanan | Home
 <img src="/images/avatar.jpg" alt="Avatar" />
 The opinions expressed on this website are solely my own and do not reflect the views or opinions of any other party,
 including my current and former employers.
+<br/><br/>
+PHP logo by [Colin Viebrock](http://viebrock.ca), under [CC 4.0 BY](https://creativecommons.org/licenses/by/4.0/).
+Icons made by [Smashicons](https://www.flaticon.com/authors/smashicons), [Elegant Themes](https://www.flaticon.com/authors/elegant-themes), [Freepik](https://www.freepik.com/), and [Daniel Bruce](https://www.flaticon.com/authors/daniel-bruce) from [Flaticon](https://www.flaticon.com), under [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/).
 </span>
 
 Hello, my name is Anant Narayanan, and you've reached my small slice of the web!
