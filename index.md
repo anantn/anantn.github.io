@@ -18,11 +18,11 @@ If you're here to download the slides for (or view) a talk I've given head over 
 
 <ul class="posts">
 {% for post in site.posts limit:2 %}
-<li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a> <span class="date">({{ post.date | date_to_string }})</span></li>
+<li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a> <span class="date"><em>({{ post.date | date_to_string }})</em></span></li>
 {% endfor %}
-<li>&raquo; <a href="/2008/07/22/aes-256-using-php-mcrypt/">AES-256 using PHP-mcrypt</a> <span class="date">(22 Jul 2008)</span></li>
-<li>&raquo; <a href="/2008/06/19/an-alternative-to-shared-libraries/">An alternative to shared libraries</a> <span class="date">(19 Jun 2008)</span></li>
-<li>&raquo; <a href="/2007/02/12/compiling-systemc-with-gcc-4-and-mac-os-x/">Compiling SystemC with GCC 4 (and Mac OS X)</a> <span class="date">(12 Feb 2007)</span></li>
+<li>&raquo; <a href="/2008/07/22/aes-256-using-php-mcrypt/">AES-256 using PHP-mcrypt</a> <span class="date"><em>(22 Jul 2008)</em></span></li>
+<li>&raquo; <a href="/2008/06/19/an-alternative-to-shared-libraries/">An alternative to shared libraries</a> <span class="date"><em>(19 Jun 2008)</em></span></li>
+<li>&raquo; <a href="/2007/02/12/compiling-systemc-with-gcc-4-and-mac-os-x/">Compiling SystemC with GCC 4 (and Mac OS X)</a> <span class="date"><em>(12 Feb 2007)</em></span></li>
 </ul>
 
 This page also includes brief summaries of my involvement with various software organizations over the years: [Facebook](#facebook), [Ozlo](#ozlo), [Firebase](#firebase), [Mozilla](#mozilla), [Plan 9](#plan9), [Google Summer of Code](#gsoc), [PHP](#php), [Gentoo](#gentoo), and [GNU](#gnu).
