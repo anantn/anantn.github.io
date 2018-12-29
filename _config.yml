@@ -1,8 +1,22 @@
 title: Binary Sunrise
-description: Garbage In -- Gospel Out
-url: http://kix.in
-author: Anant Narayanan
+description: Blog posts, talks, projects from Anant Narayanan
+url: https://www.kix.in
+author: anantn
+social:
+  name: Anant Narayanan
+  links:
+    - https://twitter.com/anantn
+    - https://www.facebook.com/anantn
+    - https://www.linkedin.com/in/anantn
+    - https://github.com/anantn
+    - https://keybase.io/anant
+logo: /favicon.ico
 permalink: :year/:month/:day/:title/
 markdown: kramdown
 kramdown:
   parse_block_html: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from

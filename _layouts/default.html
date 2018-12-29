@@ -4,19 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>{{ page.title }}</title>
+    {% seo %}
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Blog posts, talks, projects from Anant Narayanan"
-    />
     <link rel="stylesheet" href="/css/tufte.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="{{ site.name }}"
-      href="https://www.kix.in/feed.xml"
-    />
+    {% feed_meta %}
     <link rel="shortcut icon" href="/favicon.ico" />
   </head>
 
