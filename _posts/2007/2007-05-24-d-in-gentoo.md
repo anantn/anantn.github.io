@@ -6,6 +6,7 @@ layout: post
 slug: d-in-gentoo
 title: D in Gentoo
 wordpress_id: 1037
+categories: [gentoo]
 ---
 
 Hiya! This is probably the first post that will appear on Planet Gentoo since I last posted on the Gentoo SoC Planet - so I'd like to say hello to all my fellow developers and the all the awesome Gentoo users out there!

@@ -6,7 +6,7 @@ layout: post
 slug: why-should-you-encrypt-user-data
 title: Why should you encrypt user data?
 wordpress_id: 1290
-category: favorite
+categories: [mozilla, favorite]
 ---
 
 One of the things I like most about [Firefox Sync](https://www.mozilla.com/en-US/mobile/sync/) is that all my browsing data is [encrypted](http://kix.in/2009/10/11/how-does-weave-use-cryptography/) before anything leaves my computer. This wasn't easy to do, there is a **ton** of engineering effort involved in scaling servers, maintaining all the crypto code for the client, and most of all, in making the experience smooth and inclusive of all types of users. The last one is especially hard since average users find it hard to grok the concept of two passwords (one that the server knows and another that only they know, which means if they lose or forget the latter we really can't help them). I can't think of any major services out there that offer the same feature (it is clear now that Dropbox does not encrypt user data in an irrecoverable manner **EDIT**: Peter points out in the comments that Chrome does allow you to [encrypt your passwords](https://www.google.com/support/chrome/bin/answer.py?answer=1181035&hl=en-US)), and for good reason: it is damn hard to pull off. All the more reason to be very proud of the Mozilla Services team.

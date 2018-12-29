@@ -6,7 +6,7 @@ layout: post
 slug: behind-the-mozilla-apps-developer-preview
 title: Behind the Mozilla Apps Developer Preview
 wordpress_id: 1346
-category: favorite
+categories: [mozilla, favorite]
 ---
 
 On Tuesday, we launched a [developer preview](https://awesomeness.mozilla.org/pub/sf/FormLink?_ri_=X0Gzc2X%3DUQpglLjHJlTQTtQyTQ7c8QABQHAzeQGQ2Q8GJVXMtX%3DUQpglLjHJlTQTtQyTQ7c8QUKQHAzeQzgQaQzg9X&_ei_=.) of the [Mozilla Apps](https://apps.mozillalabs.com/) project, something I've been working on for the better part of the year. We released a suite of tools and documentation aimed at helping developers write, deploy and sell apps built using modern web technologies like HTML5, CSS and JavaScript. Many others have already covered the question of _"why"_ we are doing this: all the major app ecosystems out there are closed, tied to a single vendor, and could certainly use a healthy dose of the openness. There are many great things about Apps, and many great things about the Web, and we want to [bring them together](http://blog.lizardwrangler.com/2011/08/09/the-app-model-and-the-web/).
@@ -57,7 +57,7 @@ Clicking on an icon will _launch_ that app. What does launching mean? In the HTM
 
 ## App Runtime for Firefox
 
-For Firefox users, we have the opportunity to provide enhancements to the whole app installation and launch process while we wait for the API to get standardized. We've written an [add-on](https://addons.mozilla.org/en-US/firefox/addon/app-runtime/) that implements the _mozApps_ API, which will override the _include.js _HTML5 runtime version (so stores are encouraged to continue including the include.js version to provide the most portable experience for their users). If you have this add-on installed and install an app from any page or store, you will be greeted with a doorhanger that asks you confirm if you really intend to install this app:
+For Firefox users, we have the opportunity to provide enhancements to the whole app installation and launch process while we wait for the API to get standardized. We've written an [add-on](https://addons.mozilla.org/en-US/firefox/addon/app-runtime/) that implements the _mozApps_ API, which will override the \_include.js \_HTML5 runtime version (so stores are encouraged to continue including the include.js version to provide the most portable experience for their users). If you have this add-on installed and install an app from any page or store, you will be greeted with a doorhanger that asks you confirm if you really intend to install this app:
 
 <figure>
 ![App Installation Confirmation](/images/2011/app-confirm.png)
@@ -106,7 +106,7 @@ Supporting developers who want to sell apps is also important to us. We're testi
 
 ## Receipts
 
-How do we balance the need for developers to be able to charge for their apps, while allowing users to use an app they've already paid for across all their compatible devices? We've [devised a receipt format](https://wiki.mozilla.org/Apps/WebApplicationReceipt) that helps achieve this. When a user completes the payment process on a given store, the store will generate a receipt of this format and pass it to the _mozApps_ API as part of the _install data _provided to the install call. The implementation responsible for providing the API will stash the receipt along with the app itself (and all devices the app is synced to).
+How do we balance the need for developers to be able to charge for their apps, while allowing users to use an app they've already paid for across all their compatible devices? We've [devised a receipt format](https://wiki.mozilla.org/Apps/WebApplicationReceipt) that helps achieve this. When a user completes the payment process on a given store, the store will generate a receipt of this format and pass it to the _mozApps_ API as part of the \_install data \_provided to the install call. The implementation responsible for providing the API will stash the receipt along with the app itself (and all devices the app is synced to).
 
 At launch time, the app can ask for the receipt associated with itself using the amInstalled API call, do an integrity check, and send it over the original store that issued the receipt. The store can then verify that the receipt is indeed valid and notify the app, at which point the app can decide whether to let the user run it or not. We've provided a utility function verifyReceipt to help the app developer do all of this.
 
@@ -116,15 +116,15 @@ Do note, however, that this whole scheme is merely intended to help developers w
 
 This is just the beginning, we have a lot more work to do before we can realize a flourishing and open app ecosystem for the web. Here are just some of thing we have planned for the next few months:
 
-* Building out a "**Web Runtime**", or [WebRT](https://wiki.mozilla.org/Apps/WebRT). We've built an initial prototype of how such a runtime might work in the add-on for Firefox, and we want this to extend this to a more robust system with auto-updates and deeper OS integration.
+- Building out a "**Web Runtime**", or [WebRT](https://wiki.mozilla.org/Apps/WebRT). We've built an initial prototype of how such a runtime might work in the add-on for Firefox, and we want this to extend this to a more robust system with auto-updates and deeper OS integration.
 
-* **Capabilities**. In conjunction with the [WebAPI ](https://wiki.mozilla.org/WebAPI)project, we want to provide apps with more device APIs and capabilities than regular web pages, while giving the user an easy way to control and hand out permissions. This includes things like camera access, filesystem APIs and more.
+- **Capabilities**. In conjunction with the [WebAPI ](https://wiki.mozilla.org/WebAPI)project, we want to provide apps with more device APIs and capabilities than regular web pages, while giving the user an easy way to control and hand out permissions. This includes things like camera access, filesystem APIs and more.
 
-* **Web Activities**. A while ago we release a prototype of the apps extension that supported what we call [web activities](https://mozillalabs.com/blog/2011/07/web-apps-update-experiments-in-web-activities-app-discovery/), a way for apps to communicate with each other safely and easily. You could use this, for example, to upload a picture to a site from your favorite photo service, or to share a link from an app to all your friends using your favorite social network. The[ Firefox Share add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-share-alpha/) already relies on web activities to do the latter.
+- **Web Activities**. A while ago we release a prototype of the apps extension that supported what we call [web activities](https://mozillalabs.com/blog/2011/07/web-apps-update-experiments-in-web-activities-app-discovery/), a way for apps to communicate with each other safely and easily. You could use this, for example, to upload a picture to a site from your favorite photo service, or to share a link from an app to all your friends using your favorite social network. The[ Firefox Share add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-share-alpha/) already relies on web activities to do the latter.
 
-* **Push sync & notifications**. We want users to be able to "push" apps to any of their devices directly from an app store.
+- **Push sync & notifications**. We want users to be able to "push" apps to any of their devices directly from an app store.
 
-* **Standardization**. It is critical for the health of the web for all of these app related APIs to be standardized and supported by all interested parties.
+- **Standardization**. It is critical for the health of the web for all of these app related APIs to be standardized and supported by all interested parties.
 
 Most importantly, we want you to [get involved](https://groups.google.com/group/mozilla-apps) and help us build!
 

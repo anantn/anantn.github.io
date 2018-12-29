@@ -4,9 +4,9 @@ comments: true
 date: 2009-11-11 03:23:56-07:00
 layout: post
 slug: go-why-i-♥-google
-title: 'Go: Why I ♥ Google'
+title: "Go: Why I ♥ Google"
 wordpress_id: 561
-category: favorite
+categories: [plan9, favorite]
 ---
 
 Christmas came early this year.

@@ -6,6 +6,7 @@ layout: post
 slug: using-your-ipod-on-linux
 title: Using your iPod on Linux
 wordpress_id: 971
+categories: [gnu]
 ---
 
 It's pretty bad that Apple doesn't give a version of iTunes for GNU/Linux.

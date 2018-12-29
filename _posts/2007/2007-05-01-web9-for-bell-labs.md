@@ -6,6 +6,7 @@ layout: post
 slug: web9-for-bell-labs
 title: Web9 for Bell Labs
 wordpress_id: 1035
+categories: [gsoc]
 ---
 
 Howdy folks and welcome to another edition of the Summer of Code - Last year was really fun and I hope this year will be more!

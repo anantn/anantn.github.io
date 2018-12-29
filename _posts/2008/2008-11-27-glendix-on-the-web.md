@@ -6,6 +6,7 @@ layout: post
 slug: glendix-on-the-web
 title: Glendix on the Web!
 wordpress_id: 304
+categories: [plan9]
 ---
 
 [Glendix](http://glendix.org/) has been making the rounds on the web lately, with coverage from [OSNews](http://www.osnews.com/story/20588/Glendix_Bringing_the_Beauty_of_Plan_9_to_Linux), [Reddit](http://www.reddit.com/r/programming/comments/7fs3g/glendix_aims_to_combine_the_plan_9_userspace_with/), and even a Russian site, [Linux.org.ru](http://www.linux.org.ru/view-message.jsp?msgid=3285997). It's really motivating to see some buzz around the project, giving me the extra boost needed to push the completion of a usable release!

@@ -6,14 +6,14 @@ layout: post
 slug: how-does-weave-use-cryptography
 title: How does Weave use Cryptography?
 wordpress_id: 530
-category: favorite
+categories: [mozilla, favorite]
 ---
 
 I'm back from the EU MozCamp in Prague and we all had a great time! Check out the slides from my talks: [Labs Overview](http://proness.kix.in/talks/mozcamp09-labs.pdf) and [Weave in Depth](http://proness.kix.in/talks/mozcamp09-weave.pdf).
 
 A few people at the MozCamp were interested in Weave's use of cryptography to protect the user's data and privacy. Although the specs for the Weave server are [available](https://wiki.mozilla.org/Labs/Weave/0.5/API), it may take someone new a while to wrap their head around the whole scheme. I'm going to attempt explaining what crypto operations we do and why we do it in this blog post.
 
-First, let's get some basic  definitions out of the way. Symmetric cryptography means you have one key that can perform both encryption and decryption, and they are complementary operations. For Weave, we use [AES](http://en.wikipedia.org/wiki/Advanced_Encryption_Standard) with a 256 bit key, and we use it in a mode that requires an 'initialization vector' for every decryption. Asymmetric cryptography means there's a pair of keys (usually called 'public' and 'private' keys). A piece of text "encrypted" by one key can only be "decrypted" by the other key. Here, we use [RSA](http://en.wikipedia.org/wiki/RSA) with a 2048 bit private key.
+First, let's get some basic definitions out of the way. Symmetric cryptography means you have one key that can perform both encryption and decryption, and they are complementary operations. For Weave, we use [AES](http://en.wikipedia.org/wiki/Advanced_Encryption_Standard) with a 256 bit key, and we use it in a mode that requires an 'initialization vector' for every decryption. Asymmetric cryptography means there's a pair of keys (usually called 'public' and 'private' keys). A piece of text "encrypted" by one key can only be "decrypted" by the other key. Here, we use [RSA](http://en.wikipedia.org/wiki/RSA) with a 2048 bit private key.
 
 So, when a user first signs up for Weave using the wizard on their computer, we generate a (random) pair of public and private keys. Next, we use the user's passphrase to create a symmetric key. This is done using a pretty standard algorithm known as [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) (short for "Password Key Derivation Function"). The PBKDF2 algorithm requires a 'salt' value which is also stored on the server. Now that we have a symmetric key, we use it to encrypt the user's private key and upload it along with the public key to the server. Note that the passphrase is never sent to the server, so if the user's password ever gets compromised all the attacker can get is their encrypted private key, which really isn't of much use (especially given that the key is 2048 bits long).
 

@@ -6,6 +6,7 @@ layout: post
 slug: herald-the-php-9p-client
 title: Herald the PHP 9P Client
 wordpress_id: 1055
+categories: [php]
 ---
 
 I've given a few final touches to the 9P client for PHP. All the basic stuff should work (if they don't please let me know!), and I've written a script that shows some of the basic functionality that the client offers. Two actually, [this one](http://replay.waybackmachine.org/20070818155809/http://code.kix.in/projects/web9/browser/php9p/examples/ixpc.php) for the CLI SAPI and [this one](http://replay.waybackmachine.org/20070818155809/http://code.kix.in/projects/web9/browser/php9p/examples/viewer.php) for the Apache2 SAPI. All they do is read files and show directory listings, but the scripts are a good place to see what the API is like, since there's no official documentation yet. I couldn't locate a proper PHP 5 server to actually host the second example, which would have been cool.. but now we'll just have to make do with these screenshots I took off my browser (with the script running on my local Apache):

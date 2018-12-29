@@ -6,6 +6,7 @@ layout: post
 slug: building-a-rest-web-service-in-php
 title: Building a REST Web Service in PHP
 wordpress_id: 8
+categories: [php]
 ---
 
 Finally, some substantial progress. First thing I did today was to figure out

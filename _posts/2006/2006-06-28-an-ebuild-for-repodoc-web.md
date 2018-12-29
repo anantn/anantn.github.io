@@ -6,6 +6,7 @@ layout: post
 slug: an-ebuild-for-repodoc-web
 title: An ebuild for repodoc-web
 wordpress_id: 15
+categories: [gentoo]
 ---
 
 At long last, I have managed to create an
@@ -22,22 +23,24 @@ more things before you can start using the service.
 1. Change the first 2 define lines in validate/index.php:
 
 {% highlight php %}
+
 <?php
 define('HTDOCS', '/path/to/htdocs');
 define('REPODOC', '/path/to/repodoc/executable');
 ?>
+
 {% endhighlight %}
 
 2. Please note that the service will work well only with the latest GIT
-checkout of repodoc from Ferdy's repository. The repodoc-0.0.1_beta ebuild
-will still work, although the output may not be as predicted as there are
-module changes between the ebuild and GIT versions.
+   checkout of repodoc from Ferdy's repository. The repodoc-0.0.1_beta ebuild
+   will still work, although the output may not be as predicted as there are
+   module changes between the ebuild and GIT versions.
 
 3. You need to create the /.repodoc directory and assign its ownership to
-the web server (usually 'apache' or 'nobody'). This step could not be
-included in the ebuild because of access violations. This is strictly a
-repodoc requirement and not related to the web-service. The repodoc team and
-myself will be working on a solution for this soon.
+   the web server (usually 'apache' or 'nobody'). This step could not be
+   included in the ebuild because of access violations. This is strictly a
+   repodoc requirement and not related to the web-service. The repodoc team and
+   myself will be working on a solution for this soon.
 
 Once you've done these two steps, you may access the client at
 `http://localhost/repodoc-web`. Select a GuideXML file and click on Validate
@@ -47,12 +50,12 @@ Now, I'd like to point out that the system is far from perfect. There are two
 basic issues that I need to tackle:
 
 1. Eliminating the modify define lines' step since webapp.eclass knows the
-location of htdocs. Also repodoc is usually at `/usr/bin/repodoc`, but this
-is not entirely true if you're not using the ebuild and just the GIT version.
+   location of htdocs. Also repodoc is usually at `/usr/bin/repodoc`, but this
+   is not entirely true if you're not using the ebuild and just the GIT version.
 
 2. Error Handling for non GuideXML files. Trying to validate a non GuideXML
-file will result in a non-helpful error message. Proper handling is necessary
-here.
+   file will result in a non-helpful error message. Proper handling is necessary
+   here.
 
 Well, of course these aren't the only flaws, so I'd love to hear about what
 you have to say about everything!

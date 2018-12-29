@@ -6,6 +6,7 @@ layout: post
 slug: gentoo-vs-debian
 title: Gentoo Vs. Debian
 wordpress_id: 52
+categories: [gentoo]
 ---
 
 Ah, the big question. I had a fierce debate with a friend over this one. I'm

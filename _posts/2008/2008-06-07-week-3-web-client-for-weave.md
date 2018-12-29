@@ -4,9 +4,9 @@ comments: true
 date: 2008-06-07 08:10:01+00:00
 layout: post
 slug: week-3-web-client-for-weave
-title: 'Week 3: Web client for Weave'
+title: "Week 3: Web client for Weave"
 wordpress_id: 1131
-category: favorite
+categories: [mozilla, favorite]
 ---
 
 I spent most of my 3rd week at Mozilla writing a web-based client for read-only access to Weave data. We figured it would be most useful for people to be able to access their bookmarks and open tabs/windows. The other data types that Weave syncs, like form history and cookies are probably not that useful to look at in a web browser.

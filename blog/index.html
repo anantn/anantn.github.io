@@ -1,12 +1,9 @@
 ---
 layout: default
-title: Anant Narayanan
+title: Anant Narayanan | Blog
 ---
 <p>
-  My most popular blog posts, ordered by year.
-  <br/>
-  The opinions expressed here are my own,
-  see my <a href="about">about</a> page for a full disclaimer.
+  My most popular blog posts, ordered by year. See the <a href="/archive">archive</a> for a full listing.
 </p>
 {% for post in site.categories.favorite %}
   {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}

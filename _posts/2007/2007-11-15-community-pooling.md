@@ -6,6 +6,7 @@ layout: post
 slug: community-pooling
 title: Community Pooling
 wordpress_id: 1090
+categories: [gentoo]
 ---
 
 [Pradeepto](http://replay.waybackmachine.org/20071227183654/http://pradeepto.livejournal.com/) put up a [post](http://replay.waybackmachine.org/20071227183654/http://pradeepto.livejournal.com/9008.html) about how the community can help FOSS organizations scheduled to appear at [FOSS.IN](http://replay.waybackmachine.org/20071227183654/http://foss.in/) this December. Besides attending the Project Days and Stalls, you can look forward to some cool swag from your favourite organization. Almost every organization is planning on T-Shirts, Stickers and Posters.

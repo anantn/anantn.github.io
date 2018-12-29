@@ -6,6 +6,7 @@ layout: post
 slug: object-oriented-php-extensions
 title: Object Oriented PHP Extensions
 wordpress_id: 1046
+categories: [php]
 ---
 
 Before I begin, if you're using Gentoo Linux, don't forget to [check out](http://replay.waybackmachine.org/20070630070830/http://anant.wordpress.com/2007/05/30/experience-plan-9-on-linux/) the plan9port ebuild I recently made.
@@ -16,9 +17,9 @@ There isn't much documentation on building OO extensions apart from the [README]
 
 I've chosen the [libixp](http://replay.waybackmachine.org/20070630070830/http://www.suckless.org/wiki/libs) (pronounced as lib9p, get it?) library to wrap over. libixp is a small and clean C library that helps you write 9P servers and clients and should serve as a great base for the PHP extension. Incidentally, libixp's current maintainer is Kris Maglione; one of my fellow SoCers! Anyway, the first thing I did was to run the [ext_skel](http://replay.waybackmachine.org/20070630070830/http://cvs.php.net/viewvc.cgi/php-src/ext/ext_skel?revision=1.49&view=markup) script for my new extension but quickly found out that you can't have PHP extensions that begin with a number (I wanted to name the extension 9P). Rinse and repeat with an extension name of `ixp` instead. Now what?
 
-[Marcus Börger](http://replay.waybackmachine.org/20070630070830/http://marcus-boerger.de/) had presented a talk on “[Implementing PHP 5 OOP extensions](http://replay.waybackmachine.org/20070630070830/http://talks.somabo.de/200505_cancun_implementing_php5_oop_extensions.pdf)” at php|tropics, which, though a bit dated, served well as a guide. The bundled [util](http://replay.waybackmachine.org/20070630070830/http://somabo.de/php/ext/util/) extension is a good example of some OO code in action. However, as time progresses, I realized that creating a class and setting its properties in itself was getting *very* monotonous. Surely, this wasn't code that was meant to be typed in by humans; after all, why code when the computer can do it for you?
+[Marcus Börger](http://replay.waybackmachine.org/20070630070830/http://marcus-boerger.de/) had presented a talk on “[Implementing PHP 5 OOP extensions](http://replay.waybackmachine.org/20070630070830/http://talks.somabo.de/200505_cancun_implementing_php5_oop_extensions.pdf)” at php|tropics, which, though a bit dated, served well as a guide. The bundled [util](http://replay.waybackmachine.org/20070630070830/http://somabo.de/php/ext/util/) extension is a good example of some OO code in action. However, as time progresses, I realized that creating a class and setting its properties in itself was getting _very_ monotonous. Surely, this wasn't code that was meant to be typed in by humans; after all, why code when the computer can do it for you?
 
-Yep, Code generation to the rescue! [PEAR](http://replay.waybackmachine.org/20070630070830/http://pear.php.net/) has a neat package called [CodeGen_PECL](http://replay.waybackmachine.org/20070630070830/http://pear.php.net/package/CodeGen_PECL) that takes an XML description of your extension and generates not only the extension code, but also skeletal documentation to go along with it! No more worrying about naming conventions and other such menial stuff - you get straight to coding. Indeed, this is how programming should be. I will recommend this extension to anyone trying to build an extension to PHP, *especially* if you're creating an OO extension (given the lack of documentation and Zend's clunky object system for PHP5).
+Yep, Code generation to the rescue! [PEAR](http://replay.waybackmachine.org/20070630070830/http://pear.php.net/) has a neat package called [CodeGen_PECL](http://replay.waybackmachine.org/20070630070830/http://pear.php.net/package/CodeGen_PECL) that takes an XML description of your extension and generates not only the extension code, but also skeletal documentation to go along with it! No more worrying about naming conventions and other such menial stuff - you get straight to coding. Indeed, this is how programming should be. I will recommend this extension to anyone trying to build an extension to PHP, _especially_ if you're creating an OO extension (given the lack of documentation and Zend's clunky object system for PHP5).
 
 Now that I had a neat little skeleton of my extension (CodeGen_PECL indents and comments the code for you too) all I had to do was to begin actually implementing the methods. The client portion of it wasn't such a big deal, but when I started to code the classes that would help you create a 9P server, I hit a roadblock. libixp expects me to pass a bunch of function pointers, one each for every 9P operation (read, write, clunk, attach etc… more details in the [9P specification](http://replay.waybackmachine.org/20070630070830/http://plan9.bell-labs.com/sys/man/5/INDEX.html)). I now have to think of some way to map that to the PHP way. Tricky, but the answer lay quite close to me.
 
@@ -28,17 +29,17 @@ Cool, I could do the same thing with libixp! Except libixp doesn't allow me pass
 
 {% highlight cpp %}
 typedef struct Ixp9Srv {
-  void (*attach)(Ixp9Req *r);
-  void (*clunk)(Ixp9Req *r);
-  void (*create)(Ixp9Req *r);
-  void (*flush)(Ixp9Req *r);
-  void (*open)(Ixp9Req *r);
-  void (*read)(Ixp9Req *r);
-  void (*remove)(Ixp9Req *r);
-  void (*stat)(Ixp9Req *r);
-  void (*walk)(Ixp9Req *r);
-  void (*write)(Ixp9Req *r);
-  void (*freefid)(Fid *f);
+void (*attach)(Ixp9Req *r);
+void (*clunk)(Ixp9Req *r);
+void (*create)(Ixp9Req *r);
+void (*flush)(Ixp9Req *r);
+void (*open)(Ixp9Req *r);
+void (*read)(Ixp9Req *r);
+void (*remove)(Ixp9Req *r);
+void (*stat)(Ixp9Req *r);
+void (*walk)(Ixp9Req *r);
+void (*write)(Ixp9Req *r);
+void (*freefid)(Fid *f);
 } Ixp9Srv;
 {% endhighlight %}
 
