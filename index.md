@@ -41,7 +41,7 @@ _See also:_
 
 <div class="prose">
 I was an early employee at Ozlo, a startup focused on building an AI-powered digital assistant.
-My main area of focus was building large scale data pipelines to build a structured model of the world for the assistant to utilize. Ozlo was acquired by Facebook in 2017.
+My main area of focus was building large-scale data pipelines to build a structured model of the world for the assistant to utilize. Ozlo was acquired by Facebook in 2017.
 
 <div class="also">
 _See also:_
@@ -71,7 +71,7 @@ I also prototyped the first version of [static hosting](https://firebase.google.
 <div class="also">
 _See also:_
 <br/>
-<img class="inline" src="/images/talks.svg" alt="Talks" /> [Building Realtime Apps with Angular and Firebase](/talks#2014-jsconf) ,  [Building JS APIs for Browsers](/talks#2013-jsapi) , [Message Passing vs. Data Synchronization](/talks#2013-message2) ,  [Realtime Web Apps with Firebase and AngularJS](/talks#2013-angularfire) , [Firebase: Tales from the Trenches](/talks#2013-firebase) and [Server-less Apps](/talks#2013-serverless)
+<img class="inline" src="/images/talks.svg" alt="Talks" /> [Building Real-time Apps with Angular and Firebase](/talks#2014-jsconf) ,  [Building JS APIs for Browsers](/talks#2013-jsapi) , [Message Passing vs. Data Synchronization](/talks#2013-message2) ,  [Real-time Web Apps with Firebase and AngularJS](/talks#2013-angularfire) , [Firebase: Tales from the Trenches](/talks#2013-firebase) and [Server-less Apps](/talks#2013-serverless)
 <ul>
 <li><img class="inline" src="/images/blog.svg" alt="Blog" /></li>
 {% for post in site.posts %}
@@ -118,7 +118,7 @@ _See also:_
 <div class="prose">
 I was enraptured by Plan 9 ever since I first heard of it: the idea of an operating system built for the networked world, and designed by the creators of Unix (who had surely learned a lesson or two from it), was too enthralling to ignore. I host a [page on this site](/plan9) with more information and links if you're interested. Here is another [short write-up](http://www.catb.org/esr/writings/taoup/html/plan9.html) on Plan 9 by esr, the article also includes links to a little bit of history regarding UTF-8, which was invented for the OS.
 
-I've tinkered with Plan 9 in a few different ways. The biggest endeavor was probably [Glendix](http://glendix.org), a set of Linux kernel modules that enables the execution of Plan 9 "a.out" binaries natively. It isn't maintained anymore &mdash; [plan9port](https://github.com/9fans/plan9port) is a much more practical way to run Plan 9 programs on modern UNIXes &mdash; but the code is probably instructive to anyone interested in understanding how to write Linux kernel modules or execution formats (like Plan 9's a.out) at the lowest level.
+I've tinkered with Plan 9 in a few different ways. The biggest endeavor was probably [Glendix](http://glendix.org), a set of Linux kernel modules that enables the execution of Plan 9 "a.out" binaries natively. It isn't maintained any more &mdash; [plan9port](https://github.com/9fans/plan9port) is a much more practical way to run Plan 9 programs on modern UNIXes &mdash; but the code is probably instructive to anyone interested in understanding how to write Linux kernel modules or execution formats (like Plan 9's a.out) at the lowest level.
 
 I was also lucky enough to work with [Sape Mullender](https://www.diversiorum.org/sape/) at Bell-Labs, Antwerp on making improvements to the 9P network protocol. This resulted in a thesis and protocol implementation of what we called [πp](https://proness.kix.in/misc/πp-v2.pdf).
 
@@ -195,11 +195,11 @@ _See also:_
 ![Gentoo Linux](/images/projects/gentoo.png){: class="prose"}
 
 <div class="prose">
-[Gentoo](https://gentoo.org/) was my primary choice of Linux distribution for many years. I eventually waded into helping out by maintaining a few packages, and writing a web-based editor for GuideXML, Gentoo's documentation format.
+[Gentoo](https://gentoo.org/) was my primary choice of Linux distribution for many years. I eventually waded into helping out by maintaining a few packages and writing a web-based editor for GuideXML, Gentoo's documentation format.
 
-I owe a lot of my understanding of Linux to Gentoo. I would still recommend anyone interested in the operating system to install Gentoo atleast once, you learn so much because the distribution doesn't hide the internals from you. To this day, I wince slightly when installing new "binaries" on my computers &mdash; on Gentoo you compile everything from source &mdash; how can you really trust binaries built by someone else on their computers?
+I owe a lot of my understanding of Linux to Gentoo. I would still recommend anyone interested in the operating system to install Gentoo at least once, you learn so much because the distribution doesn't hide the internals from you. To this day, I wince slightly when installing new "binaries" on my computers &mdash; on Gentoo you compile everything from source &mdash; how can you really trust binaries built by someone else on their computers?
 
-Over time, I found myself with lesser free time, so the practicality of Ubuntu on the Desktop and a Macbook Pro on-the-go eventually won over.
+Over time, I found myself with lesser free time, so the practicality of Ubuntu on the Desktop and a MacBook Pro on-the-go eventually won over.
 
 <div class="also">
 _See also:_

@@ -25,7 +25,7 @@ Slides for most of these presentations are also available on
 ## 2014
 
 <a name="2014-jsconf"></a>
-[Building Realtime Apps with Angular and Firebase](https://proness.kix.in/talks/ngconf14-firebase.pdf)
+[Building Real-time Apps with Angular and Firebase](https://proness.kix.in/talks/ngconf14-firebase.pdf)
 <br><em>ng-conf, Salt Lake City, January</em>
 
 <iframe class="video" src="https://www.youtube.com/embed/e4yUTkva_FM" frameborder="0" allowfullscreen></iframe>
@@ -45,7 +45,7 @@ Slides for most of these presentations are also available on
 <iframe src="https://player.vimeo.com/video/77352415" class="video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <a name="2013-angularfire"></a>
-[Realtime Web Apps with Firebase and AngularJS](https://proness.kix.in/talks/angular13-firebase/)
+[Real-time Web Apps with Firebase and AngularJS](https://proness.kix.in/talks/angular13-firebase/)
 <br><em>AngularJS Meetup, Mountain View, July</em>
 
 <iframe class="video" src="https://www.youtube.com/embed/C7ZI7z7qnHU" frameborder="0" allowfullscreen></iframe>
