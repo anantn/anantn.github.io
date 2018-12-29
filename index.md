@@ -122,7 +122,7 @@ I've tinkered with Plan 9 in a few different ways. The biggest endeavor was prob
 
 I was also lucky enough to work with [Sape Mullender](https://www.diversiorum.org/sape/) at Bell-Labs, Antwerp on making improvements to the 9P network protocol. This resulted in a thesis and protocol implementation of what we called [πp](https://proness.kix.in/misc/πp-v2.pdf).
 
-One of the nice side effects of being involved in the Plan 9 community was following the adventures of [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), [Rob Pike](https://ai.google/research/people/r) and [Russ Cox](https://swtch.com/~rsc/), who all eventually ended up at Google and made [Go](https://golang.org/). Unsurprisingly, Go borrows many ideas from Plan 9, a language I use almost exclusively for all my personal and professional projects these days.
+One of the nice side effects of being involved in the Plan 9 community was following the adventures of [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), [Rob Pike](https://ai.google/research/people/r) and [Russ Cox](https://swtch.com/~rsc/), who all eventually ended up at Google and made the [Go language](https://golang.org/). Unsurprisingly, Go borrows many ideas from Plan 9, a language I use almost exclusively for all my personal and professional projects these days.
 
 <div class="also">
 _See also:_
