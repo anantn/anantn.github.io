@@ -4,8 +4,9 @@ comments: true
 date: 2007-06-01 06:49:09+00:00
 layout: post
 slug: experience-plan-9-on-linux
-title: 'Experience Plan 9 on Linux!'
+title: "Experience Plan 9 on Linux!"
 wordpress_id: 1043
+categories: [plan9]
 ---
 
 [Plan9](http://replay.waybackmachine.org/20070607083037/http://plan9.bell-labs.com/plan9/) is an operating system that is designed to make up for all the mistakes that UNIX made. And it’s quite different from any of the current UNIX clones, be it any of the BSDs or Linux. To ease the migration, there’s a project called [Plan9Port](http://replay.waybackmachine.org/20070607083037/http://swtch.com/plan9/); which is essentially a port of several Plan9 utilities to the POSIX platform.

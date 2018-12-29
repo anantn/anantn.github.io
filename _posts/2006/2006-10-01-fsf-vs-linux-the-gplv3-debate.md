@@ -6,6 +6,7 @@ layout: post
 slug: fsf-vs-linux-the-gplv3-debate
 title: FSF vs. Linux - The GPLv3 Debate
 wordpress_id: 998
+categories: [gnu]
 ---
 
 It was quite amusing to read about how the Kernel developers were

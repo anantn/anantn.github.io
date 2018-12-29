@@ -6,6 +6,7 @@ layout: post
 slug: gsoc-mentor-summit-09-roundup
 title: GSoC Mentor Summit '09 Roundup
 wordpress_id: 555
+categories: [gsoc]
 ---
 
 The grand Summer of Code [Mentor Summit of 2009](http://gsoc-wiki.osuosl.org/index.php/2009) concluded last week and I had the fantastic opportunity of being able to attend on behalf of [Gentoo](http://socghop.appspot.com/org/home/google/gsoc2009/gentoo), [Plan 9 ](http://socghop.appspot.com/org/home/google/gsoc2009/plan9)and [Mozilla](http://socghop.appspot.com/org/home/google/gsoc2009/mozilla). What follows is some indication of how awesome the summit was:

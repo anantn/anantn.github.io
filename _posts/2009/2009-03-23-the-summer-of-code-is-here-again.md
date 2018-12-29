@@ -6,6 +6,7 @@ layout: post
 slug: the-summer-of-code-is-here-again
 title: The Summer of Code is here again!
 wordpress_id: 469
+categories: [gsoc]
 ---
 
 [![SoC 2009](/images/2009/socwithlogo.gif)](http://socghop.appspot.com/)

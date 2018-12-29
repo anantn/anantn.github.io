@@ -6,7 +6,7 @@ layout: post
 slug: a-new-beginning
 title: A new beginning
 wordpress_id: 1603
-category: favorite
+categories: [firebase, favorite]
 ---
 
 After a nice relaxing thanksgiving week, with almost no e-mail to read (I can't stress enough _how nice_ this was) - I'm incredibly excited to start my first day at [Firebase](http://www.firebase.com) tomorrow! If you haven't heard of them before, it's because they're a startup :) And they're in the business of building a scalable, real-time backend for apps.

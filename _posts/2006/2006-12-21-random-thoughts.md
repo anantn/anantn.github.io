@@ -6,6 +6,7 @@ layout: post
 slug: random-thoughts
 title: Random Thoughts
 wordpress_id: 1004
+categories: [gnu]
 ---
 
 Wow, been over a month since I last updated the blog. Somehow I just keep

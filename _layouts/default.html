@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tufte.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="https://www.kix.in/feed.xml">
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blog posts, talks, projects from Anant Narayanan"
+    />
+    <link rel="stylesheet" href="/css/tufte.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.name }}"
+      href="https://www.kix.in/feed.xml"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <div class="navigation">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/talks">Talks</a>
-            <a href="/archive">Archive</a>
-        </div>
-        <div class="links">
-            <a href="https://twitter.com/anantn"><img src="/images/twitter.svg" /></a>
-            <a href="https://github.com/anantn"><img src="/images/github.svg" /></a>
-        </div>
+      <div class="navigation">
+        <a href="/"><img src="/images/home.svg" /> Home</a>
+        <a href="/blog"><img src="/images/blog.svg" /> Blog</a>
+        <a href="/talks"><img src="/images/talks.svg" /> Talks</a>
+        <a href="/archive"><img src="/images/archive.svg" /> Archive</a>
+      </div>
+      <div class="links">
+        <a target="_blank" href="https://twitter.com/anantn"
+          ><img src="/images/twitter.svg"
+        /></a>
+        <a target="_blank" href="https://github.com/anantn"
+          ><img src="/images/github.svg"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/anantn/"
+          ><img src="/images/linkedin.svg"
+        /></a>
+      </div>
     </div>
 
-    <div class="content">
-        {{ content }}
-    </div>
+    <div class="content">{{ content }}</div>
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-278886-9', 'auto');
-        ga('send', 'pageview');
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-278886-9", "auto");
+      ga("send", "pageview");
     </script>
-</body>
-
+  </body>
 </html>

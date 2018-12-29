@@ -6,7 +6,7 @@ layout: post
 slug: google-summer-of-code
 title: Google Summer of Code
 wordpress_id: 64
-category: favorite
+categories: [gsoc, favorite]
 ---
 
 Another one of Google's excellent ideas. Continuing from last years Summer of
@@ -27,24 +27,24 @@ like to work with. Every accepted student will be assigned a mentor and the
 coding starts 23rd May!
 
 Google is offering $5000 as a stipend for every accepted project. $4500 goes
-to the student and $500 to the mentoring organization. But that's only if you
+to the student and \$500 to the mentoring organization. But that's only if you
 successfully complete your project!
 
 Last time, Google accepted around 400 students last year and they say the
 number will be greater this time. Lots of help available from SoC 2005
 veterans on how to write proposals. Check out:
 
-* [http://google.wikia.com/wiki/Summer_of_Code](http://google.wikia.com/wiki/Summer_of_Code)
+- [http://google.wikia.com/wiki/Summer_of_Code](http://google.wikia.com/wiki/Summer_of_Code)
 
-* [http://summerofcode.xwiki.com/xwiki/bin/view/Main/WebHome](http://summerofcode.xwiki.com/xwiki/bin/view/Main/WebHome)
+- [http://summerofcode.xwiki.com/xwiki/bin/view/Main/WebHome](http://summerofcode.xwiki.com/xwiki/bin/view/Main/WebHome)
 
-* [http://natulte.net/pub/soc-thoughts.html](http://natulte.net/pub/soc-thoughts.html)
+- [http://natulte.net/pub/soc-thoughts.html](http://natulte.net/pub/soc-thoughts.html)
 
 And don't forget to read Google's FAQs
 
-* [http://code.google.com/soc/studentfaq.html](http://code.google.com/soc/studentfaq.html)
+- [http://code.google.com/soc/studentfaq.html](http://code.google.com/soc/studentfaq.html)
 
-* [http://code.google.com/soc/mentorfaq.html](http://code.google.com/soc/mentorfaq.html)
+- [http://code.google.com/soc/mentorfaq.html](http://code.google.com/soc/mentorfaq.html)
 
 I didn't know about the program last year, but I'm definitely going to apply
 this time! Hopefully something to do with PHP or GNOME, I haven't quite

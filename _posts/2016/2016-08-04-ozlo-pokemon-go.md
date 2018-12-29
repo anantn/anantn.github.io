@@ -4,6 +4,7 @@ comments: true
 category: favorite
 slug: ozlo-pokemon-go
 title: Teaching Ozlo about Pokémon GO
+categories: [ozlo]
 ---
 
 Pokémon GO is all the rage these days. [Ozlo](https://www.ozlo.com), your friendly AI sidekick,
@@ -18,16 +19,16 @@ what goes into teaching him a completely new concept, and why his ability to lea
 
 The process involves three high-level steps:
 
-* Feeding Ozlo data about the new concept
-* Teaching Ozlo to understand how people talk about the concept
-* Teaching Ozlo how to talk to people about what it knows
+- Feeding Ozlo data about the new concept
+- Teaching Ozlo to understand how people talk about the concept
+- Teaching Ozlo how to talk to people about what it knows
 
 We'll cover each of these steps one-by-one and then discuss why it's important we do things this way —
 and why that makes Ozlo fundamentally different than many other chatbots and AI assistants out there.
 
 ## Data
 
-Ozlo's view of the world consists of *entities* (people, places, or things) and relationships among them.
+Ozlo's view of the world consists of _entities_ (people, places, or things) and relationships among them.
 Teaching Ozlo about something new begins with acquiring data about the subject that so we can augment
 his knowledge of the world. This can happen by several means — crawling the web, hitting APIs,
 and obtaining data from partners, for example.
@@ -57,19 +58,19 @@ There's a lot in that sentence that Ozlo can already understand! He has a basic 
 but also knows how people talk about restaurants and landmarks (since we taught him that earlier). What does Ozlo see
 in that sentence?
 
-> *"show me"*: Here's a hint that the answer to this question requires some sort of visual presentation.
+> _"show me"_: Here's a hint that the answer to this question requires some sort of visual presentation.
 
-> *"near"*: I've seen this word many times before and when it is followed by a name of a place, I know what that means.
+> _"near"_: I've seen this word many times before and when it is followed by a name of a place, I know what that means.
 
-> *"ferry building"*: Looks like I have many entities that match this name. But, I can rank all the places with this
-name by their popularity and distance from where the user currently location to narrow down a likely candidate.
+> _"ferry building"_: Looks like I have many entities that match this name. But, I can rank all the places with this
+> name by their popularity and distance from where the user currently location to narrow down a likely candidate.
 
 The only part of that sentence Ozlo didn't quite understand was "pokemon gyms". This is where we step in and give him
 some examples along with what they mean:
 
-> *"pokestops"*: This means entities that are PokéStops
+> _"pokestops"_: This means entities that are PokéStops
 
-> *"pokemon gyms"*: This means entities that are PokéStops of type "gym"
+> _"pokemon gyms"_: This means entities that are PokéStops of type "gym"
 
 We also added many more variations of the above to give him a basic understanding of PokéStops. And don't forget —
 Ozlo also keeps learning as you use him — so he'll collect a lot more examples over time than what we just start
