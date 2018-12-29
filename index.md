@@ -12,11 +12,18 @@ PHP logo by [Colin Viebrock](http://viebrock.ca), under [CC 4.0 BY](https://crea
 Icons made by [Smashicons](https://www.flaticon.com/authors/smashicons), [Elegant Themes](https://www.flaticon.com/authors/elegant-themes), [Freepik](https://www.freepik.com/), and [Daniel Bruce](https://www.flaticon.com/authors/daniel-bruce) from [Flaticon](https://www.flaticon.com), under [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/).
 </span>
 
-Hello, my name is Anant Narayanan, and you've reached my small slice of the web!
+Hello, my name is Anant Narayanan, and you've reached my small slice of the web! I'm a software engineer by trade, and love using technology to solve problems in people's lives.
 
-I'm a software engineer by trade, and love using technology to solve problems in people's lives.
+If you're here to download the slides for (or view) a talk I've given head over to the [talks page](/talks). Or, you may want to check out some of my [blog posts](/blog). Here are the top 5 posts mixed by recency and popularity:
 
-You may want to check out some of my most popular [blog posts](/blog) or the [full archive](/archive). Perhaps you'd like to download slides for, or view, a [talk I've given](/talks).
+<ul class="posts">
+{% for post in site.posts limit:2 %}
+<li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a> <span class="date">({{ post.date | date_to_string }})</span></li>
+{% endfor %}
+<li>&raquo; <a href="/2008/07/22/aes-256-using-php-mcrypt/">AES-256 using PHP-mcrypt</a> <span class="date">(22 Jul 2008)</span></li>
+<li>&raquo; <a href="/2008/06/19/an-alternative-to-shared-libraries/">An alternative to shared libraries</a> <span class="date">(19 Jun 2008)</span></li>
+<li>&raquo; <a href="/2007/02/12/compiling-systemc-with-gcc-4-and-mac-os-x/">Compiling SystemC with GCC 4 (and Mac OS X)</a> <span class="date">(12 Feb 2007)</span></li>
+</ul>
 
 This page also includes brief summaries of my involvement with various software organizations over the years: [Facebook](#facebook), [Ozlo](#ozlo), [Firebase](#firebase), [Mozilla](#mozilla), [Plan 9](#plan9), [Google Summer of Code](#gsoc), [PHP](#php), [Gentoo](#gentoo), and [GNU](#gnu).
 
