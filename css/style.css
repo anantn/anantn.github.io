@@ -88,6 +88,10 @@ img.inline {
   margin-bottom: -3px;
 }
 
+span.date {
+  font-size: 0.7em;
+}
+
 ol,
 ul {
   width: 90%;
