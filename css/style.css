@@ -133,6 +133,10 @@ blockquote p {
   font-size: 1.3rem;
 }
 
+p.excerpt {
+  font-size: 0.8em;
+}
+
 .video {
   width: 40%;
   height: 280px;

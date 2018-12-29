@@ -15,6 +15,7 @@ title: Anant Narayanan | Blog
   {% endif %}
   <li>
     &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+    <p class="excerpt">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
   </li>
 {% endfor %}
 </ul>
