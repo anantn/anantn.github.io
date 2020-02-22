@@ -4,7 +4,7 @@ title: Anant Narayanan | Home
 ---
 
 <span class="marginnote">
-<img src="/images/avatar.jpg" alt="Avatar" />
+<img src="https://www.gravatar.com/avatar/07849b3424ed76e574037f8818829138?s=400" alt="Avatar" />
 The opinions expressed on this website are solely my own and do not reflect the views or opinions of any other party,
 including my current and former employers.
 <br/><br/>
