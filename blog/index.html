@@ -15,7 +15,11 @@ title: Anant Narayanan | Blog
   {% endif %}
   <li>
     &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-    <p class="excerpt">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
+    <p class="excerpt">
+      {{ post.content | markdownify | strip_html | truncatewords: 70 }}
+      <br/>
+      <span>[<a href="{{ post.url}}#isso-thread">0 comments</a>]</span>
+    </p>
   </li>
 {% endfor %}
 </ul>
