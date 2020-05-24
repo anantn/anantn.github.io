@@ -35,7 +35,7 @@ After a couple days of research, I settled on the final [build spec](https://pro
 
 7. **Tower**: [Fractal Meshify C](https://www.amazon.com/gp/product/B074DQVB97/). Given nobody uses optical drives anymore, it just makes sense to go for a compact mid-tower case unless you're planning to go crazy with expansion and storage. I liked the look and feel of the Meshify series, and Fractal are known for their great cable management and generally high quality cases. I'm not crazy about RGB in my build, so the dark tinted tempered glass it comes with works pretty well.
 
-8. **Monitor**: [Alienware AW3418DW](https://www.microcenter.com/product/484980/dell-alienware-aw3418dw-341-uw-qhd-120hz-hdmi-dp-g-sync-curved-ips-led-gaming-monitor). This monitor is actually what really started the whole upgrade idea in my head, as I happened to find a really good deal at $750 (it usually retails for around $999). Figured it was time to embrace the ultrawide 1440p experience!
+8. **Monitor**: [Alienware AW3418DW](https://www.microcenter.com/product/484980/dell-alienware-aw3418dw-341-uw-qhd-120hz-hdmi-dp-g-sync-curved-ips-led-gaming-monitor). This monitor is what really started the whole upgrade idea in my head, as I happened to find a really good deal at $750 (it usually retails for around $999). Figured it was time to embrace the ultrawide 1440p experience!
 
 9. **Peripherals**: [Kinesis Gaming Freestyle](https://www.amazon.com/gp/product/B07SXX7P6D/) keyboard, and [Kinesis Gaming Vektor](https://www.amazon.com/gp/product/B07BMGTR6D/) mouse. I use a [Kinesis Advantage](https://kinesis-ergo.com/shop/advantage2/) for work, and really love their gaming products too. High quality, reliable hardware, what more to say?
 
