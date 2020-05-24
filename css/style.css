@@ -35,6 +35,18 @@ body {
   height: 25px;
 }
 
+.links .search form {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2px;
+}
+
+.links .search form input {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 200px;
+}
+
 div.org img.prose {
   width: 60px;
   height: 60px;
@@ -210,6 +222,12 @@ pre,
   .links img {
     width: 20px;
     height: 20px;
+  }
+  .links .search form {
+    padding-top: 1px;
+  }
+  .links .search form input {
+    max-width: 120px;
   }
   div.content {
     margin-top: 30px;

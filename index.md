@@ -29,6 +29,7 @@ This page also includes brief summaries of my involvement with various software 
 
 <div class="org">
 
+<hr/>
 ## <a name="facebook"></a> Facebook (2017-)
 
 ![Facebook](/images/projects/facebook.svg){: class="prose"}
@@ -45,6 +46,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="ozlo"></a> Ozlo (2014-2017)
 
 ![Ozlo](/images/projects/ozlo.png){: class="prose"}
@@ -69,6 +71,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="firebase"></a> Firebase (2012-2014)
 
 ![Firebase](/images/projects/firebase.png){: class="prose"}
@@ -94,6 +97,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="mozilla"></a> Mozilla (2008-2012)
 
 ![Mozilla](/images/projects/mozilla.png){: class="prose"}
@@ -121,6 +125,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="plan9"></a> Plan 9 (2006-2010)
 
 ![Plan 9](/images/projects/plan9.png){: class="prose"}
@@ -150,6 +155,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="gsoc"></a> Google Summer of Code (2006-2009)
 
 ![Google Summer of Code](/images/projects/gsoc.png){: class="prose"}
@@ -176,6 +182,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="php"></a> PHP (2006-2008)
 
 ![PHP](/images/projects/php.png){: class="prose"}
@@ -200,6 +207,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="gentoo"></a> Gentoo Linux (2006-2007)
 
 ![Gentoo Linux](/images/projects/gentoo.png){: class="prose"}
@@ -227,6 +235,7 @@ _See also:_
 
 </div>
 
+<hr/>
 ## <a name="gnu"></a> GNU (2006-2007)
 
 ![GNU](/images/projects/gnu.svg){: class="prose"}
