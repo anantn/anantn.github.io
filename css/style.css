@@ -224,7 +224,7 @@ pre,
     height: 20px;
   }
   .links .search form {
-    padding-top: 1px;
+    padding-top: 0px;
   }
   .links .search form input {
     max-width: 120px;
