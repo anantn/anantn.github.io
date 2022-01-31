@@ -1,0 +1,38 @@
+<hr />
+<h2><a name="{{ page.key }}"></a>{{ page.name }} ({{ page.years }})</h2>
+<p><img src="/images/projects/{{ page.key }}.png" class="prose" /></p>
+<div class="prose">
+    <p>{{ content }}</p>
+    <div class="also">
+        <p>
+            <em>See also:</em>
+            <br />
+            {% for talk in page.talks %}
+            {% if forloop.first %}
+            <img class="inline" src="/images/talks.svg" alt="Talks" />
+            {% endif %}
+            {% if forloop.last and forloop.index != 1 %}and {% endif %}
+            <a href="/talks#{{ talk.link }}">{{ talk.name }}</a>
+            {% if forloop.last %}
+            <br />
+            {% else %},
+            {% endif %}
+            {% endfor %}
+
+            {% assign postEmpty = true %}
+            {% for post in site.posts %}
+            {% if post.categories contains page.key %}
+            {% if postEmpty %}
+        <ul>
+            <img class="inline" src="/images/blog.svg" alt="Blog" />
+            {% assign postEmpty = false %}
+            {% endif %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% if postEmpty == false %}
+        </ul>
+        {% endif %}
+        </p>
+    </div>
+</div>

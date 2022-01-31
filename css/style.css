@@ -80,7 +80,7 @@ div.org li:first-child:before {
 div.org li:nth-child(2):before {
   content: "";
 }
-div.org li:last-child:before {
+div.org li:last-child:not(:first-child):before {
   content: " and ";
 }
 
