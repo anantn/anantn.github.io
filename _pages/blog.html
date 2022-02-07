@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Anant Narayanan | Blog
+title: Blog
+order: 2
 ---
+
 <p>
-  My most popular blog posts, ordered by year. See the <a href="/archive">archive</a> for a full listing.
+All my blog posts, sorted by year.
 </p>
-{% for post in site.categories.favorite %}
+
+{% for post in site.posts %}
   {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
   {% if currentyear != year %}
     {% unless forloop.first %}</ul>{% endunless %}
@@ -14,12 +17,7 @@ title: Anant Narayanan | Blog
     {% capture year %}{{currentyear}}{% endcapture %}
   {% endif %}
   <li>
-    &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-    <p class="excerpt">
-      {{ post.content | markdownify | strip_html | truncatewords: 70 }}
-      <br/>
-      <span>[<a href="{{ post.url}}#isso-thread">0 comments</a>]</span>
-    </p>
+    <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>

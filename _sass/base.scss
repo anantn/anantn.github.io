@@ -1,0 +1,13 @@
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 568px;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
