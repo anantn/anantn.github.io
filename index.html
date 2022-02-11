@@ -5,7 +5,7 @@ order: 1
 ---
 <p>
     Hello and welcome to my small slice of the web! I’m a technology leader by trade &mdash;
-    passionate about building software and teams that solve interesting real world problems.
+                passionate about building software and teams that solve interesting real world problems.
 </p>
 <p>
     If you’re here to download the slides for (or view) a talk I’ve given head over to the
@@ -34,19 +34,18 @@ order: 1
         </span>
     </li>
 </ul>
-<p>This page also includes brief summaries of my involvement with various software organizations over the years:
-    <a href="#facebook">Facebook</a>,
-    <a href="#ozlo">Ozlo</a>,
-    <a href="#firebase">Firebase</a>,
-    <a href="#mozilla">Mozilla</a>,
-    <a href="#plan9">Plan 9</a>,
-    <a href="#gsoc">Google Summer of Code</a>,
-    <a href="#php">PHP</a>,
-    <a href="#gentoo">Gentoo</a>, and
-    <a href="#gnu">GNU</a>.
+<p>
+    This page also includes brief summaries of my involvement with various software organizations over the years:
+    {% for org in site.orgs reversed %}
+        <a href="#{{ org.key }}">{{ org.name }}</a>
+        {% if forloop.last != true %},{% else %}.{% endif %}
+    {% endfor %}
+    </p>
+    {% for org in site.orgs reversed %}
+        <div class="org">
+            {{ org.output }}
+        </div>
+    {% endfor %}
+</p> 
+</p> 
 </p>
-{% for org in site.orgs reversed %}
-    <div class="org">
-        {{ org.output }}
-    </div>
-{% endfor %}

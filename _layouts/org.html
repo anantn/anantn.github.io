@@ -10,22 +10,27 @@
         <p>
             <em>See also:</em>
             <br/>
-            {% for talk in page.talks %}
-                {% if forloop.first %}{% endif %}
-                {% if forloop.last and forloop.index != 1 %}and
-                {% endif %}
-                <a href="/talks#{{ talk.link }}">{{ talk.name }}</a>
-                {% if forloop.last %}
-                    <br/>
-                    {% else %},
-                {% endif %}
-            {% endfor %}
-
+            {% assign talkEmpty = true %}
+            {% for talk in site.data.talks %}
+                {% if talk.categories contains page.key %}
+                    {% if talkEmpty %}
+                        <ul class="oneline">
+                            {% assign talkEmpty = false %}
+                        {% endif %}
+                        <li>
+                            <a href="{{ talk.url }}">{{ talk.name }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                {% if talkEmpty == false %}
+                </ul>
+            {% endif %}
+            <br/>
             {% assign postEmpty = true %}
             {% for post in site.posts %}
                 {% if post.categories contains page.key %}
                     {% if postEmpty %}
-                        <ul>
+                        <ul class="oneline">
                             {% assign postEmpty = false %}
                         {% endif %}
                         <li>

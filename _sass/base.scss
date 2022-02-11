@@ -11,3 +11,19 @@ $mobile: 568px;
 body {
   min-height: 100vh;
 }
+
+ul.oneline {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline;
+    &:after {
+      content: ", ";
+      margin-left: -0.3rem;
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}

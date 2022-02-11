@@ -1,0 +1,32 @@
+.talks {
+  span {
+    white-space: nowrap;
+    display: inline-block;
+
+    &.year {
+      font-size: 1.5rem;
+      position: relative;
+    }
+
+    &.month {
+      text-transform: uppercase;
+      padding-right: 2rem;
+    }
+  }
+}
+
+ul.talks {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li.talk {
+  display: flex;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  &:nth-child(odd) {
+    background-color: var(--bold-bg);
+  }
+}
