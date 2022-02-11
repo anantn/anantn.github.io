@@ -2,14 +2,110 @@ $desktop: 1024px;
 $tablet: 768px;
 $mobile: 568px;
 
+@mixin heading {
+  font-family: "Playfair Display", "Palatino", "Garamond", serif;
+}
+
+@mixin content {
+  font-family: "Lato", "Roboto", "Helvetica", sans-serif;
+}
+
+@mixin mono {
+  font-family: "Fira Code", "Courier New", "Courier", monospace;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  @include content();
+}
+
 body {
+  line-height: 1.5rem;
   min-height: 100vh;
+  word-wrap: break-word;
+}
+
+pre,
+pre code {
+  @include mono();
+  font-size: 0.8rem;
+  line-height: 1rem;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+abbr {
+  @include mono();
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: var(---contrast);
+}
+
+abbr[title]:hover {
+  cursor: help;
+}
+
+h1,
+h2,
+.title {
+  @include heading();
+  font-weight: bold;
+}
+
+h3,
+h4 {
+  @include heading();
+  font-weight: medium;
+}
+
+h5,
+h6 {
+  @include heading();
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 ul.oneline {

@@ -13,6 +13,16 @@
       padding-right: 2rem;
     }
   }
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -25px;
+    visibility: hidden;
+    &:target + a,
+    &:target + a + br + em {
+      color: $yellow;
+    }
+  }
 }
 
 ul.talks {

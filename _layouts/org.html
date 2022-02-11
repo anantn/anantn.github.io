@@ -1,8 +1,8 @@
 <hr/>
-<h2>
+<h3>
     <a name="{{ page.key }}"></a>
     {{ page.name }}
-    ({{ page.years }})</h2>
+    ({{ page.years }})</h3>
 <p><img class="prose" src="/images/projects/{{ page.key }}.webp"/></p>
 <div class="prose">
     <p>{{ content }}</p>
@@ -18,7 +18,7 @@
                             {% assign talkEmpty = false %}
                         {% endif %}
                         <li>
-                            <a href="{{ talk.url }}">{{ talk.name }}</a>
+                            <a href="/talks#{{ talk.id }}">{{ talk.name }}</a>
                         </li>
                     {% endif %}
                 {% endfor %}
