@@ -1,0 +1,59 @@
+---
+layout: default
+title: Talks
+order: 3
+---
+<p>
+    Here's a list of talks I've given, in reverse chronological order. Links to
+                            slide decks and videos are linked where possible. Slides for most of these
+                            presentations are also available on
+    <a href="https://www.slideshare.net/anantn/">SlideShare</a>
+    and
+    <a href="https://speakerdeck.com/anantn">SpeakerDeck</a>.
+</p>
+<div class="talks">
+    {% assign last_year = "" %}
+    {% for talk in site.data.talks %}
+        {% capture year %}
+            <span class="year">{{talk.year}}</span>
+        {% endcapture %}
+        {% if year != last_year %}
+            {% assign last_year = year %}
+            {% if forloop.first != true %}
+            </ul>
+        {% endif %}
+        <span class="year">{{year}}</span>
+        <ul class="talks">
+        {% endif %}
+        <li class="talk">
+            <span class="month">{{ talk.month | slice: 0, 3 }}</span>
+            <div class="talk">
+                <a class="anchor" name="{{ talk.id }}"></a>
+                {% if talk.url %}
+                    <a href="{{ talk.url }}">{{ talk.name }}</a>
+                {% else if talk.urls %}
+                    <span>{{ talk.name }}</span><br/>
+                    <ul class="oneline">
+                        {% for u in talk.urls %}
+                            <li>
+                                <a href="{{ u.url }}">[{{ u.name }}]</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                <br/>
+                <em>{{ talk.location }}</em>
+                {% if talk.video %}
+                    <br/>
+                    {% if talk.video contains "youtube" %}
+                        <iframe class="video" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+                    {% else if talk.video contains "vimeo" %}
+                        <iframe src="{{ talk.video }}" class="video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    {% else %}
+                        <iframe src="{{ talk.video }}" class="video"></iframe>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </li>
+    {% endfor %}
+</div>

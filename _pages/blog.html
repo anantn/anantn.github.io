@@ -10,14 +10,16 @@ order: 2
 <div class="timeline">
     {% assign last_year = "" %}
     {% for post in site.posts %}
-        {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+        {% capture year %}
+            {{post.date | date: "%Y"}}
+        {% endcapture %}
         {% if year != last_year %}
             {% assign last_year = year %}
             {% if forloop.first != true %}
-            </ul>
+                </ul>
             {% endif %}
-        <span class="year">{{year}}</span>
-        <ul>
+            <span class="year">{{year}}</span>
+            <ul>
         {% endif %}
         <li>
             <div>
@@ -29,7 +31,7 @@ order: 2
             </div>
         </li>
         {% if forloop.last %}
-        </ul>
+            </ul>
         {% endif %}
     {% endfor %}
 </div>
