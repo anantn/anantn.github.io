@@ -21,6 +21,7 @@ $green: #859900;
   --bold-bg: #{$base2};
   --bold-color: #{$base01};
   --contrast: #{base0};
+  --secondary: #{base1};
 }
 
 .dark {
@@ -29,6 +30,7 @@ $green: #859900;
   --bold-bg: #{$base02};
   --bold-color: #{$base1};
   --contrast: #{base00};
+  --secondary: #{base01};
 }
 
 html,

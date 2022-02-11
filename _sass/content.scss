@@ -1,14 +1,3 @@
-a.anchor {
-  display: block;
-  position: relative;
-  top: -25px;
-  visibility: hidden;
-  &:target + a,
-  &:target + a + br + em {
-    color: $yellow;
-  }
-}
-
 div.toc {
   position: fixed;
   top: 1em;
@@ -19,13 +8,21 @@ div.toc {
 }
 
 div.content {
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 
 .post {
   padding-top: 1rem;
   .post-title {
-    font-size: 2.5rem;
+    @include heading();
+    font-size: 4rem;
     font-weight: bold;
+    font-style: italic;
+    line-height: 3rem;
+  }
+  .post-date {
+    @include mono();
+    font-size: 1rem;
+    padding-top: 1rem;
   }
 }
