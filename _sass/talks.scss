@@ -4,11 +4,13 @@
     display: inline-block;
 
     &.year {
+      @include mono();
       font-size: 1.5rem;
       position: relative;
     }
 
     &.month {
+      @include mono();
       text-transform: uppercase;
       padding-right: 2rem;
     }
@@ -34,9 +36,18 @@ ul.talks {
 li.talk {
   display: flex;
   padding: 1rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
   &:nth-child(odd) {
     background-color: var(--bold-bg);
+  }
+
+  iframe {
+    width: 333px;
+    height: 250px;
+    padding: 0.5rem 0rem;
+
+    &.vimeo {
+      margin-top: -1.5rem;
+      margin-bottom: -2rem;
+    }
   }
 }

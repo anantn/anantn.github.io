@@ -31,7 +31,8 @@ textarea,
 }
 
 body {
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
   min-height: 100vh;
   word-wrap: break-word;
 }
@@ -39,7 +40,7 @@ body {
 pre,
 pre code {
   @include mono();
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1rem;
   white-space: pre;
   word-wrap: normal;
@@ -117,7 +118,8 @@ ul.oneline {
     display: inline;
     &:after {
       content: ", ";
-      margin-left: -0.3rem;
+      margin-left: -0.1rem;
+      margin-right: 0.1rem;
     }
     &:last-child:after {
       content: "";

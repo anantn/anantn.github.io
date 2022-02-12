@@ -22,6 +22,16 @@ div.content {
   max-width: $tablet;
 }
 
+.org-prelude {
+  display: inline-block;
+}
+
+.posts {
+  .date {
+    @include mono();
+    font-size: 0.7rem;
+  }
+}
 .post {
   padding-top: 1rem;
   .post-title {
