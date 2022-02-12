@@ -32,7 +32,14 @@
     {% assign sorted_pages = site.pages | sort:"order" %}
     {% for pg in sorted_pages %}
         {% if pg.layout == "default" %}
-            <a class="nav-link pure-button {% if pg.name == page.name %}pure-button-active{% endif %}" href="{{ pg.url }}">
+            {% assign button_class = "" %}
+            {% if pg.name == page.name %}
+                {% assign button_class = "pure-button-active" %}
+            {% endif %}
+            {% if page.layout == "post" and pg.title == "Blog" %}
+                {% assign button_class = "pure-button-active" %}
+            {% endif %}
+            <a class="nav-link pure-button {{ button_class }}" href="{{ pg.url }}">
                 <ion-icon name="{{ pg.icon }}"></ion-icon>
                 {{ pg.title }}</a>
         {% endif %}
