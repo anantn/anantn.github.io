@@ -110,6 +110,32 @@ var {
   hyphens: none;
 }
 
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-style: none;
+  @media screen and (max-width: $tablet) {
+    margin: 0 auto;
+  }
+}
+
+li::marker {
+  @include mono();
+  font-size: 0.8rem;
+  font-style: bold;
+}
+
+div.inline {
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+  img {
+    display: inline-block;
+  }
+}
+
 ul.oneline {
   display: inline;
   list-style: none;

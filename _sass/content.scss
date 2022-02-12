@@ -7,6 +7,7 @@ div.toc {
     position: sticky;
     top: 1rem;
     padding-left: 1rem;
+    padding-right: 1rem;
     h3 {
       margin-bottom: 0.5rem;
     }
@@ -20,6 +21,17 @@ div.toc {
 div.content {
   padding: 1rem;
   max-width: $tablet;
+  @media screen and (max-width: $tablet) {
+    padding-top: 0.5rem;
+  }
+}
+
+div.footnotes {
+  padding-left: 0;
+  border: 1px solid $yellow;
+  font-size: 0.8em;
+  font-style: italic;
+  background-color: var(--bold-bg);
 }
 
 .org-prelude {
@@ -34,9 +46,10 @@ div.content {
 }
 .post {
   padding-top: 1rem;
+  padding-bottom: 2rem;
   .post-title {
     @include heading();
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     font-style: italic;
     line-height: 3.5rem;
@@ -44,7 +57,7 @@ div.content {
   .post-date {
     @include mono();
     font-size: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
   .post-header {
     @media screen and (max-width: $tablet) {

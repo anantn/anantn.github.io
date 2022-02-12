@@ -9,8 +9,10 @@
 #isso-thread {
   padding: 0;
   margin: 0;
+  border-top: 1px dotted var(--primary-color);
 }
 #isso-thread > h4 {
+  margin: 0.5rem 0rem;
   color: var(--bold-color);
   font-weight: bold;
 }
@@ -38,6 +40,7 @@
   display: block;
   float: left;
   width: 7%;
+  margin-top: 0.4em;
   margin-right: 0.5em;
 }
 .isso-postbox > .avatar {
