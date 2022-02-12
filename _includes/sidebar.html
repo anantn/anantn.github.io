@@ -32,7 +32,9 @@
     {% assign sorted_pages = site.pages | sort:"order" %}
     {% for pg in sorted_pages %}
         {% if pg.layout == "default" %}
-            <a class="nav-link pure-button {% if pg.name == page.name %}pure-button-active{% endif %}" href="{{ pg.url }}">{{ pg.title }}</a>
+            <a class="nav-link pure-button {% if pg.name == page.name %}pure-button-active{% endif %}" href="{{ pg.url }}">
+                <ion-icon name="{{ pg.icon }}"></ion-icon>
+                {{ pg.title }}</a>
         {% endif %}
     {% endfor %}
 </nav>
