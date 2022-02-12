@@ -31,9 +31,11 @@
                     {{ content }}
                 </div>
                 <div class="toc pure-u-1 pure-u-md-1-5">
+                    <div>
                     {% if page.layout == "post" %}
                         {% include toc.html html=content %}
                     {% endif %}
+                    </div>
                 </div>
             </div>
             {% include scripts.html %}</body>
