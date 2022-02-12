@@ -175,7 +175,7 @@
   margin: 0 0 0.3em;
   padding: 0.4em 0.8em;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: var(--bold-bg);
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -190,11 +190,12 @@
   margin: 0;
 }
 .isso-postbox > .form-wrapper > .auth-section .input-wrapper input {
+  outline: none;
   padding: 0.3em 10px;
   margin-right: 0.5em;
   max-width: 100%;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: var(--bold-bg);
   line-height: 1.4em;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -205,22 +206,22 @@
   margin: 0;
 }
 .isso-postbox > .form-wrapper > .auth-section .post-action > input {
-  color: black;
+  color: var(--primary-color);
   padding: calc(0.3em - 1px);
   margin-left: 0.5em;
   border-radius: 2px;
-  border: 1px solid #ccc;
-  background-color: #ddd;
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
   cursor: pointer;
   outline: 0;
   line-height: 1.4em;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .isso-postbox > .form-wrapper > .auth-section .post-action > input:hover {
-  background-color: #ccc;
+  background-color: var(--bold-bg);
 }
 .isso-postbox > .form-wrapper > .auth-section .post-action > input:active {
-  background-color: #bbb;
+  background-color: var(--primary-color);
 }
 @media screen and (max-width: 600px) {
   .isso-postbox > .form-wrapper > .auth-section .input-wrapper {
