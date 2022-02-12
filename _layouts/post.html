@@ -3,11 +3,10 @@ layout: default
 ---
 <section class="post">
     <header class="post-header">
-        <span class="post-title">{{ page.title }}</span>
-        <br/>
-        <span class="post-date">
+        <div class="post-title">{{ page.title }}</div>
+        <div class="post-date">
             {{ page.date | date_to_string }}
-        </span>
+        </div>
     </header>
     <div class="post-content">
         {{ content }}

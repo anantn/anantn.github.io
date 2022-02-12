@@ -1,14 +1,25 @@
 div.toc {
-  position: fixed;
-  top: 1em;
-  right: 1em;
   @media screen and (max-width: $desktop) {
     display: none;
+  }
+
+  div {
+    position: sticky;
+    top: 1rem;
+    padding-left: 1rem;
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1rem;
+      margin-left: 0;
+    }
   }
 }
 
 div.content {
-  padding: 2rem;
+  padding: 1rem;
+  max-width: $tablet;
 }
 
 .post {
@@ -18,11 +29,16 @@ div.content {
     font-size: 4rem;
     font-weight: bold;
     font-style: italic;
-    line-height: 3rem;
+    line-height: 3.5rem;
   }
   .post-date {
     @include mono();
     font-size: 1rem;
     padding-top: 1rem;
+  }
+  .post-header {
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+    }
   }
 }
