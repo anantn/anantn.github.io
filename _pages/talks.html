@@ -13,18 +13,13 @@ icon: mic
     <a href="https://speakerdeck.com/anantn">SpeakerDeck</a>.
 </p>
 <div class="talks">
+    <ul class="talks">
     {% assign last_year = "" %}
     {% for talk in site.data.talks %}
-        {% capture year %}
-            <span class="year">{{talk.year}}</span>
-        {% endcapture %}
+        {% capture year %}{{talk.year}}{% endcapture %}
         {% if year != last_year %}
             {% assign last_year = year %}
-            {% if forloop.first != true %}
-            </ul>
-        {% endif %}
-        <span class="year">{{year}}</span>
-        <ul class="talks">
+            <span class="year">{{year}}</span>
         {% endif %}
         <li class="talk">
             <span class="month">{{ talk.month | slice: 0, 3 }}</span>
@@ -57,4 +52,5 @@ icon: mic
             </div>
         </li>
     {% endfor %}
+    </ul>
 </div>

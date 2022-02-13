@@ -7,12 +7,14 @@
       @include mono();
       font-size: 1.5rem;
       position: relative;
+      margin: 0.5rem 0rem;
     }
 
     &.month {
       @include mono();
       text-transform: uppercase;
       padding-right: 2rem;
+      padding-left: 0.5rem;
     }
   }
   a.anchor {
@@ -36,8 +38,11 @@ ul.talks {
 li.talk {
   display: flex;
   padding: 1rem;
-  &:nth-child(odd) {
+  &:nth-of-type(odd) {
     background-color: var(--bold-bg);
+  }
+  &:nth-of-type(even) {
+    background-color: var(--hsl-bg);
   }
 
   iframe {
