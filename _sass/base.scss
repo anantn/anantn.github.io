@@ -169,7 +169,8 @@ ul.oneline {
       margin-right: 0.1rem;
     }
     &:last-child:after {
-      content: "";
+      content: ".";
+      margin-left: -0.1rem;
     }
   }
 }
