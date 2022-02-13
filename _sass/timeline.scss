@@ -19,6 +19,7 @@
       font-size: 1.5rem;
       position: relative;
       top: 22px;
+      padding-bottom: 1rem;
 
       &::after {
         content: "";
@@ -39,6 +40,10 @@
       &:not(:first-child) {
         position: relative;
         left: -4px;
+      }
+
+      & + li::before {
+        @extend %vertical-line;
       }
     }
 
@@ -95,14 +100,14 @@
         }
       }
 
-      &:nth-child(odd) {
+      &:nth-of-type(odd) {
         background-color: var(--bold-bg);
+      }
+      &:nth-of-type(even) {
+        background-color: var(--hsl-bg);
       }
 
       &::after {
-        @extend %vertical-line;
-      }
-      &:first-child::before {
         @extend %vertical-line;
       }
     }

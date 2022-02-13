@@ -5,7 +5,7 @@ div.toc {
 
   div {
     position: sticky;
-    top: 1rem;
+    top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     h3 {
@@ -14,6 +14,9 @@ div.toc {
     ul {
       padding-left: 1rem;
       margin-left: 0;
+      li {
+        margin-top: 0.5rem;
+      }
     }
   }
 }
@@ -63,5 +66,13 @@ div.footnotes {
     @media screen and (max-width: $tablet) {
       text-align: center;
     }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 1rem;
   }
 }
