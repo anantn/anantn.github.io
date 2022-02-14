@@ -1,0 +1,15 @@
+{% assign categories = "" %}
+{% for talk in include.data %}
+    {% if talk.categories %}
+        {% assign categories = categories | concat: talk.categories %}
+    {% endif %}
+{% endfor %}
+{% assign categories = categories | uniq %}
+<span>Filter by topic:</span>
+<div class="pure-button-group" role="group">
+    {% for c in categories %}
+        {% if c != "" %}
+            <button class="pure-button">{{ c | | capitalize }}</button>
+        {% endif %}
+    {% endfor %}
+</div>

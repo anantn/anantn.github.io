@@ -12,8 +12,9 @@ icon: mic
     and
     <a href="https://speakerdeck.com/anantn">SpeakerDeck</a>.
 </p>
-<div class="talks">
-    <ul class="talks">
+<div id="talks" class="talks">
+    {% include filter.html data=site.data.talks %}
+    <ul class="talks list">
     {% assign last_year = "" %}
     {% for talk in site.data.talks %}
         {% capture year %}{{talk.year}}{% endcapture %}
@@ -21,18 +22,18 @@ icon: mic
             {% assign last_year = year %}
             <span class="year">{{year}}</span>
         {% endif %}
-        <li class="talk">
+        <li class="talk" data-categories="{{ talk.categories |  join: " " }}">
             <span class="month">{{ talk.month | slice: 0, 3 }}</span>
             <div class="talk">
                 <a class="anchor" name="{{ talk.id }}"></a>
                 {% if talk.url %}
-                    <a href="{{ talk.url }}">{{ talk.name }}</a>
+                    <a href="{{ talk.url }}" class="list-item">{{ talk.name }}</a>
                 {% else if talk.urls %}
                     <span>{{ talk.name }}</span><br/>
                     <ul class="oneline">
                         {% for u in talk.urls %}
                             <li>
-                                <a href="{{ u.url }}">[{{ u.name }}]</a>
+                                <a href="{{ u.url }}" class="list-item">[{{ u.name }}]</a>
                             </li>
                         {% endfor %}
                     </ul>
@@ -54,3 +55,6 @@ icon: mic
     {% endfor %}
     </ul>
 </div>
+<script>
+    search("talks");
+</script>
