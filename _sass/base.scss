@@ -174,3 +174,22 @@ ul.oneline {
     }
   }
 }
+
+.pure-button {
+  border-radius: 14px;
+  margin: 0.25rem;
+  color: var(--primary-color);
+  background-color: var(--bold-bg);
+  &:focus {
+    background-image: none;
+  }
+}
+
+.pure-button-group {
+  .pure-button:first-child {
+    border-radius: 14px 0px 0px 14px;
+  }
+  .pure-button:last-child {
+    border-radius: 0px 14px 14px 0px;
+  }
+}

@@ -37,6 +37,24 @@ div.footnotes {
   background-color: var(--bold-bg);
 }
 
+.filtered {
+  span.day {
+    display: none;
+  }
+  span.month {
+    display: none;
+    ~ a::before {
+      display: none;
+    }
+  }
+  span.year + li::before {
+    display: none;
+  }
+  ul > li::after {
+    display: none;
+  }
+}
+
 .org-prelude {
   display: inline-block;
 }
