@@ -22,10 +22,10 @@ function search(name) {
     }
   });
 
-  var buttons = element.querySelectorAll(".pure-button-group > button");
+  var buttons = element.querySelectorAll(".tag-cloud > a");
   for (var button of buttons) {
     button.addEventListener("click", function (e) {
-      var active = "pure-button-active";
+      var active = "tag-active";
       if (e.target.classList.contains(active)) {
         e.target.classList.remove(active);
         list.filter();
@@ -36,7 +36,7 @@ function search(name) {
         e.target.classList.add(active);
         list.filter(function (item) {
           var check = item.values().categories;
-          if (check && check.includes(e.target.innerHTML.toLowerCase())) {
+          if (check && check.includes(e.target.innerText.toLowerCase())) {
             return true;
           }
           return false;
