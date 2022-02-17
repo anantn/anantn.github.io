@@ -4,11 +4,11 @@ $tablet: 768px;
 $mobile: 568px;
 
 @mixin heading {
-  font-family: "Playfair Display", "Palatino", "Garamond", serif;
+  font-family: "Merriweather", "Palatino", "Garamond", serif;
 }
 
 @mixin content {
-  font-family: "Lato", "Roboto", "Helvetica", sans-serif;
+  font-family: "Fira Sans", "Roboto", "Helvetica", sans-serif;
 }
 
 @mixin mono {
@@ -19,6 +19,7 @@ $mobile: 568px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -31,8 +32,8 @@ textarea,
 }
 
 body {
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   min-height: 100vh;
   word-wrap: break-word;
 }

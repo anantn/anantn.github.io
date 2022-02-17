@@ -7,7 +7,9 @@
   text-decoration: none;
 }
 #isso-thread {
-  padding: 0;
+  padding: 1rem;
+  background-color: var(--bold-bg);
+  font-size: 0.9rem;
   margin: 0;
   border-top: 1px dotted var(--primary-color);
 }
