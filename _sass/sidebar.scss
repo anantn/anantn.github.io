@@ -80,6 +80,7 @@
     .subtitle {
       @include heading();
       font-size: 1.1rem;
+      font-weight: bold;
       @media screen and (max-width: $desktop) {
         font-size: 0.88rem;
       }
