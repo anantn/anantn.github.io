@@ -27,6 +27,43 @@ div.content {
   @media screen and (max-width: $tablet) {
     padding-top: 0.5rem;
   }
+
+  div.tag-cloud {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+
+    span {
+      font-size: 0.8rem;
+      font-style: italic;
+      margin-right: 0.5rem;
+    }
+
+    a.tag {
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.35s;
+      padding: 8px 16px;
+      margin-right: 4px;
+      font-size: 0.8rem;
+      line-height: 1;
+      font-weight: 500;
+      border: 2px solid var(--bold-bg);
+      border-radius: 30px;
+      color: var(--primary-color);
+
+      &:hover {
+        color: var(--bold-color);
+        border-color: var(--contrast);
+      }
+
+      &.tag-active {
+        color: var(--background-color);
+        background-color: var(--primary-color);
+      }
+    }
+  }
 }
 
 div.footnotes {

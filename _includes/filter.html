@@ -5,11 +5,11 @@
     {% endif %}
 {% endfor %}
 {% assign categories = categories | uniq %}
-<span>Filter by topic:</span>
-<div class="pure-button-group" role="group">
+<div class="tag-cloud" role="group">
+    <span>Filter by topic:</span>
     {% for c in categories %}
-        {% if c != "" %}
-            <button class="pure-button">{{ c | | capitalize }}</button>
+        {% if c != "" and c != "favorite" %}
+            <a class="tag">{{ c }}</a>
         {% endif %}
     {% endfor %}
 </div>
