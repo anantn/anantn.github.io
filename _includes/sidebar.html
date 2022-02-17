@@ -31,7 +31,7 @@
 <nav class="nav">
     {% assign sorted_pages = site.pages | sort:"order" %}
     {% for pg in sorted_pages %}
-        {% if pg.layout == "default" %}
+        {% if pg.layout == "default" and pg.icon and pg.order %}
             {% assign button_class = "" %}
             {% if pg.name == page.name %}
                 {% assign button_class = "pure-button-active" %}

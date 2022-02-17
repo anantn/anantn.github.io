@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Plan 9
-order: 4
-icon: folder-open
 ---
 
 [Plan 9](http://plan9.bell-labs.com/plan9/) is a research system developed at the [Bell Labs](http://en.wikipedia.org/wiki/Bell_labs).
