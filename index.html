@@ -5,16 +5,16 @@ order: 1
 icon: home
 ---
 <p>
-    Hello and welcome to my small slice of the web! I’m a technology leader by trade &mdash;
-    passionate about building software and teams that solve interesting real world problems.
+    Hello and welcome to my small slice of the web!
 </p>
 <p>
     If you’re here to download the slides for (or view) a talk I’ve given head over to the
-    <a href="/talks">talks page</a>. Or, you may want to check out some of my
-    <a href="/blog">blog posts</a>. Here are the top 5 posts mixed by recency and popularity:
+    <a href="/talks">talks page</a>. You'll find me occasionally rambling on
+    <a href="/blog">my blog</a>
+    &mdash; here are a few of my recent posts, though the full archive is likely to be more interesting.
 </p>
 <ul class="posts">
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts limit:5 %}
         <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
             <span class="date">
@@ -22,22 +22,11 @@ icon: home
             </span>
         </li>
     {% endfor %}
-    <li>
-        <a href="/2008/07/22/aes-256-using-php-mcrypt/">AES-256 using PHP-mcrypt</a>
-        <span class="date">
-            <em>(22 Jul 2008)</em>
-        </span>
-    </li>
-    <li>
-        <a href="/2008/06/19/an-alternative-to-shared-libraries/">An alternative to shared libraries</a>
-        <span class="date">
-            <em>(19 Jun 2008)</em>
-        </span>
-    </li>
 </ul>
 <div class="org-prelude">
     <span>
-        This page also includes brief summaries of my involvement with various software organizations over the years:
+        I'm an engineering leader by day and have been involved in various software organizations over the years.
+        Here you'll find short summaries of what I’ve worked on &mdash;
     </span>
     <ul class="oneline">
         {% for org in site.orgs reversed %}

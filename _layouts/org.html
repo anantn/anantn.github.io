@@ -1,46 +1,44 @@
-<hr/>
-<h3>
+<div class="header">
     <a name="{{ page.key }}"></a>
-    {{ page.name }}
-    ({{ page.years }})</h3>
-<p><img class="prose" src="/images/projects/{{ page.key }}.webp"/></p>
-<div class="prose">
-    <p>{{ content }}</p>
-    <div class="also">
-        <p>
-            <em>See also:</em>
-            <br/>
-            {% assign talkEmpty = true %}
-            {% for talk in site.data.talks %}
-                {% if talk.categories contains page.key %}
-                    {% if talkEmpty %}
-                        <ul class="oneline">
-                            {% assign talkEmpty = false %}
-                        {% endif %}
-                        <li>
-                            <a href="/talks#{{ talk.id }}">{{ talk.name }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-                {% if talkEmpty == false %}
-                </ul>
+    <img class="prose" src="/images/projects/{{ page.key }}.webp"/>
+    <h2>{{ page.name }}
+        ({{ page.years }})</h2>
+</div>
+{{ content }}
+<div class="also">
+    <em>See also:</em>
+    <br/>
+    {% assign talkEmpty = true %}
+    {% for talk in site.data.talks %}
+        {% if talk.categories contains page.key %}
+            {% if talkEmpty %}
+                <ion-icon name="mic"></ion-icon>
+                <ul class="oneline">
+                    {% assign talkEmpty = false %}
+                {% endif %}
+                <li>
+                    <a href="/talks#{{ talk.id }}">{{ talk.name }}</a>
+                </li>
             {% endif %}
-            <br/>
-            {% assign postEmpty = true %}
-            {% for post in site.posts %}
-                {% if post.categories contains page.key %}
-                    {% if postEmpty %}
-                        <ul class="oneline">
-                            {% assign postEmpty = false %}
-                        {% endif %}
-                        <li>
-                            <a href="{{ post.url }}">{{ post.title }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-                {% if postEmpty == false %}
-                </ul>
+        {% endfor %}
+        {% if talkEmpty == false %}
+        </ul>
+        <br/>
+    {% endif %}
+    {% assign postEmpty = true %}
+    {% for post in site.posts %}
+        {% if post.categories contains page.key %}
+            {% if postEmpty %}
+                <ion-icon name="document-text"></ion-icon>
+                <ul class="oneline">
+                    {% assign postEmpty = false %}
+                {% endif %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
             {% endif %}
-        </p>
-    </div>
+        {% endfor %}
+        {% if postEmpty == false %}
+        </ul>
+    {% endif %}
 </div>
