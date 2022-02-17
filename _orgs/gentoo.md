@@ -10,4 +10,4 @@ years: 2006-2007
 
 I owe a lot of my understanding of Linux to Gentoo. I would still recommend anyone interested in the operating system to install Gentoo at least once, you learn so much because the distribution doesn't hide the internals from you. On Gentoo you compile everything from source.
 
-Over time, I found myself with lesser free time, so the practicality of Ubuntu on the Desktop and a MacBook Pro on-the-go eventually won over.
+Over the years, I found myself with lesser free time, so the practicality of Ubuntu on the Desktop and a MacBook Pro on-the-go eventually won over.

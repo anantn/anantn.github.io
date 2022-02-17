@@ -93,7 +93,41 @@ div.footnotes {
 }
 
 .org-prelude {
-  display: inline-block;
+  padding-bottom: 2rem;
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.org {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+
+    a {
+      position: relative;
+      top: -25px;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-style: italic;
+      margin: 0;
+      margin-right: auto;
+    }
+
+    img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+  }
+
+  .also {
+    font-size: 0.9rem;
+    ion-icon {
+      vertical-align: middle;
+    }
+  }
 }
 
 .posts {
@@ -121,13 +155,5 @@ div.footnotes {
     @media screen and (max-width: $tablet) {
       text-align: center;
     }
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    scroll-margin-top: 2rem;
   }
 }
