@@ -54,5 +54,15 @@ li.talk {
       margin-top: -1.5rem;
       margin-bottom: -2rem;
     }
+
+    @media screen and (max-width: $tablet) {
+      width: 200px;
+      height: 150px;
+
+      &.vimeo {
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+      }
+    }
   }
 }
