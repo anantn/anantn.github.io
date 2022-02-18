@@ -45,3 +45,21 @@ function search(name) {
     });
   }
 }
+
+function enableScrollButton() {
+  window.addEventListener("scroll", function () {
+    var element = document.getElementById("scroll-top");
+    if (window.scrollY >= 768) {
+      element.className = "active";
+    } else {
+      element.className = "";
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  enableScrollButton();
+  if (document.getElementById("filter") !== null) {
+    search("filter");
+  }
+});
