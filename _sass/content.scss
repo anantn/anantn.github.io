@@ -102,6 +102,7 @@ div.footnotes {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: row-reverse;
     margin-top: 3rem;
 
     a {
@@ -114,6 +115,15 @@ div.footnotes {
       font-style: italic;
       margin: 0;
       margin-right: auto;
+      span {
+        font-size: 1.2rem;
+        @media screen and (max-width: $tablet) {
+          &::before {
+            content: "\a";
+            white-space: pre;
+          }
+        }
+      }
     }
 
     img {
