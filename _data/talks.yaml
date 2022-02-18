@@ -1,0 +1,299 @@
+- id: "2018-kg"
+  year: 2018
+  month: October
+  name: "Enterprise Scale Knowledge Graphs"
+  url: https://proness.kix.in/talks/iswc18-kg.pdf
+  location: <a href="http://iswc2018.semanticweb.org/panel-enterprise-scale-knowledge-graphs/">ISWC</a>, Monterey
+  categories: ["facebook"]
+
+- id: "2017-assistant"
+  year: 2017
+  month: June
+  name: "Building an Intelligent Assistant"
+  url: https://proness.kix.in/talks/devweek17-ozlo.pdf
+  location: DeveloperWeek, New York
+  categories: ["ozlo"]
+
+- id: "2014-jsconf"
+  year: 2014
+  month: January
+  name: "Building Real-time Apps with Angular and Firebase"
+  url: https://proness.kix.in/talks/ngconf14-firebase.pdf
+  location: ng-conf, Salt Lake City
+  video: https://www.youtube.com/embed/e4yUTkva_FM
+  categories: ["firebase"]
+
+- id: "2013-jsapi"
+  year: 2013
+  month: October
+  name: "Building JS APIs for Browsers"
+  url: https://proness.kix.in/talks/devconf13-browsers/
+  location: HTML5DevConf, San Francisco
+  video: https://www.youtube.com/embed/Jo4DttCcL7w
+  categories: ["firebase"]
+
+- id: "2013-message2"
+  year: 2013
+  month: October
+  name: "Message Passing vs. Data Synchronization"
+  url: https://proness.kix.in/talks/realtimeconf13-datasync.pdf
+  location: RealtimeConf, Portland
+  video: https://player.vimeo.com/video/77352415
+  categories: ["firebase"]
+
+- id: "2013-angularfire"
+  year: 2013
+  month: July
+  name: "Real-time Web Apps with Firebase and AngularJS"
+  url: https://proness.kix.in/talks/angular13-firebase/
+  location: AngularJS Meetup, Mountain View
+  video: https://www.youtube.com/embed/C7ZI7z7qnHU
+  categories: ["firebase"]
+
+- id: "2013-webrtc2"
+  year: 2013
+  month: May
+  name: "WebRTC: A Practical Introduction"
+  url: https://proness.kix.in/talks/fluent13-webrtc/
+  location: FluentConf, San Francisco
+  categories: ["mozilla"]
+
+- id: "2013-message1"
+  year: 2013
+  month: May
+  name: "Message Passing vs. Data Synchronization"
+  url: https://proness.kix.in/talks/pivotal13-datasync.pdf
+  location: Pivotal Labs, San Francisco
+  categories: ["firebase"]
+
+- id: "2013-firebase"
+  year: 2013
+  month: May
+  name: "Firebase: Tales from the Trenches"
+  url: https://proness.kix.in/talks/geeklist13-firebase
+  location: Geekli.st, San Francisco
+  categories: ["firebase"]
+
+- id: "2013-webrtc1"
+  year: 2013
+  month: March
+  name: "WebRTC: An Overview"
+  url: https://proness.kix.in/talks/jive13-webrtc/
+  location: Jive, San Francisco
+  categories: ["mozilla"]
+
+- id: "2013-serverless"
+  year: 2013
+  month: February
+  name: "Server-less Apps"
+  url: https://proness.kix.in/talks/denverjs13-serverless.pdf
+  location: DenverJS, Denver
+  categories: ["firebase", "mozilla"]
+
+- id: "2012-webrtc-error"
+  year: 2012
+  month: October
+  name: "Error Handling in WebRTC"
+  url: https://proness.kix.in/talks/tpac12-webrtc.pdf
+  location: W3C TPAC, Lyon
+  categories: ["mozilla"]
+
+- id: "2012-webrtc-demystified"
+  year: 2012
+  month: September
+  name: "WebRTC Demystified"
+  url: https://proness.kix.in/talks/mozcamp12-webrtc.pdf
+  location: MozCamp EU, Warsaw
+  categories: ["mozilla"]
+
+- id: "2012-firefoxos"
+  year: 2012
+  month: August
+  name: "Apps for Firefox OS"
+  url: https://proness.kix.in/talks/campus12-apps.pdf
+  location: Campus Party EU, Berlin
+  categories: ["mozilla"]
+
+- id: "2011-webrtc-security"
+  year: 2011
+  month: October
+  name: "WebRTC: User Security &amp; Privacy"
+  url: https://proness.kix.in/talks/tpac11-webrtc.pdf
+  location: W3C TPAC, San Jose
+  categories: ["mozilla"]
+
+- id: "2011-firefox-architecture"
+  year: 2011
+  month: June
+  name: "Firefox Architecture Overview"
+  url: https://proness.kix.in/talks/cisco11-fxarch.pdf
+  location: Cisco, San Jose
+  categories: ["mozilla"]
+
+- id: "2010-piep"
+  year: 2010
+  month: August
+  name: "πp: A new file protocol"
+  url: https://proness.kix.in/talks/bell10-piep.pdf
+  location: Alcatel-Lucent, Antwerp
+  categories: ["plan9"]
+
+- id: "2009-addons"
+  year: 2009
+  month: December
+  name: "Next Generation Addons"
+  url: https://proness.kix.in/talks/foss.in09-jetpack.pdf
+  location: FOSS.IN, Bangalore
+  categories: ["mozilla"]
+
+- id: "2009-distributed-debug"
+  year: 2009
+  month: November
+  name: "An Overview of Distributed Debugging"
+  url: https://proness.kix.in/talks/atds09-ddb.pdf
+  location: Vrije Universiteit, Amsterdam
+
+- id: "2009-botnet"
+  year: 2009
+  month: October
+  name: "A Brief Incursion into Botnet Detection"
+  url: https://proness.kix.in/talks/atns09-botnet.pdf
+  location: Vrije Universiteit, Amsterdam
+
+- id: "2009-weave"
+  year: 2009
+  month: October
+  name: "Mozilla Weave"
+  url: https://proness.kix.in/talks/mozcamp09-weave.pdf
+  location: MozCamp EU, Prague
+  categories: ["mozilla"]
+
+- id: "2009-about-labs"
+  year: 2009
+  month: October
+  name: "about:labs"
+  url: https://proness.kix.in/talks/mozcamp09-labs.pdf
+  location: Prague DevDay, Prague
+  categories: ["mozilla"]
+
+- id: "2009-distributed-files"
+  year: 2009
+  month: March
+  name: "Distributed File Systems: An Overview"
+  url: https://proness.kix.in/talks/cgc09-dfs.pdf
+  location: Vrije Universiteit, Amsterdam
+
+- id: "2008-mozilla-labs"
+  year: 2008
+  month: December
+  name: "Innovating with Mozilla Labs"
+  url: https://proness.kix.in/talks/foss.in08-mozilla-labs.pdf
+  location: FOSS.IN, Bangalore
+  categories: ["mozilla"]
+
+- id: "2008-glendix"
+  year: 2008
+  month: October
+  name: "Glendix: The Why and The How"
+  url: https://proness.kix.in/talks/iwp9-08-glendix.pdf
+  location: IWP9, Volos
+  categories: ["plan9"]
+
+- id: "2008-weave-demo"
+  year: 2008
+  month: July
+  name: "Weave Demo Session"
+  url: https://wiki.mozilla.org/Summit2008/Sessions/Proposals/Weave
+  location: Firefox Summit, Whistler
+  categories: ["mozilla"]
+
+- id: "2008-prism"
+  year: 2008
+  month: February
+  name: "Mozilla Prism &amp; Hackfest"
+  url: https://proness.kix.in/talks/gnunify08-prism.pdf
+  location: Gnunify, Pune
+  categories: ["mozilla"]
+
+- id: "2008-foss"
+  year: 2008
+  month: February
+  name: "What is FOSS?"
+  url: https://proness.kix.in/talks/blitz08-foss.pdf
+  location: Blitzschlag, Jaipur
+
+- id: "2007-gentoo"
+  year: 2007
+  month: December
+  name: "Making Gentoo Tick"
+  url: https://proness.kix.in/talks/foss.in07-making-gentoo-tick.pdf
+  location: FOSS.IN, Bangalore
+  categories: ["gentoo"]
+
+- id: "2007-xpconnect"
+  year: 2007
+  month: December
+  name: "Mozilla Project Day: XPConnect"
+  url: https://proness.kix.in/talks/foss.in07-mozillapd-xpconnect.pdf
+  location: FOSS.IN, Bangalore
+  categories: ["mozilla"]
+
+- id: "2007-plan92"
+  year: 2007
+  month: December
+  name: "Unix++: Plan 9 from Bell Labs"
+  url: https://proness.kix.in/talks/foss.in07-plan9.pdf
+  location: FOSS.IN, Bangalore
+  categories: ["plan9"]
+
+- id: "2007-foss-labs"
+  year: 2007
+  month: July-September
+  name: "FOSS labs series"
+  urls:
+    - name: bootcamp
+      url: https://proness.kix.in/talks/itr07-bootcamp.pdf
+    - name: linux
+      url: https://proness.kix.in/talks/itr07-linux-basics.pdf
+    - name: linux+
+      url: https://proness.kix.in/talks/itr07-more-linux.pdf
+    - name: html-php
+      url: https://proness.kix.in/talks/itr07-html-php.pdf
+    - name: php-mysql
+      url: https://proness.kix.in/talks/itr07-php-mysql.pdf
+    - name: php+
+      url: https://proness.kix.in/talks/itr07-php.pdf
+    - name: cake
+      url: https://proness.kix.in/talks/itr07-cake.pdf
+    - name: cake+
+      url: https://proness.kix.in/talks/itr07-more-cake.pdf
+  location: MNIT, Jaipur
+
+- id: "2007-plan91"
+  year: 2007
+  month: January
+  name: "Introducing Plan 9"
+  url: https://proness.kix.in/talks/freed07-plan9.pdf
+  location: Freed.IN, New Delhi
+  categories: ["plan9"]
+
+- id: "2007-ctypes"
+  year: 2007
+  month: January
+  name: "Extending Python with ctypes"
+  url: https://proness.kix.in/talks/gnunify07-ctypes.pdf
+  location: Gnunify, Pune
+
+- year: 2006
+  month: January
+  name: "Webapps with Javascript"
+  urls:
+    - name: part1
+      url: https://proness.kix.in/talks/webapps/part1.html
+    - name: part2
+      url: https://proness.kix.in/talks/webapps/part2.html
+    - name: part3
+      url: https://proness.kix.in/talks/webapps/part3.html
+    - name: part4
+      url: https://proness.kix.in/talks/webapps/part4.html
+  location: Freedel, New Delhi

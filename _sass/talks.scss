@@ -1,0 +1,68 @@
+.talks {
+  span {
+    white-space: nowrap;
+    display: inline-block;
+
+    &.year {
+      @include mono();
+      font-size: 1.5rem;
+      position: relative;
+      margin: 0.5rem 0rem;
+    }
+
+    &.month {
+      @include mono();
+      text-transform: uppercase;
+      padding-right: 2rem;
+      padding-left: 0.5rem;
+    }
+  }
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -25px;
+    visibility: hidden;
+    &:target + a,
+    &:target + a + br + em {
+      color: $yellow;
+    }
+  }
+}
+
+ul.talks {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li.talk {
+  display: flex;
+  padding: 1rem;
+  &:nth-of-type(odd) {
+    background-color: var(--bold-bg);
+  }
+  &:nth-of-type(even) {
+    background-color: var(--hsl-bg);
+  }
+
+  iframe {
+    width: 333px;
+    height: 250px;
+    padding: 0.5rem 0rem;
+
+    &.vimeo {
+      margin-top: -1.5rem;
+      margin-bottom: -2rem;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 200px;
+      height: 150px;
+
+      &.vimeo {
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+      }
+    }
+  }
+}

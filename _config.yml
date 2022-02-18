@@ -1,7 +1,8 @@
-title: Binary Sunrise
-description: Blog posts, talks, projects from Anant Narayanan
+title: kix
+description: Talks & Ramblings
 url: https://www.kix.in
-author: anantn
+author:
+  name: Anant Narayanan
 social:
   name: Anant Narayanan
   links:
@@ -29,3 +30,5 @@ defaults:
       permalink: /:basename:output_ext
 include:
   - _pages
+sass:
+  style: compressed

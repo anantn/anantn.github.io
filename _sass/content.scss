@@ -1,0 +1,159 @@
+div.toc {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+
+  div {
+    position: sticky;
+    top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1rem;
+      margin-left: 0;
+      li {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+div.content {
+  padding: 1rem;
+  max-width: $tablet;
+  @media screen and (max-width: $tablet) {
+    padding-top: 0.5rem;
+  }
+
+  div.tag-cloud {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+
+    span {
+      font-size: 0.8rem;
+      font-style: italic;
+      margin-right: 0.5rem;
+    }
+
+    a.tag {
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.35s;
+      padding: 8px 16px;
+      margin: 4px 0px 0px 4px;
+      font-size: 0.8rem;
+      line-height: 1;
+      font-weight: 500;
+      border: 2px solid var(--bold-bg);
+      border-radius: 30px;
+      color: var(--primary-color);
+
+      &:hover {
+        color: var(--bold-color);
+        border-color: var(--contrast);
+      }
+
+      &.tag-active {
+        color: var(--background-color);
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}
+
+div.footnotes {
+  padding-left: 0;
+  border: 1px solid $yellow;
+  font-size: 0.8em;
+  font-style: italic;
+  background-color: var(--bold-bg);
+}
+
+.filtered {
+  span.day {
+    display: none;
+  }
+  span.month {
+    display: none;
+    ~ a::before {
+      display: none;
+    }
+  }
+  span.year + li::before {
+    display: none;
+  }
+  ul > li::after {
+    display: none;
+  }
+}
+
+.org-prelude {
+  padding-bottom: 2rem;
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.org {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+
+    a {
+      position: relative;
+      top: -25px;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-style: italic;
+      margin: 0;
+      margin-right: auto;
+    }
+
+    img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+  }
+
+  .also {
+    font-size: 0.9rem;
+    ion-icon {
+      vertical-align: middle;
+    }
+  }
+}
+
+.posts {
+  .date {
+    @include mono();
+    font-size: 0.7rem;
+  }
+}
+.post {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  .post-title {
+    @include heading();
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 3.5rem;
+  }
+  .post-date {
+    @include mono();
+    font-size: 1rem;
+    padding-top: 0.5rem;
+  }
+  .post-header {
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+    }
+  }
+}

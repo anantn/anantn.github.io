@@ -1,0 +1,47 @@
+<div class="photo">
+    <a href="/"><img alt="avatar" src="/images/avatar.webp"></a>
+</div>
+<div class="profile">
+    <a href="/">
+        <h1 class="title">{{ site.title }}</h1>
+    </a>
+    <p class="subtitle">{{ site.description }}</p>
+    <p class="author">by
+        {{ site.author.name }}</p>
+</div>
+<div class="social">
+    <ul>
+        <li><a href="https://www.linkedin.com/in/anantn/" rel="noopenepr" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://github.com/anantn" rel="noopener" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://twitter.com/anantn" rel="noopener" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://facebook.com/anantn" rel="noopener" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    </ul>
+</div>
+<div class="options">
+    <div class="toggle-theme" onclick="toggleDarkMode()">
+        <div class="toggle-moon">
+            <ion-icon name="moon"></ion-icon>
+        </div>
+        <div class="toggle-sun">
+            <ion-icon name="sunny"></ion-icon>
+        </div>
+        <div class="toggle-thumb"></div>
+    </div>
+</div>
+<nav class="nav">
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for pg in sorted_pages %}
+        {% if pg.layout == "default" and pg.icon and pg.order %}
+            {% assign button_class = "" %}
+            {% if pg.name == page.name %}
+                {% assign button_class = "pure-button-active" %}
+            {% endif %}
+            {% if page.layout == "post" and pg.title == "Blog" %}
+                {% assign button_class = "pure-button-active" %}
+            {% endif %}
+            <a class="nav-link pure-button {{ button_class }}" href="{{ pg.url }}">
+                <ion-icon name="{{ pg.icon }}"></ion-icon>
+                {{ pg.title }}</a>
+        {% endif %}
+    {% endfor %}
+</nav>
