@@ -1,0 +1,15 @@
+{% assign categories = "" %}
+{% for talk in include.data %}
+    {% if talk.categories %}
+        {% assign categories = categories | concat: talk.categories %}
+    {% endif %}
+{% endfor %}
+{% assign categories = categories | uniq %}
+<div class="tag-cloud" role="group">
+    <span>Filter by topic:</span>
+    {% for c in categories %}
+        {% if c != "" and c != "favorite" %}
+            <a class="tag">{{ c }}</a>
+        {% endif %}
+    {% endfor %}
+</div>

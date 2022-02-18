@@ -1,58 +1,43 @@
 ---
 layout: default
-title: Anant Narayanan | Home
+title: Home
+order: 1
+icon: home
 ---
 <p>
-    <span class="marginnote">
-        <img src="https://www.gravatar.com/avatar/07849b3424ed76e574037f8818829138?s=400" alt="Avatar" />
-        The opinions expressed on this website are solely my own and do not reflect the views or opinions of any other
-        party,
-        including my current and former employers.
-        <br /><br />
-        PHP logo by <a href="http://viebrock.ca">Colin Viebrock</a>, under <a
-            href="https://creativecommons.org/licenses/by/4.0/">CC 4.0 BY</a>.
-        Icons made by <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a>, <a
-            href="https://www.flaticon.com/authors/elegant-themes">Elegant Themes</a>, <a
-            href="https://www.freepik.com/">Freepik</a>, and <a
-            href="https://www.flaticon.com/authors/daniel-bruce">Daniel Bruce</a> from <a
-            href="https://www.flaticon.com">Flaticon</a>, under <a
-            href="https://creativecommons.org/licenses/by/3.0/">CC 3.0 BY</a>.
-    </span>
+    Hello and welcome to my small slice of the web!
 </p>
 <p>
-    Hello, my name is Anant Narayanan, and you’ve reached my small slice of the web! I’m a software engineer by trade,
-    and love using technology to solve problems in people’s lives.
-</p>
-<p>
-    If you’re here to download the slides for (or view)
-    a talk I’ve given head over to the <a href="/talks">talks page</a>. Or, you may want to check out some of my
-    <a href="/blog">blog posts</a>. Here are the top 5 posts mixed by recency and popularity:
+    If you’re here to download the slides for (or view) a talk I’ve given head over to the
+    <a href="/talks">talks page</a>. You'll find me occasionally rambling on
+    <a href="/blog">my blog</a>
+    &mdash; here are a few of my recent posts, though the full archive is likely to be more interesting.
 </p>
 <ul class="posts">
-    {% for post in site.posts limit:3 %}
-    <li>
-        &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="date"><em>({{ post.date | date_to_string }})</em></span>
-    </li>
+    {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">
+                <em>({{ post.date | date_to_string }})</em>
+            </span>
+        </li>
     {% endfor %}
-    <li>
-        &raquo; <a href="/2008/07/22/aes-256-using-php-mcrypt/">AES-256 using PHP-mcrypt</a>
-        <span class="date"><em>(22 Jul 2008)</em></span>
-    </li>
-    <li>
-        &raquo; <a href="/2008/06/19/an-alternative-to-shared-libraries/">An alternative to shared libraries</a>
-        <span class="date"><em>(19 Jun 2008)</em></span>
-    </li>
 </ul>
-<p>
-<p>This page also includes brief summaries of my involvement with various software organizations over the years: <a
-        href="#facebook">Facebook</a>, <a href="#ozlo">Ozlo</a>, <a href="#firebase">Firebase</a>, <a
-        href="#mozilla">Mozilla</a>, <a href="#plan9">Plan 9</a>, <a href="#gsoc">Google Summer of Code</a>, <a
-        href="#php">PHP</a>, <a href="#gentoo">Gentoo</a>, and <a href="#gnu">GNU</a>.
-</p>
-
-{% for org in site.orgs reversed %}
-<div class="org">
-    {{ org.output }}
+<div class="org-prelude">
+    <span>
+        I'm an engineering leader by day and have been involved in various software organizations over the years.
+        Here you'll find short summaries of what I’ve worked on &mdash;
+    </span>
+    <ul class="oneline">
+        {% for org in site.orgs reversed %}
+            <li>
+                <a href="#{{ org.key }}">{{ org.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
+{% for org in site.orgs reversed %}
+    <div class="org">
+        {{ org.output }}
+    </div>
 {% endfor %}
