@@ -12,7 +12,7 @@ icon: mic
     and
     <a href="https://speakerdeck.com/anantn">SpeakerDeck</a>.
 </p>
-<div id="talks" class="talks">
+<div id="filter" class="talks">
     {% include filter.html data=site.data.talks %}
     <ul class="talks list">
     {% assign last_year = "" %}
@@ -55,6 +55,3 @@ icon: mic
     {% endfor %}
     </ul>
 </div>
-<script>
-    search("talks");
-</script>

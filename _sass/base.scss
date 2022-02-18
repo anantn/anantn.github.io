@@ -19,7 +19,12 @@ $mobile: 568px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 html,
@@ -183,6 +188,23 @@ ul.oneline {
       content: ".";
       margin-left: -0.1rem;
     }
+  }
+}
+
+div#scroll-top {
+  position: fixed;
+  bottom: 1rem;
+  right: -5rem;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+
+  a {
+    margin: 0;
+    padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  &.active {
+    right: 1rem;
   }
 }
 

@@ -8,7 +8,7 @@ icon: document-text
 <p>
     All my blog posts, in reverse chronological order.
 </p>
-<div id="blog" class="timeline">
+<div id="filter" class="timeline">
     {% include filter.html data=site.posts %}
     <ul class="list">
     {% assign last_year = "" %}
@@ -30,6 +30,3 @@ icon: document-text
     {% endfor %}
 </ul>
 </div>
-<script>
-    search("blog");
-</script>
