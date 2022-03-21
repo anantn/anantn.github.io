@@ -48,7 +48,7 @@ I'm probably missing other things &mdash; but if any of these are important to y
 You're better off upgrading to the paid plan, or waiting for Google to roll out their migration tool.
 
 I'll refer to the old G Suite account as a "workspace" account here on out. The new plain old consumer Google
-account will be called the a "personal" account.
+account will be called the "personal" account.
 
 1. **Start by backing up everything in your workspace account.** You can do this via [Google Takeout](https://takeout.google.com/settings/takeout). It may take a day or two for them to generate the data depending on how much you have. Recommend storing these zip files somewhere safe.
 
@@ -192,7 +192,7 @@ I found no way to migrate these services to the new account. I manually recreate
 
 ## Android Phone
 
-The final step was to switch my Android phone to my personal account. You can login with [multiple Google accounts](https://support.google.com/googleplay/answer/2521798?hl=en) on Android which was helpful. I first moved by WhatsApp backup, by uploading it to my personal account (you can also use [local backup](https://faq.whatsapp.com/android/chats/how-to-restore-your-chat-history)).
+The final step was to switch my Android phone to my personal account. You can login with [multiple Google accounts](https://support.google.com/googleplay/answer/2521798?hl=en) on Android which was helpful. I first moved my WhatsApp backup, by uploading it to my personal account (you can also use [local backup](https://faq.whatsapp.com/android/chats/how-to-restore-your-chat-history)).
 
 After about a week of using my phone this way to make sure all data was moved over, I did a factory reset and logged back in with only my personal account. It's been a couple of weeks using it that way and I haven't had to go back to my workspace account for anything!
 
@@ -202,4 +202,4 @@ Switching from workspace to a personal account was a time consuming yet insightf
 
 While being able to download your data through services like Takeout is a helpful start, we are still a long way from true data portability. As the process above has outlined, it's not just about access to your **raw data** but **metadata** that may be provider specific &mdash; such as comments on photos, filters & labels on your email, and your video uploads and watch history. I dream of a future where you are able to seamlessly store, control, and and move not just your raw data but also all digital interactions that you have had or others have had with content you create.
 
-Google has been working on the [Data Transfer Project](https://datatransferproject.dev/), which Apple recently joined and includes contributions from Facebook, Microsoft, and Twitter. The project has similar goals but currently only works for moving Photos between a select few services. We shall if this initiative will expand to more types of data in the future!
+Google has been working on the [Data Transfer Project](https://datatransferproject.dev/), which Apple recently joined and includes contributions from Facebook, Microsoft, and Twitter. The project has similar goals but currently only works for moving Photos between a select few services. We shall see if this initiative will expand to more types of data in the future!
