@@ -47,9 +47,13 @@ body {
 @mixin codeformat {
   @include mono();
   font-size: 0.9rem;
-  line-height: 1rem;
+  line-height: 1.1rem;
   white-space: pre;
   word-wrap: normal;
+  @media screen and (max-width: $tablet) {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
 }
 
 pre,
