@@ -17,6 +17,6 @@ Last night the entire team was in the office until midnight, polishing and tweak
 
 ![The night before the Firebase public beta](/images/2013/fb-public-beta.jpg)
 
-The real reward, however, is when I talk about Firebase with other developers. The response has been overwhelmingly positive - from veterans I know at Mozilla to folks who are just learning JavaScript at Meetups. The look on their face when they** first understand how Firebase works**, that '_aha!_' moment, is priceless. A few moments later, you can almost hear their mind sprinting through the possibilities of what they could make.
+The real reward, however, is when I talk about Firebase with other developers. The response has been overwhelmingly positive - from veterans I know at Mozilla to folks who are just learning JavaScript at Meetups. The look on their face when they **first understand how Firebase works**, that '_aha!_' moment, is priceless. A few moments later, you can almost hear their mind sprinting through the possibilities of what they could make.
 
 We have an excellent product, and now is the time to spread the word and help people build amazing things with it. 2013 is going to be a fun and challenging year!

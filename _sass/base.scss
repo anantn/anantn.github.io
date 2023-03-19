@@ -4,15 +4,19 @@ $tablet: 767px;
 $mobile: 568px;
 
 @mixin heading {
-  font-family: "Merriweather", "Palatino", "Garamond", serif;
+  font-family: "Roboto Slab", "Palatino", "Garamond", serif;
 }
 
 @mixin content {
-  font-family: "Fira Sans", "Roboto", "Helvetica", sans-serif;
+  font-family: "Inter", "Roboto", "Helvetica", sans-serif;
 }
 
 @mixin mono {
   font-family: "Fira Code", "Courier New", "Courier", monospace;
+}
+
+@mixin blockquote {
+  font-family: "Lora", "Garamond", serif;
 }
 
 * {
@@ -65,6 +69,8 @@ p > code {
   @include codeformat();
   color: $yellow;
   padding: 0.2rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
   border-radius: 0.5rem;
   background-color: var(--bold-bg);
 }
@@ -85,7 +91,7 @@ abbr[title]:hover {
 }
 
 blockquote {
-  @include heading();
+  @include blockquote();
   width: 100%;
   margin: 1rem 0;
   padding: 0.5rem 1rem 0.5em 2rem;
