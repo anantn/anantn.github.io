@@ -24,7 +24,7 @@
     visibility: hidden;
     &:target + a,
     &:target + a + br + em {
-      color: $yellow;
+      color: var(--fragment);
     }
   }
 }

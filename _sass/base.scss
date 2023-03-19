@@ -45,7 +45,6 @@ body {
   line-height: 1.5rem;
   min-height: 100vh;
   word-wrap: break-word;
-  padding-bottom: 5rem;
 }
 
 @mixin codeformat {
@@ -67,7 +66,7 @@ pre code {
 .dark p > code,
 p > code {
   @include codeformat();
-  color: $yellow;
+  color: var(--fragment);
   padding: 0.2rem;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
@@ -88,6 +87,14 @@ abbr {
 
 abbr[title]:hover {
   cursor: help;
+}
+
+.highlight {
+  margin: 0;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  background-color: var(--bold-bg);
+  color: var(--primary-color);
 }
 
 blockquote {
@@ -222,7 +229,7 @@ div#scroll-top {
   border-radius: 14px;
   margin: 0.25rem;
   color: var(--primary-color);
-  background-color: var(--bold-bg);
+  background-color: var(--background-color);
   &:focus {
     background-image: none;
   }
