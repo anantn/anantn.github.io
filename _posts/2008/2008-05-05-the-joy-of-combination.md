@@ -21,17 +21,17 @@ Writing the code for this part turned out to be a little tricky, since: a) Linux
 
 So, till now, each of the two modules were working as expected when tested individually. I tested the first module by assembling a program using Linux conventions in Plan 9:
 
-{% highlight gas %}
+{% highlight nasm %}
 DATA string<>+0(SB)/8, $"Linux\n\z\z"
 GLOBL string<>+0(SB), $8
 
-TEXT \_main+0(SB), 1, \$0
+TEXT _main+0(SB), 1, \$0
 
 # Arguments for write(2)
 
 MOVL $1, BX
 MOVL $string<>+0(SB), CX
-MOVL \$7, DX
+MOVL $7, DX
 
 # Number for sys_write is 4
 
@@ -40,7 +40,7 @@ INT  $0x80
 
 # Argument for exit(2)
 
-MOVL \$0, BX
+MOVL $0, BX
 
 # Number for sys_exit is 1
 
@@ -50,15 +50,15 @@ INT  $0x80
 
 After running `8a hello.s; 8l hello.8`, copying the executable to Linux and running it, it worked. The other module, I tested by writing a program for [nasm](http://replay.waybackmachine.org/20080603015642/http://nasm.sourceforge.net/) in Linux, but this time using Plan 9 conventions:
 
-{% highlight gas %}
+{% highlight nasm %}
 section .data
 hello: db 'Hello World!', 10
 hlen: equ \$-hello
 
 section .text
-global \_start
+global _start
 
-\_start: # 4 arguments for plan 9's pwrite call # last one is vlong (8 bytes)
+_start: # 4 arguments for plan 9's pwrite call # last one is vlong (8 bytes)
 push 1
 push hello
 push hlen
@@ -84,7 +84,7 @@ P9: Padding 4b19 bytes from 4af9
 Done! Output written to linux.out
 $ ./linux.out
 Segmentation fault
-\$ dmesg | tail -n 1
+$ dmesg | tail -n 1
 linux.out[7762]: segfault at c0000000 eip 00001051 esp bfffffb8 error 5
 {% endhighlight %}
 
