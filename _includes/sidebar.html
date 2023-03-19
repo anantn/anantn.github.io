@@ -38,12 +38,12 @@
             {% if pg.name == page.name %}
                 {% assign button_class = "pure-button-active" %}
             {% endif %}
-            {% if page.layout == "post" and pg.title == "Blog" %}
+            {% if page.layout == "post" and pg.buttontitle == "Blog" %}
                 {% assign button_class = "pure-button-active" %}
             {% endif %}
             <a class="nav-link pure-button {{ button_class }}" href="{{ pg.url }}">
                 <ion-icon name="{{ pg.icon }}"></ion-icon>
-                {{ pg.title }}</a>
+                {{ pg.buttontitle }}</a>
         {% endif %}
     {% endfor %}
 </nav>
