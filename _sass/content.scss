@@ -1,5 +1,4 @@
 div.toc {
-  background-color: var(--bold-bg);
   margin-left: 2rem;
   
   @media screen and (max-width: $desktop) {
@@ -30,6 +29,7 @@ div.content {
   padding-bottom: 5rem;
   max-width: $tablet;
   min-height: 100vh;
+  background-color: var(--background-color);
 
   @media screen and (max-width: $tablet) {
     padding: 1rem;
