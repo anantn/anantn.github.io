@@ -1,0 +1,62 @@
+$nord-polar-night-0: #2e3440;
+$nord-polar-night-1: #3b4252;
+$nord-polar-night-2: #434c5e;
+$nord-polar-night-3: #4c566a;
+$nord-snow-storm-0: #d8dee9;
+$nord-snow-storm-1: #e5e9f0;
+$nord-snow-storm-2: #eceff4;
+$nord-frost-0: #8fbcbb;
+$nord-frost-1: #88c0d0;
+$nord-frost-2: #81a1c1;
+$nord-frost-3: #5e81ac;
+$nord-aurora-0: #bf616a;
+$nord-aurora-1: #d08770;
+$nord-aurora-2: #ebcb8b;
+$nord-aurora-3: #a3be8c;
+$nord-aurora-4: #b48ead;
+$nord-3-bright: #616e87;
+
+:root {
+  --primary-color: #{$nord-polar-night-1};
+  --background-color: #{$nord-snow-storm-2};
+  --bold-bg: #{$nord-snow-storm-1};
+  --bold-color: #{$nord-polar-night-0};
+  --contrast: #{$nord-polar-night-2};
+  --secondary: #{$nord-polar-night-3};
+  --hsl-bg: #{$nord-frost-1};
+  --fragment: #{$nord-aurora-2};
+}
+
+.dark {
+  --primary-color: #{$nord-snow-storm-0};
+  --background-color: #{$nord-polar-night-0};
+  --bold-bg: #{$nord-polar-night-1};
+  --bold-color: #{$nord-snow-storm-2};
+  --contrast: #{$nord-snow-storm-1};
+  --secondary: #{$nord-polar-night-2};
+  --hsl-bg: #{$nord-polar-night-3};
+  --fragment: #{$nord-aurora-2};
+}
+
+html,
+.dark {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  * {
+    color: var(--primary-color);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--bold-color);
+    border-color: var(--primary-color);
+  }
+  a,
+  a:active,
+  a:visited {
+    color: var(--bold-color);
+  }
+}
