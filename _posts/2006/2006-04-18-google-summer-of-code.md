@@ -27,7 +27,7 @@ like to work with. Every accepted student will be assigned a mentor and the
 coding starts 23rd May!
 
 Google is offering $5000 as a stipend for every accepted project. $4500 goes
-to the student and \$500 to the mentoring organization. But that's only if you
+to the student and $500 to the mentoring organization. But that's only if you
 successfully complete your project!
 
 Last time, Google accepted around 400 students last year and they say the

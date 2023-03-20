@@ -13,7 +13,7 @@ I usually never pay attention to the auto complete suggestions offered by Google
 
 !["How To" in India](/images/2009/1_in.png)
 
-\#1 certainly explains India's growing population. We're also quite obsessive about learning proper English (Outsour Singh is desperately looking to land that call center job) and hacking Orkut accounts. Now, for the Netherlands:
+#1 certainly explains India's growing population. We're also quite obsessive about learning proper English (Outsour Singh is desperately looking to land that call center job) and hacking Orkut accounts. Now, for the Netherlands:
 
 !["How To" in the Netherlands](/images/2009/2_nl.png)
 

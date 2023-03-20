@@ -25,7 +25,7 @@ So, till now, each of the two modules were working as expected when tested indi
 DATA string<>+0(SB)/8, $"Linux\n\z\z"
 GLOBL string<>+0(SB), $8
 
-TEXT _main+0(SB), 1, \$0
+TEXT _main+0(SB), 1, $0
 
 # Arguments for write(2)
 
@@ -53,7 +53,7 @@ After running `8a hello.s; 8l hello.8`, copying the executable to Linux and runn
 {% highlight nasm %}
 section .data
 hello: db 'Hello World!', 10
-hlen: equ \$-hello
+hlen: equ $-hello
 
 section .text
 global _start
