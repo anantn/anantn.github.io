@@ -4,7 +4,7 @@ comments: true
 layout: post
 slug: gsuite-migration
 title: Migrating a G Suite Legacy Account
-categories: [favorite]
+categories: [google, favorite]
 ---
 
 Google [recently announced](https://9to5google.com/2022/01/19/g-suite-legacy-free-edition/)

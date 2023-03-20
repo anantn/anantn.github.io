@@ -16,43 +16,50 @@ icon: mic
 <div id="filter" class="talks">
     {% include filter.html data=site.data.talks %}
     <ul class="talks list">
-    {% assign last_year = "" %}
-    {% for talk in site.data.talks %}
+        {% assign last_year = "" %}
+        {% for talk in site.data.talks %}
         {% capture year %}{{talk.year}}{% endcapture %}
         {% if year != last_year %}
-            {% assign last_year = year %}
-            <span class="year">{{year}}</span>
+        {% assign last_year = year %}
+        <span class="year">{{year}}</span>
         {% endif %}
         <li class="talk" data-categories="{{ talk.categories |  join: " " }}">
             <span class="month">{{ talk.month | slice: 0, 3 }}</span>
             <div class="talk">
                 <a class="anchor" name="{{ talk.id }}"></a>
                 {% if talk.url %}
+                <span>
                     <a href="{{ talk.url }}" class="list-item">{{ talk.name }}</a>
+                    <span class="date">({{ talk.month }}, {{ year }})</span>
+                </span>
                 {% else if talk.urls %}
-                    <span>{{ talk.name }}</span><br/>
-                    <ul class="oneline">
-                        {% for u in talk.urls %}
-                            <li>
-                                <a href="{{ u.url }}" class="list-item">[{{ u.name }}]</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                <span>
+                    <span>{{ talk.name }}</span>
+                    <span class="date">({{ talk.month }}, {{ year }})</span><br />
+                </span>
+                <ul class="oneline">
+                    {% for u in talk.urls %}
+                    <li>
+                        <a href="{{ u.url }}" class="list-item">[{{ u.name }}]</a>
+                    </li>
+                    {% endfor %}
+                </ul>
                 {% endif %}
-                <br/>
+                <br />
                 <em>{{ talk.location }}</em>
                 {% if talk.video %}
-                    <br/>
-                    {% if talk.video contains "youtube" %}
-                        <iframe class="video" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
-                    {% else if talk.video contains "vimeo" %}
-                        <iframe src="{{ talk.video }}" class="video vimeo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    {% else %}
-                        <iframe src="{{ talk.video }}" class="video"></iframe>
-                    {% endif %}
+                <br />
+                {% if talk.video contains "youtube" %}
+                <iframe class="video" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+                {% else if talk.video contains "vimeo" %}
+                <iframe src="{{ talk.video }}" class="video vimeo" frameborder="0" webkitallowfullscreen
+                    mozallowfullscreen allowfullscreen></iframe>
+                {% else %}
+                <iframe src="{{ talk.video }}" class="video"></iframe>
+                {% endif %}
                 {% endif %}
             </div>
         </li>
-    {% endfor %}
+        {% endfor %}
     </ul>
 </div>
