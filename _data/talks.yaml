@@ -4,7 +4,7 @@
   name: "Enterprise Scale Knowledge Graphs"
   url: https://proness.kix.in/talks/iswc18-kg.pdf
   location: <a href="http://iswc2018.semanticweb.org/panel-enterprise-scale-knowledge-graphs/">ISWC</a>, Monterey
-  categories: ["facebook"]
+  categories: ["ai", "knowledge graph", "facebook"]
 
 - id: "2017-assistant"
   year: 2017
@@ -12,7 +12,7 @@
   name: "Building an Intelligent Assistant"
   url: https://proness.kix.in/talks/devweek17-ozlo.pdf
   location: DeveloperWeek, New York
-  categories: ["ozlo"]
+  categories: ["ai", "ozlo"]
 
 - id: "2014-jsconf"
   year: 2014
@@ -21,7 +21,7 @@
   url: https://proness.kix.in/talks/ngconf14-firebase.pdf
   location: ng-conf, Salt Lake City
   video: https://www.youtube.com/embed/e4yUTkva_FM
-  categories: ["firebase"]
+  categories: ["firebase", "javascript"]
 
 - id: "2013-jsapi"
   year: 2013
@@ -30,7 +30,7 @@
   url: https://proness.kix.in/talks/devconf13-browsers/
   location: HTML5DevConf, San Francisco
   video: https://www.youtube.com/embed/Jo4DttCcL7w
-  categories: ["firebase"]
+  categories: ["firebase", "javascript"]
 
 - id: "2013-message2"
   year: 2013
@@ -48,7 +48,7 @@
   url: https://proness.kix.in/talks/angular13-firebase/
   location: AngularJS Meetup, Mountain View
   video: https://www.youtube.com/embed/C7ZI7z7qnHU
-  categories: ["firebase"]
+  categories: ["firebase", "javascript"]
 
 - id: "2013-webrtc2"
   year: 2013
@@ -56,7 +56,7 @@
   name: "WebRTC: A Practical Introduction"
   url: https://proness.kix.in/talks/fluent13-webrtc/
   location: FluentConf, San Francisco
-  categories: ["mozilla"]
+  categories: ["mozilla", "webrtc"]
 
 - id: "2013-message1"
   year: 2013
@@ -80,7 +80,7 @@
   name: "WebRTC: An Overview"
   url: https://proness.kix.in/talks/jive13-webrtc/
   location: Jive, San Francisco
-  categories: ["mozilla"]
+  categories: ["mozilla", "webrtc"]
 
 - id: "2013-serverless"
   year: 2013
@@ -88,7 +88,7 @@
   name: "Server-less Apps"
   url: https://proness.kix.in/talks/denverjs13-serverless.pdf
   location: DenverJS, Denver
-  categories: ["firebase", "mozilla"]
+  categories: ["firebase", "mozilla", "javascript"]
 
 - id: "2012-webrtc-error"
   year: 2012
@@ -96,7 +96,7 @@
   name: "Error Handling in WebRTC"
   url: https://proness.kix.in/talks/tpac12-webrtc.pdf
   location: W3C TPAC, Lyon
-  categories: ["mozilla"]
+  categories: ["mozilla", "webrtc"]
 
 - id: "2012-webrtc-demystified"
   year: 2012
@@ -104,7 +104,7 @@
   name: "WebRTC Demystified"
   url: https://proness.kix.in/talks/mozcamp12-webrtc.pdf
   location: MozCamp EU, Warsaw
-  categories: ["mozilla"]
+  categories: ["mozilla", "webrtc"]
 
 - id: "2012-firefoxos"
   year: 2012
@@ -120,7 +120,7 @@
   name: "WebRTC: User Security &amp; Privacy"
   url: https://proness.kix.in/talks/tpac11-webrtc.pdf
   location: W3C TPAC, San Jose
-  categories: ["mozilla"]
+  categories: ["mozilla", "webrtc"]
 
 - id: "2011-firefox-architecture"
   year: 2011
