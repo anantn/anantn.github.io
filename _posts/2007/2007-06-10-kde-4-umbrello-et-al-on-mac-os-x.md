@@ -13,7 +13,7 @@ I needed a decent [UML](http://replay.waybackmachine.org/20070713072718/http://e
 
 Check out this yummy screenshot (click for the full version):
 
-![Umbrello on Mac](/images/2007/umbrello-mac.png)
+[![Umbrello on Mac](/images/2007/umbrello-mac.png)](/images/2007/umbrello-mac.png)
 
 That's Umbrello on Mac OS X, complete with an Apple style menu and a Dock Icon! Read on for compilation instructions…
 

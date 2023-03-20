@@ -13,13 +13,13 @@ In the [last](http://replay.waybackmachine.org/20070630070830/http://summerofcod
 
 {% highlight cpp %}
 struct Ixp9Req {
-Ixp9Conn *conn;
-Fid *fid;
-Fid *newfid;
-Ixp9Req *oldreq;
-Fcall ifcall;
-Fcall ofcall;
-void *aux;
+    Ixp9Conn *conn;
+    Fid *fid;
+    Fid *newfid;
+    Ixp9Req *oldreq;
+    Fcall ifcall;
+    Fcall ofcall;
+    void *aux;
 };
 {% endhighlight %}
 
@@ -34,9 +34,9 @@ Now how do we wrap this functionality in PHP land? The `aux` functionality must 
 
 {% highlight cpp %}
 typedef struct _IxpAux {
-IxpCallback *cb;
-zval *aux;
-int type;
+    IxpCallback *cb;
+    zval *aux;
+    int type;
 } IxpAux;
 {% endhighlight %}
 
