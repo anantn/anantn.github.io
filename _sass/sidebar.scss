@@ -157,12 +157,14 @@
     margin-top: 1rem;
     @media screen and (max-width: $tablet) {
       margin-top: 0;
+      font-size: 0.9rem;
       flex-direction: row;
     }
     .nav-link {
       display: flex;
       ion-icon {
         margin-right: 0.25em;
+        vertical-align: middle;
       }
     }
   }

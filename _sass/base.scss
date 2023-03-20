@@ -41,8 +41,8 @@ textarea,
 }
 
 body {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
   min-height: 100vh;
   word-wrap: break-word;
 }
@@ -214,6 +214,7 @@ div#scroll-top {
   a {
     margin: 0;
     padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+    background-color: $accented-black;
   }
 
   &.active {

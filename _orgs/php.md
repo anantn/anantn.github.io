@@ -4,6 +4,7 @@ date: 2006-01-03
 key: php
 name: PHP
 years: 2006-2008
+short: PHP-GTK2, Documentation
 ---
 [PHP-GTK](http://gtk.php.net/) was my first foray into open source. It initially caught my eye while trying to build a UI application for my university, and I eventually ended up contributing tutorials and documentation for the project.
 

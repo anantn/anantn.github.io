@@ -4,6 +4,7 @@ date: 2006-01-05
 key: plan9
 name: Plan 9
 years: 2006-2010
+short: Glendix, πp, 9p
 ---
 
 I was enraptured by Plan 9 ever since I first heard of it: the idea of an operating system built for the networked world, and designed by the creators of Unix (who had surely learned a lesson or two from it), was too enthralling to ignore. I host a [page on this site](/plan9) with more information and links if you're interested. Here is another [short write-up](http://www.catb.org/esr/writings/taoup/html/plan9.html) on Plan 9 by esr, the article also includes links to a little bit of history regarding UTF-8, which was invented for the OS.
