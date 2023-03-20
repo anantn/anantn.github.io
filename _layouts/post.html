@@ -5,7 +5,7 @@ layout: default
     <header class="post-header">
         <div class="post-title">{{ page.title }}</div>
         <div class="post-date">
-            {{ page.date | date_to_string }}
+            {{ page.date | date_to_string }} • {% include time.html content=content %}
         </div>
     </header>
     <div class="post-content">
