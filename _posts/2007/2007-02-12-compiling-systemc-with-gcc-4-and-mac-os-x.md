@@ -6,7 +6,7 @@ layout: post
 slug: compiling-systemc-with-gcc-4-and-mac-os-x
 title: Compiling SystemC with GCC 4 (and Mac OS X)
 wordpress_id: 1019
-category: favorite
+categories: [linux, favorite]
 ---
 
 I'm having to use [SystemC](http://replay.waybackmachine.org/20070219120114/http://www.systemc.org/) for a project involving simulation of [Network-On-Chip](http://replay.waybackmachine.org/20070219120114/http://en.wikipedia.org/wiki/Network_On_Chip) applications. Turned out that it didn't quite compile cleanly on my GNU/Linux machine:

@@ -2,7 +2,7 @@
 layout: post
 slug: amazon-echo
 title: Amazon Echo
-category: favorite
+categories: [tech, favorite]
 ---
 
 I received my [Amazon Echo](http://www.amazon.com/oc/echo/) recently. I ordered it merely as a curiosity and to generally stay aware of industry trends. But after just a few days of using it at home; I love it enough to prompt dusting off this blog after almost two years of no posts!

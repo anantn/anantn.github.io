@@ -6,7 +6,7 @@ layout: post
 slug: so-are-you-on-facebook
 title: So, are you on Facebook?
 wordpress_id: 704
-category: favorite
+categories: [tech, favorite]
 ---
 
 This post is entirely inspired by David Ascher's talk on "Messaging with Mozilla Values" at the Mozilla summit, and is also a result of me deciding not to simply let blog posts sit as drafts forever (looks like I haven't made a post in a while!)

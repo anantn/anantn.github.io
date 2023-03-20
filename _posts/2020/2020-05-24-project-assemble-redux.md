@@ -4,7 +4,7 @@ comments: true
 layout: post
 slug: project-assemble-redux
 title: Project Assemble Redux
-categories: [favorite]
+categories: [tech, favorite]
 ---
 
 Last time I [posted](/2011/02/02/project-assemble/) about building PCs was in 2011. [That PC](https://proness.kix.in/misc/dream_comp.html) lasted me quite a while - 6 years - at which point it got an upgrade that I didn't [write about](https://proness.kix.in/misc/dream_comp2.html) (Intel 6700k on an Asus Z170, with a GTX 970). That build certainly held its own and even ran [Half-Life: Alyx](https://www.half-life.com/en/alyx/) on a Rift just fine. But, the graphics card in particular is starting to show its age, and hey, with everyone stuck at home I figured it was time for another upgrade.

@@ -6,7 +6,7 @@ layout: post
 slug: suspicion-of-religion
 title: Suspicion of Religion
 wordpress_id: 722
-category: favorite
+categories: [favorite]
 ---
 
 I usually avoid debates on religion with anyone except with people I know well for fear of it turning into a heated argument, which often happens when dealing with such a topic. I'm going to make an exception and make a post about it because I read something recently that has changed the way I approach religion.

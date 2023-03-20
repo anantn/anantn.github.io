@@ -6,7 +6,7 @@ layout: post
 slug: ssh-http-multiplexer
 title: SSH-HTTP Multiplexer
 wordpress_id: 315
-category: favorite
+categories: [linux, favorite]
 ---
 
 One of my friends wanted to run a HTTP server on his office machine, but the network it is connected to blocks all ports except 22 (SSH). Sure, he could run Apache on port 22 but that would mean he could no longer login remotely.

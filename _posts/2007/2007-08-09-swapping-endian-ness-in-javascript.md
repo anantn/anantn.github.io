@@ -6,7 +6,7 @@ layout: post
 slug: swapping-endian-ness-in-javascript
 title: Swapping Endian-ness in JavaScript
 wordpress_id: 1063
-category: favorite
+categories: [javascript, favorite]
 ---
 
 My [mentor](http://replay.waybackmachine.org/20070818155809/http://www.maht0x0r.net/) came up with two interesting ways of swapping [endian-ness](http://replay.waybackmachine.org/20070818155809/http://en.wikipedia.org/wiki/Endian) on JavaScript. The first one he proposed was based on what was "usually done in Plan 9", something along the lines of:
