@@ -6,7 +6,7 @@ layout: post
 slug: going-retro
 title: Going retro
 wordpress_id: 1124
-category: favorite
+categories: [mac, favorite]
 ---
 
 I've been looking for some really light games, ones that don't suck up too much of time and are yet fun to play. I've already played the standard games you usually play on Linux: [TuxRacer](http://replay.waybackmachine.org/20080603015642/http://tuxracer.sourceforge.net/), [BZFlag](http://replay.waybackmachine.org/20080603015642/http://bzflag.org/), [Neverball](http://replay.waybackmachine.org/20080603015642/http://icculus.org/neverball/), [Armagetron AD](http://replay.waybackmachine.org/20080603015642/http://www.armagetronad.net/), [Frozen Bubble](http://replay.waybackmachine.org/20080603015642/http://www.frozen-bubble.org/), [Battle for Wesnoth,](http://replay.waybackmachine.org/20080603015642/http://www.wesnoth.org/) [Pingus](http://replay.waybackmachine.org/20080603015642/http://pingus.seul.org/); and [DotA](http://replay.waybackmachine.org/20080603015642/http://en.wikipedia.org/wiki/Defense_of_the_Ancients) was getting a little too heavy. I highly recommend these games if you haven't played them, by the way.

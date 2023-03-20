@@ -6,7 +6,7 @@ layout: post
 slug: kde-4-umbrello-et-al-on-mac-os-x
 title: 'KDE 4, Umbrello et. al. on Mac OS X!'
 wordpress_id: 1051
-category: favorite
+categories: [mac, favorite]
 ---
 
 I needed a decent [UML](http://replay.waybackmachine.org/20070713072718/http://en.wikipedia.org/wiki/UML) modeller that was capable of converting my class diagrams into PHP 5 code. I usually use [ArgoUML](http://replay.waybackmachine.org/20070713072718/http://argouml.tigris.org/) on my Mac; it's a great product but lacks the code-generation feature that I needed. (It does generate C++ and Java code though). (EDIT: As noted in comment below, ArgoUML indeed supports PHP code generation as a seperate module!). So I rebooted into Linux and emerged [Umbrello](http://replay.waybackmachine.org/20070713072718/http://uml.sourceforge.net/). However, I had heard about the Qt/Mac edition, which is essentially Qt4 but with a native Mac interface. I was very tempted to try this out - KDE 4 without X with a native Mac look is absolutely exciting!

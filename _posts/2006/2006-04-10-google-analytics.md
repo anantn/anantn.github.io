@@ -6,7 +6,7 @@ layout: post
 slug: google-analytics
 title: Google Analytics
 wordpress_id: 63
-category: favorite
+categories: [google, favorite]
 ---
 
 I was lucky enough to recieve an invitation code for Google's new

@@ -51,12 +51,8 @@ body {
   @include mono();
   font-size: 0.9rem;
   line-height: 1.1rem;
-  white-space: pre;
-  word-wrap: normal;
-  @media screen and (max-width: $tablet) {
-    word-wrap: break-word;
-    white-space: pre-wrap;
-  }
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 pre,

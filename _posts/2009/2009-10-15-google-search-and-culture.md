@@ -6,7 +6,7 @@ layout: post
 slug: google-search-and-culture
 title: Google Search and Culture
 wordpress_id: 535
-category: favorite
+categories: [google, favorite]
 ---
 
 I usually never pay attention to the auto complete suggestions offered by Google, until now, when I found they can be quite amusing. What's even more fun though, is repeating a search across different country specific sites, to get a idea of what the people of that nation are most worried about. Here's a sampling, let's start with India:

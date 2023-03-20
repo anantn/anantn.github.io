@@ -152,6 +152,7 @@
   name: "An Overview of Distributed Debugging"
   url: https://proness.kix.in/talks/atds09-ddb.pdf
   location: Vrije Universiteit, Amsterdam
+  categories: ["systems"]
 
 - id: "2009-botnet"
   year: 2009
@@ -159,6 +160,7 @@
   name: "A Brief Incursion into Botnet Detection"
   url: https://proness.kix.in/talks/atns09-botnet.pdf
   location: Vrije Universiteit, Amsterdam
+  categories: ["systems"]
 
 - id: "2009-weave"
   year: 2009
@@ -182,6 +184,7 @@
   name: "Distributed File Systems: An Overview"
   url: https://proness.kix.in/talks/cgc09-dfs.pdf
   location: Vrije Universiteit, Amsterdam
+  categories: ["systems"]
 
 - id: "2008-mozilla-labs"
   year: 2008
@@ -221,6 +224,7 @@
   name: "What is FOSS?"
   url: https://proness.kix.in/talks/blitz08-foss.pdf
   location: Blitzschlag, Jaipur
+  categories: ["foss"]
 
 - id: "2007-gentoo"
   year: 2007
@@ -268,6 +272,7 @@
     - name: cake+
       url: https://proness.kix.in/talks/itr07-more-cake.pdf
   location: MNIT, Jaipur
+  categories: ["foss"]
 
 - id: "2007-plan91"
   year: 2007
@@ -283,6 +288,7 @@
   name: "Extending Python with ctypes"
   url: https://proness.kix.in/talks/gnunify07-ctypes.pdf
   location: Gnunify, Pune
+  categories: ["python", "foss"]
 
 - year: 2006
   month: January
@@ -297,3 +303,4 @@
     - name: part4
       url: https://proness.kix.in/talks/webapps/part4.html
   location: Freedel, New Delhi
+  categories: ["javascript", "foss"]

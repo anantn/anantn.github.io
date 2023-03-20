@@ -181,4 +181,8 @@ div.footnotes {
     height: auto;
     display: inline-block;
   }
+  table > thead {
+    color: var(--primary-color);
+    background-color: var(--bold-bg);
+  }
 }

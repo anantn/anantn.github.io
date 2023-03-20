@@ -6,7 +6,7 @@ layout: post
 slug: fiddling-with-binary-in-javascript
 title: Fiddling with Binary in JavaScript
 wordpress_id: 1068
-category: favorite
+categories: [javascript, favorite]
 ---
 
 Since ordinary JavaScript cannot directly communicate with a 9P server (over TCP), we decided to go in for a 2-tier approach: A script on the client generates a 9P message which is sent to a server via an XMLHttpRequest. The server then forwards the message to the actual 9P server. Messages from the 9P server to the client are sent in a similar fashion.

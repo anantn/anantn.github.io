@@ -6,22 +6,24 @@ layout: post
 slug: ajax-toolkit-shootout
 title: AJAX Toolkit Shootout
 wordpress_id: 16
-category: favorite
+categories: [javascript, favorite]
 ---
 
 [Stuart](http://www.stuartherbert.com/) inspired me to do an objective
 evaluation of all the toolkits out there and then make a choice. So, here it
 is, my personal evaluation and reasons for choosing what I chose!
 
-<table border="1" width="100%">
-<tbody>
+<table width="100%" class="pure-table pure-table-bordered">
+<thead>
   <tr>
-    <td><strong>Toolkit</strong></td>
-    <td><strong>License</strong></td>
-    <td><strong>Type</strong></td>
-    <td><strong>Pros</strong></td>
-    <td><strong>Cons</strong></td>
+    <th>Toolkit</th>
+    <th>License</th>
+    <th>Type</th>
+    <th>Pros</th>
+    <th>Cons</th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td><a href="http://code.google.com/webtoolkit/">Google Web toolkit</a></td>
     <td>Custom</td>
