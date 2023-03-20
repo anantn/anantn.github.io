@@ -173,4 +173,12 @@ div.footnotes {
       text-align: center;
     }
   }
+  a:has(img) {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
 }
