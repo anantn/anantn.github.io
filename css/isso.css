@@ -168,7 +168,7 @@
   display: block;
 }
 .isso-postbox > .form-wrapper > .auth-section .post-action:nth-last-child(2) {
-  /*display: none;*/
+  display: none;
 }
 .isso-postbox > .form-wrapper > .auth-section .post-action:last-child {
   /*display: none;*/
