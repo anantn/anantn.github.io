@@ -74,6 +74,61 @@ div.content {
   }
 }
 
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+
+  a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5rem;
+    background-color: var(--bold-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 0.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+
+    @media screen and (max-width: $tablet) {
+      margin: 0.5rem;
+    }
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image {
+    height: 2.5rem;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    margin: 0.2rem;
+    color: var(--contrast);
+  }
+  
+  .card-text {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
 div.footnotes {
   padding-left: 0;
   border: 1px solid var(--fragment);
@@ -103,6 +158,21 @@ div.footnotes {
 .org-prelude {
   padding-bottom: 2rem;
   border-bottom: 1px dotted var(--primary-color);
+
+  ul {
+    padding-left: 0.2rem;
+  }
+  
+  li {
+    margin: 1rem;
+    margin-left: 0;
+    list-style-type: none;
+    img {
+      height: 1rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
 }
 
 .org {
@@ -115,7 +185,7 @@ div.footnotes {
 
     a {
       position: relative;
-      top: -25px;
+      top: -35px;
     }
 
     h2 {

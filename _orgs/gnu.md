@@ -4,6 +4,7 @@ date: 2006-01-01
 key: gnu
 name: GNU
 years: 2006-2007
+short: Parted, Signal Handling
 ---
 After contributing code for proper signal handling in [GNU Parted](https://www.gnu.org/software/parted/), I was briefly the maintainer of the project for a little over a year. Parted is a partition manager and is widely used on most Linux distributions, notably in the default installer for Ubuntu.
 

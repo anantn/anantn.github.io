@@ -6,13 +6,14 @@ order: 1
 icon: home
 ---
 <p>
-    Hello and welcome to my small slice of the web!
+    Hello and welcome to my small slice of the web! I'm passionate about technology and teams that build great software.
 </p>
+
 <p>
-    If you’re here to download the slides for (or view) a talk I’ve given head over to the
-    <a href="/talks">talks page</a>. You'll find me occasionally rambling on
-    <a href="/blog">my blog</a>
-    &mdash; here are a few of my recent posts, though the full archive is likely to be more interesting.
+    I love sharing technical knowledge through public speaking and writing.
+    Check out my 🗣️ <a href="/talks">talks page</a> which include slides (and videos when available) of all my
+    speaking engagements. The 📝 <a href="/blog">blog index</a> contains archives of all my posts since 2008 &mdash;
+    here are the 5 most recent:
 </p>
 <ul class="posts">
     {% for post in site.posts limit:5 %}
@@ -24,21 +25,49 @@ icon: home
     </li>
     {% endfor %}
 </ul>
-<div class="org-prelude">
-    <span>
-        I'm an engineering leader by day and have been involved in various software organizations over the years.
-        Here you'll find short summaries of what I’ve worked on &mdash;
-    </span>
-    <ul class="oneline">
-        {% for org in site.orgs reversed %}
-        <li>
-            <a href="#{{ org.key }}">{{ org.name }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+<p>
+    I'm currently an Engineering Director at Meta, building product experiences for the next generation of smart
+    glasses. Prior to Facebook, I worked at Ozlo, Firebase, and Mozilla &mdash; working on AI assistants, knowledge
+    graphs, developer tools, WebRTC, and more. Read all about it:
+</p>
+<div class="pure-g cards">
+    {% for org in site.orgs reversed %}
+    {% if org.company %}
+    <div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 card">
+        <a href="/about#{{ org.key }}">
+            <div>
+                <img src="/images/projects/{{ org.key }}.webp" alt="{{ org.name }}" class="card-image">
+                <h3 class="card-title">{{ org.name }}</h3>
+                <!--
+                <p class="card-text">
+                    {% assign lines = org.short | split: ", " %}
+                    {% for line in lines %}
+                    {{ line }}<br>
+                    {% endfor %}
+                </p>
+                -->
+            </div>
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
 </div>
-{% for org in site.orgs reversed %}
-<div class="org">
-    {{ org.output }}
+<p>
+    Aside from my professional work, I am an avid advocate and contributor to the open source community.
+    Over the years I've been involved projects like GNU, Gentoo, PHP, Firefox, and Plan 9.
+    Learn more:
+</p>
+<div class="pure-g cards">
+    {% for org in site.orgs reversed %}
+    {% if org.company != true %}
+    <div class="pure-u-1-4 pure-u-md-1-4 pure-u-lg-1-6 card">
+        <a href="/about#{{ org.key }}">
+            <div>
+                <img src="/images/projects/{{ org.key }}.webp" alt="{{ org.name }}" class="card-image">
+                <h3 class="card-title">{{ org.name }}</h3>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
 </div>
-{% endfor %}

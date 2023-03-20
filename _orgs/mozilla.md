@@ -4,6 +4,8 @@ date: 2008-01-01
 key: mozilla
 name: Mozilla
 years: 2008-2012
+short: WebRTC, Firefox Sync, App Marketplace
+company: true
 ---
 
 Mozilla holds a special place in my heart: they were my gateway into Silicon Valley. I worked on a number of Mozilla projects in various capacities, first as a volunteer, then as an intern, and finally as a full-time employee for [Mozilla Labs](https://labs.mozilla.org/).
