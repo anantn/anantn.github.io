@@ -16,12 +16,12 @@ icon: home
 </p>
 <ul class="posts">
     {% for post in site.posts limit:5 %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <span class="date">
-                <em>({{ post.date | date_to_string }})</em>
-            </span>
-        </li>
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="date">
+            ({{ post.date | date_to_string }})
+        </span>
+    </li>
     {% endfor %}
 </ul>
 <div class="org-prelude">
@@ -31,14 +31,14 @@ icon: home
     </span>
     <ul class="oneline">
         {% for org in site.orgs reversed %}
-            <li>
-                <a href="#{{ org.key }}">{{ org.name }}</a>
-            </li>
+        <li>
+            <a href="#{{ org.key }}">{{ org.name }}</a>
+        </li>
         {% endfor %}
     </ul>
 </div>
 {% for org in site.orgs reversed %}
-    <div class="org">
-        {{ org.output }}
-    </div>
+<div class="org">
+    {{ org.output }}
+</div>
 {% endfor %}

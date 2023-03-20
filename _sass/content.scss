@@ -147,12 +147,12 @@ div.footnotes {
   }
 }
 
-.posts {
-  .date {
-    @include mono();
-    font-size: 0.7rem;
-  }
+.date {
+  @include mono();
+  font-style: italic;
+  font-size: 0.7rem;
 }
+
 .post {
   padding-top: 1rem;
   padding-bottom: 2rem;

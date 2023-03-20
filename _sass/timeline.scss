@@ -122,3 +122,21 @@
     }
   }
 }
+
+// Slightly clunky hiding/showing of dates, different for talks & blog
+// because of interaction with the left hand side timeline
+div#filter > ul.list > li > div > span.date {
+  display: none;
+}
+
+div#filter.filtered > ul.list > li > div span.date {
+  display: inline-block;
+}
+
+div#filter > ul.talks > li > div > span > span.date {
+  display: none;
+}
+
+div#filter.filtered > ul.talks > li > div > span > span.date {
+  display: inline-block;
+}

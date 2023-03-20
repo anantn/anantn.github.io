@@ -12,22 +12,22 @@ icon: document-text
 <div id="filter" class="timeline">
     {% include filter.html data=site.posts %}
     <ul class="list">
-    {% assign last_year = "" %}
-    {% for post in site.posts %}
+        {% assign last_year = "" %}
+        {% for post in site.posts %}
         {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
         {% if year != last_year %}
-            {% assign last_year = year %}
-            <span class="year">{{year}}</span>
+        {% assign last_year = year %}
+        <span class="year">{{year}}</span>
         {% endif %}
         <li data-categories="{{ post.categories | join: " " }}">
             <div>
                 <span class="day">{{ post.date | date: "%d" }}</span>
                 <span class="month">{{ post.date | date: "%b" }}</span>
-                <a href="{{ post.url }}">
-                    {{ post.title }}
-                </a>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <span class="date">({{ post.date | date: "%b %d %Y" }})</span>
+                </span>
             </div>
         </li>
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
 </div>
