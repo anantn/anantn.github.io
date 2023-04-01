@@ -10,4 +10,4 @@ wordpress_id: 504
 
 [Very cool](http://blog.mozilla.com/sean/2009/07/17/250/).
 
-![Mozillaaaa](/images/2009/mozillaaaaa.png)
+[![Mozillaaaa](/images/2009/mozillaaaaa.png)](/images/2009/mozillaaaaa.png)

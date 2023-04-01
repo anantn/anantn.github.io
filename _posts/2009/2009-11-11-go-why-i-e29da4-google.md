@@ -11,7 +11,7 @@ categories: [google, plan9, favorite]
 
 Christmas came early this year.
 
-![Glenda2Go](/images/2009/glenda2go.png)
+[![Glenda2Go](/images/2009/glenda2go.png)](/images/2009/glenda2go.png)
 
 Today, Google announced their new open source systems programming language: [Go](http://golang.org/). I'm super excited about this, we all have been wondering what Rob Pike has been upto since he joined the big G, and now we know. Not just that, but Ken Thomson, Robert Griesemer, Ian Taylor and Russ Cox were all involved in the project, with Ken doing what he does best, writing compilers in lightning speed ;) If that isn't a list of heavyweight respectable computer scientists, I don't know what is!
 

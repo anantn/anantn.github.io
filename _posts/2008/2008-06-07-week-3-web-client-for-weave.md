@@ -17,11 +17,11 @@ Since we aren’t decided on the final data encryption format for Weave 0.2 yet,
 
 Anyway, here’s how the initial prototype of the client looks. Login page:
 
-![Weave's web client login page](/images/2008/weave-client-login.png)
+[![Weave's web client login page](/images/2008/weave-client-login.png)](/images/2008/weave-client-login.png)
 
 And the page you get after logging in:
 
-![You can view your bookmarks and open tabs/windows](/images/2008/weave-client-inside.png)
+[![You can view your bookmarks and open tabs/windows](/images/2008/weave-client-inside.png)](/images/2008/weave-client-inside.png)
 
 [Chris](http://replay.waybackmachine.org/20080702220300/http://cbeard.typepad.com/) thought it would be great if we pushed the limits a little more, what if we get Weave to sync all the data the AwesomeBar needs to act awesome? We could write a web-based AwesomeBar and integrate it with the Weave web-client - needless to say that it would be totally wicked. Chris also tried accessing the web client in an iPhone, and it just worked out of the box (which wasn’t totally surprising because it was just Safari, anyway), but it definitely makes for an awesome demo.
 

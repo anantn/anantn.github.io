@@ -12,6 +12,6 @@ Today, after roaming the earth for 21 years depending on someone else to cook my
 
 Here's a picture of the modest beginning:
 
-![My First Meal](/images/2008/100_2229.jpg)
+[![My First Meal](/images/2008/100_2229.jpg)](/images/2008/100_2229.jpg)
 
 It looks a lot more delicious than it really was: just boiled vegetables with garlic bread - dressed with salt, pepper and a dollop of butter - rather bland for an Indian tongue. But, oh well, it's a start ;)

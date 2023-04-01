@@ -17,7 +17,7 @@ On the graphics card end, NVIDIA is still king of the hill. Wish there were more
 
 After a couple days of research, I settled on the final [build spec](https://proness.kix.in/misc/dream_comp3.html).
 
-![PC Parts](/images/2020/pc-parts.jpg)
+[![PC Parts](/images/2020/pc-parts.jpg)](/images/2020/pc-parts.jpg)
 
 ## CPU
 
@@ -27,19 +27,19 @@ After a couple days of research, I settled on the final [build spec](https://pro
 
 [Gigabyte x570 Aorus Elite](https://www.amazon.com/gp/product/B07SVRZGMX/). Again, probably could have gotten away with the older 450-series motherboard, but the 570 comes with PCIe Gen 4 and USB 3.2 support. Not that much more expensive either.
 
-![Motherboard & CPU](/images/2020/motherboard-and-cpu.jpg)
+[![Motherboard & CPU](/images/2020/motherboard-and-cpu.jpg)](/images/2020/motherboard-and-cpu.jpg)
 
 ## RAM
 
 [G.Skill 2x16GB @ 3600MHz](https://www.amazon.com/gp/product/B07WTS8T2W/). AMD builds have a reputation for being somewhat finicky with RAM setup. The Ryzen 7 is basically built to take advantage of 3600Mhz DDR4 and this kit is widely used with no known compatibility problems. 3200Mhz will also work just fine if you want to save a little.
 
-![RAM](/images/2020/ram.jpg)
+[![RAM](/images/2020/ram.jpg)](/images/2020/ram.jpg)
 
 ## GPU
 
 [Asus ROG Strix RTX 2080 Super](https://www.amazon.com/gp/product/B07VFKM4VQ/). The RTX 20 "Super" series is great value for money and beats every non "super" card (except for the very high-end 2080Ti). If you're gaming at 1080p, a 2070 super is of great value, but I was going for a 1440p monitor (more on that below) and felt the 2080 would last me longer at that resolution.
 
-![GPU](/images/2020/gpu.jpg)
+[![GPU](/images/2020/gpu.jpg)](/images/2020/gpu.jpg)
 
 ## Power Supply
 
@@ -49,7 +49,7 @@ After a couple days of research, I settled on the final [build spec](https://pro
 
 [Aorus NVMe Gen4 M.2 2TB](https://www.amazon.com/gp/product/B07TJX83W2/). Ok, I'll admit this drive is somewhat of an overkill, but if I'm getting a Gen 4 compatible CPU and Motherboard, why not? These are some blazing fast read/write speeds, that you'll likely only notice with some very disk heavy workload (like compiling Firefox?). This is my first M.2 drive, and I quite like that it fits right on your motherboard. Very happily kissed my old set of SSDs and spinning drives goodbye!
 
-![M2 SSD](/images/2020/m2.jpg)
+[![M2 SSD](/images/2020/m2.jpg)](/images/2020/m2.jpg)
 
 ## Tower
 
@@ -67,11 +67,11 @@ After a couple days of research, I settled on the final [build spec](https://pro
 
 Actual assembly was easier than ever, with everything living on the board itself, cable management was trivial and the whole thing was up and running in just a couple of hours. I made one small change, which was to swap out the Wrath Prism cooler included with the CPU for a [Hyper 212 (Black Edition)](https://www.amazon.com/gp/product/B07H25DYM3). The prism cooler worked fine from a thermal perspective, it was just too noisy for my taste.
 
-![Final Build](/images/2020/final-build.jpg)
+[![Final Build](/images/2020/final-build.jpg)](/images/2020/final-build.jpg)
 
 Final touches were on the actual desk setup. I had to figure out how to make use of my two old monitors alongside the new ultrawide. Decided to change out my desk to one [that would fit](https://www.amazon.com/gp/product/B000W8I1D8) all the monitors side-by-side with a couple of monitor arms. This is how it all came together:
 
-![Final Setup](/images/2020/final-setup.jpg)
+[![Final Setup](/images/2020/final-setup.jpg)](/images/2020/final-setup.jpg)
 
 The PC's been running smoothly and performed as expected on the benchmarks, though it runs a little hotter than I'm used to. Over a sustained gaming session, both the CPU and GPU stay just a little below 70°C which feels nominal, so I'm not too worried.
 

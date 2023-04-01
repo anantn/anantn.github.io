@@ -9,7 +9,7 @@ categories: [ozlo, favorite]
 Pokémon GO is all the rage these days. [Ozlo](https://www.ozlo.com), your friendly AI sidekick,
 would be remiss if he didn't help you catch them all!
 
-![Ozlo learns about Pokémon GO](/images/2016/ozlo-pokemon.png)
+[![Ozlo learns about Pokémon GO](/images/2016/ozlo-pokemon.png)](/images/2016/ozlo-pokemon.png)
 
 Thanks to Ozlo's unique, knowledge-based approach to the world, we were able to teach him about
 Pokémon in just under a week, including how to find PokéStops and Pokémon Gyms near places you
@@ -89,7 +89,7 @@ Then we construct the visual format of the response. In our iOS app we settled o
 which is an easy way to view several points of interest in a given geographic area. For now, we just tell Ozlo what
 type of visual result format to use, based on the user's device.
 
-![Ozlo learns about Pokémon GO](/images/2016/ozlo-pokemon-mpm.png)
+[![Ozlo learns about Pokémon GO](/images/2016/ozlo-pokemon-mpm.png)](/images/2016/ozlo-pokemon-mpm.png)
 
 Ozlo's capabilities aren't limited to just rendering maps though - he can choose between a variety of output formats -
 and we pick the one that's best suited to the medium you're using to communicate with him.

@@ -8,7 +8,7 @@ title: "MozCamp EU 2012: Mobilize Mozilla"
 wordpress_id: 1535
 ---
 
-![MozCamp Mobilize](/images/2012/mozcamp-mobilize.png)
+[![MozCamp Mobilize](/images/2012/mozcamp-mobilize.png)](/images/2012/mozcamp-mobilize.png)
 {: .center}
 
 A group of around 200 Mozillians gathered in Warsaw, Poland last week for the European MozCamp of 2012. My last MozCamp was the one in [Prague back in 2009](http://kix.in/2009/10/01/heading-to-prague/), so it was wonderful to be able to participate and meet with the European community after so long. There was a mix of familiar and new faces, a great sign of a growing and vibrant community!

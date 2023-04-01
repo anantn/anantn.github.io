@@ -39,7 +39,7 @@ If you're not convinced that shared libraries are clunky hacks that shouldn't be
 
 As an advocate of the Plan 9 operating system and it's underlying principles, my opinion may be a bit biased; but I think synthetic file systems are frickin' awesome. If I were to design a system where several applications were to share common cryptography code (for example), here's how I would do it:
 
-![Schematic diagram of a synthetic Crypto filesystem](/images/2008/crypto_with_fs.png)
+[![Schematic diagram of a synthetic Crypto filesystem](/images/2008/crypto_with_fs.png)](/images/2008/crypto_with_fs.png)
 
 The synthetic file system in the center works something like this: applications wanting some cryptography work to be done read and write to files exposed by the FS. For example, _Application 1_ would write the data it needs SHA-1ed to `/crypto/hash/sha1/data`, and a subsequent read on the same file would return the hash (the read would block until the SHA1 was actually calculated). The great thing about such filesystems are that they are language independent, since almost any respectable language has file operations in its standard library.
 

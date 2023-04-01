@@ -50,12 +50,12 @@ icon: mic
                 {% if talk.video %}
                 <br />
                 {% if talk.video contains "youtube" %}
-                <iframe class="video" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video no-lightbox" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
                 {% else if talk.video contains "vimeo" %}
-                <iframe src="{{ talk.video }}" class="video vimeo" frameborder="0" webkitallowfullscreen
-                    mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="no-lightbox" src="{{ talk.video }}" class="video vimeo" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 {% else %}
-                <iframe src="{{ talk.video }}" class="video"></iframe>
+                <iframe class="no-lightbox" src="{{ talk.video }}" class="video"></iframe>
                 {% endif %}
                 {% endif %}
             </div>
