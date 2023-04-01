@@ -18,13 +18,13 @@ The latter point irked me quite a bit (given I've been scrobbling consistently s
 
 However, at this year's [WWDC](https://developer.apple.com/videos/wwdc2018/), Apple announced [MusicKit JS](https://developer.apple.com/documentation/musickitjs) which was quite intriguing on its own, but also opened the doors to kill these two birds with one stone. Thus, ThinMusic was born:
 
-![ThinMusic Screenshot](/images/2018/thinmusic.png)
+[![ThinMusic Screenshot](/images/2018/thinmusic.png)](/images/2018/thinmusic.png)
 
 ThinMusic requires an Apple Music subscription (and a Facebook account so it can store the authentication tokens securely). It supports all the basic features of a music player and works on any modern browser. It is also optimized for desktop use, since on mobile devices you're probably better off with Apple Music's native app (available on both iOS and Android). You can use it on mobile if you really want, but be warned the experience is not as good (mostly due to my laziness to optimize the layout and make a real responsive design).
 
 As an added bonus, it appears this might be a good way to play songs on the [Portal](https://portal.facebook.com), since the [Apple Music skill for Alexa](https://support.apple.com/en-in/HT209250) doesn't work on it yet:
 
-![ThinMusic on Portal](/images/2018/thinmusic-portal.png)
+[![ThinMusic on Portal](/images/2018/thinmusic-portal.png)](/images/2018/thinmusic-portal.png)
 
 Just open the browser app, navigate to [thinmusic.com](https://www.thinmusic.co) and login. Since it is running inside the browser, there is no support for voice control (and who wants to type for extended periods on the Portal), but if you just want to queue up a playlist quickly, this setup can work pretty well.
 

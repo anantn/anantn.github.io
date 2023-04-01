@@ -15,7 +15,7 @@ It's been a few months since I [joined the team](http://kix.in/2012/11/25/a-new-
 
 Last night the entire team was in the office until midnight, polishing and tweaking everything to make sure we were ready for today's release. Bugs were found and fixed in minutes. We even managed to implement an entire feature that we decided was important to have. The dedication and caliber of my colleagues continues to amaze me.
 
-![The night before the Firebase public beta](/images/2013/fb-public-beta.jpg)
+[![The night before the Firebase public beta](/images/2013/fb-public-beta.jpg)](/images/2013/fb-public-beta.jpg)
 
 The real reward, however, is when I talk about Firebase with other developers. The response has been overwhelmingly positive - from veterans I know at Mozilla to folks who are just learning JavaScript at Meetups. The look on their face when they **first understand how Firebase works**, that '_aha!_' moment, is priceless. A few moments later, you can almost hear their mind sprinting through the possibilities of what they could make.
 

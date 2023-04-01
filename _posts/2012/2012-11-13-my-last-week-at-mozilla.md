@@ -31,7 +31,7 @@ The highlight of my stay at Mozilla has definitely been the fantastic opportunit
 
 But I didn't just have the chance to work with amazing Mozillians. Being a part of the organization also gave me the opportunity to meet other people with similar qualities from around the world. Through work with standards bodies like the [W3C](http://w3.org) and [IETF](http://ietf.org), and community events like [MozCamp](http://kix.in/?s=mozcamp&submit=Search), I had the chance to visit various parts of the world to soak in different cultures and ideas. I learned so much about life, food, love, etiquette, physics and everything else worth knowing, just by being a part of the community.
 
-![Dopplr Raumzeitgeist](/images/2012/raumzeitgeist.jpg)
+[![Dopplr Raumzeitgeist](/images/2012/raumzeitgeist.jpg)](/images/2012/raumzeitgeist.jpg)
 
 And so, even though it is cliché, it could not be truer that the decision to leave Mozilla has been one of the hardest in my life. Thankfully, I will always be a Mozillian, which I think is the best perk of being part of an open, community-oriented organization. [John Lilly](https://twitter.com/johnolilly) (who I had the fortune to meet, again, thanks to Mozilla) has written about how a person's [first few years](http://john.jubjubs.net/2011/05/20/recruiting-dna/) in their career goes on to define how they approach problems much later in life. I couldn't be prouder or happier that my first job has been with Mozilla. A very high bar has been set, and there is no doubt that I will continue to carry their watermark with me wherever I go.
 
