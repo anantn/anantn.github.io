@@ -1,6 +1,6 @@
 div.toc {
   margin-left: 2rem;
-  
+
   @media screen and (max-width: $desktop) {
     display: none;
   }
@@ -10,12 +10,15 @@ div.toc {
     top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+
     h3 {
       margin-bottom: 0.5rem;
     }
+
     ul {
       padding-left: 1rem;
       margin-left: 0;
+
       li {
         margin-top: 0.5rem;
       }
@@ -105,23 +108,23 @@ div.cards {
       margin: 0.5rem;
     }
   }
-  
+
   .card:hover {
     transform: translateY(-5px);
   }
-  
+
   .card-image {
     height: 2.5rem;
     margin: 0 auto;
     border-radius: 5px;
   }
-  
+
   .card-title {
     font-size: 1rem;
     margin: 0.2rem;
     color: var(--contrast);
   }
-  
+
   .card-text {
     color: var(--primary-color);
     font-size: 0.8rem;
@@ -141,16 +144,20 @@ div.footnotes {
   span.day {
     display: none;
   }
+
   span.month {
     display: none;
-    ~ a::before {
+
+    ~a::before {
       display: none;
     }
   }
-  span.year + li::before {
+
+  span.year+li::before {
     display: none;
   }
-  ul > li::after {
+
+  ul>li::after {
     display: none;
   }
 }
@@ -162,11 +169,12 @@ div.footnotes {
   ul {
     padding-left: 0.2rem;
   }
-  
+
   li {
     margin: 1rem;
     margin-left: 0;
     list-style-type: none;
+
     img {
       height: 1rem;
       display: inline-block;
@@ -192,8 +200,10 @@ div.footnotes {
       font-weight: bold;
       margin: 0;
       margin-right: auto;
+
       span {
         font-size: 1.2rem;
+
         @media screen and (max-width: $tablet) {
           &::before {
             content: "\a";
@@ -211,6 +221,7 @@ div.footnotes {
 
   .also {
     font-size: 0.9rem;
+
     ion-icon {
       vertical-align: middle;
     }
@@ -226,6 +237,7 @@ div.footnotes {
 .post {
   padding-top: 1rem;
   padding-bottom: 2rem;
+
   .post-title {
     @include heading();
     font-size: 3.5rem;
@@ -233,26 +245,48 @@ div.footnotes {
     font-style: italic;
     line-height: 3.5rem;
   }
+
   .post-date {
     @include mono();
     font-size: 1rem;
     padding-top: 0.5rem;
   }
+
   .post-header {
     @media screen and (max-width: $tablet) {
       text-align: center;
     }
   }
+
   a:has(img) {
     text-decoration: none;
   }
+
   img {
     max-width: 100%;
     height: auto;
     display: inline-block;
   }
-  table > thead {
+
+  table {
+    background-color: var(--background-color);
+  }
+
+  table>thead {
     color: var(--primary-color);
     background-color: var(--bold-bg);
+  }
+
+  li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  div.imgholder {
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
