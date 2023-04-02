@@ -43,9 +43,11 @@ html,
 .dark {
   background-color: var(--bold-bg);
   color: var(--primary-color);
+
   * {
     color: var(--primary-color);
   }
+
   h1,
   h2,
   h3,
@@ -55,6 +57,7 @@ html,
     color: var(--bold-color);
     border-color: var(--primary-color);
   }
+
   a,
   a:active,
   a:visited {

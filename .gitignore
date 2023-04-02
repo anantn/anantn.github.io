@@ -2,4 +2,5 @@ _site
 notes
 vendor
 .bundle
+.vscode
 .sass-cache
