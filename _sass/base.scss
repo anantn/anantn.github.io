@@ -59,8 +59,11 @@ pre,
 pre code {
   @include codeformat();
 }
-.dark p > code,
-p > code {
+
+.dark p>code,
+p>code,
+.dark li>code,
+li>code {
   @include codeformat();
   color: var(--fragment);
   padding: 0.2rem;
@@ -166,6 +169,7 @@ video {
   height: auto;
   display: block;
   border-style: none;
+
   @media screen and (max-width: $tablet) {
     margin: 0 auto;
   }
@@ -181,6 +185,7 @@ div.inline {
   @media screen and (max-width: $tablet) {
     text-align: center;
   }
+
   img {
     display: inline-block;
   }
@@ -190,13 +195,16 @@ ul.oneline {
   display: inline;
   list-style: none;
   padding: 0;
+
   li {
     display: inline;
+
     &:after {
       content: ", ";
       margin-left: -0.1rem;
       margin-right: 0.1rem;
     }
+
     &:last-child:after {
       content: ".";
       margin-left: -0.1rem;
@@ -227,6 +235,7 @@ div#scroll-top {
   margin: 0.25rem;
   color: var(--primary-color);
   background-color: var(--background-color);
+
   &:focus {
     background-image: none;
   }
