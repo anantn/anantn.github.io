@@ -190,6 +190,8 @@ $ python launch.py --opt-sdp-no-mem-attention --opt-channelslast
 
 You can substitute `--opt-sdp-no-mem-attention` with just `--opt-sdp-attention` for even faster performance at the cost of some non-determinism (you may not be able to recreate the exact image even with the same seed).
 
+To squeeze even more performance out of Stable Diffusion, if you are on WSL, consider disabling ["Hardware-accelerated GPU scheduling"](https://www.majorgeeks.com/content/page/hardware_accelerated_gpu_scheduling.html) from your Windows Settings. This may impact performance of Games running natively on Windows though, YMMV.
+
 ## Things to try
 
 Now that you have a basic set up, you can start to explore all the knobs presented to you in the UI. Here are some things to try:
