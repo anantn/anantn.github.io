@@ -2,7 +2,7 @@
 author: anant
 comments: true
 layout: post
-slug: txt2img
+slug: quick-sd-install-guide
 title: "Quick guide to installing Stable Diffusion"
 categories: [ai, favorite]
 ---
