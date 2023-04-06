@@ -44,7 +44,7 @@ If you are on a Windows PC, I recommend installing WSL2 first. WSL2 is basically
 Installing WSL is [fairly straightforward](https://learn.microsoft.com/en-us/windows/wsl/install), open a Windows terminal or PowerShell and type:
 
 ```bash
-wsl --install
+> wsl --install
 ```
 
 This installs the latest version of Ubuntu, which is what I use. Most of the instructions that follow are common to Windows, Linux, and Mac.
@@ -60,9 +60,9 @@ $ curl https://pyenv.run | bash
 Make sure to add the required lines to your`~/.bashrc` or `~/.zshrc` file as instructed. For bash this looks something like:
 
 ```bash
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+$ echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+$ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 ```
 
 You can test this worked by opening a new terminal and typing:
@@ -154,6 +154,41 @@ Set "Seed" to `1481517414`. Click the big "Generate" button!
 If all went well you should see an image that's almost exactly or as close to the one in picture above! That's because we used the same base model, sampler, sampling steps and most importantly the `seed` number.
 
 Congratulations on generating your first image with Stable Diffusion!
+
+## Tips for NVIDIA GPUs
+
+If you have any NVIDIA GPU, you will get better performance by starting the UI with the `xformers` argument:
+
+```bash
+$ python launch.py --xformers
+```
+
+For this to work you have to install the proper NVIDIA video drivers. If you are on WSL, make sure to install the drivers on *Windows* and not Linux. There is an annoying bug in WSL currently that *also* requires you to create a few symbolic links for `libcuda.so` - [the workaround is described here](https://github.com/microsoft/WSL/issues/5548#issuecomment-1363676648), essentially you run this in a Windows terminal or PowerShell:
+
+```sh
+> C:
+> cd \Windows\System32\lxss\lib
+> del libcuda.so
+> del libcuda.so.1
+> mklink libcuda.so libcuda.so.1.1
+> mklink libcuda.so.1 libcuda.so.1.1
+```
+
+You'll have to do this every time you update your NVIDIA drivers until Microsoft fixes the bug in WSL.
+
+Confusingly, if you have an NVIDIA RTX 40 series card, my observation is that you will get the best performance by **not using** `xformers` - but instead updating to the latest version of `torch` with CUDA 11.8 support:
+
+```bash
+$ pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+```
+
+Then launch stable-diffusion-webui with the following arguments:
+
+```bash
+$ python launch.py --opt-sdp-no-mem-attention --opt-channelslast
+```
+
+You can substitute `--opt-sdp-no-mem-attention` with just `--opt-sdp-attention` for even faster performance at the cost of some non-determinism (you may not be able to recreate the exact image even with the same seed).
 
 ## Things to try
 
