@@ -12,7 +12,7 @@ In my last post ["AI primer: Image Models 101"](/2023/04/01/txt2img/), I recomme
 However, if you are a hobbyist and tinkerer, or just want to invest a bit of time to go deeper in this space, Stable Diffusion is a great choice. It's a bit more involved to set up, but has several advantages:
 
 * It is one of the few image generation models that you can run fully offline on your own computer - it's free and no cloud service required!
-* You can generate images that you have a hard time generating with tools Midjourney, such as images with an obscure or very specific style.
+* You can generate images that you have a hard time generating with models like Midjourney, such as images with an obscure or very specific style.
 * The model weights are open to inspect, and you can fine-tune these weights to achieve various effects (which we will talk about in a future post).
 * It has a powerful suite of image to image models &mdash; such as for upscaling, inpainting, and outpainting.
 * There's a large community of open source developers and hobbyists who work on a wide range of tools and applications around it.
