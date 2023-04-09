@@ -227,7 +227,7 @@ Remember, the more accurate and descriptive your captions are, the easier it wil
 
 ## Hyperparameter selection
 
-I spent a lot of time playing with the knobs you have at your disposal when fine-tuning. I'll discuss each knob in a bit more detail below, but if you just want to jump ahead to the optimal configuration I found, jump ahead to the [training & testing section](#training-and-testing).
+I spent a lot of time playing with the knobs you have at your disposal when fine-tuning. I'll discuss the relevant hyperparameters in a more detail below, but if you're just interested in the optimal configuration I found, jump ahead to the [training & testing section](#training-and-testing).
 
 ### Training steps
 
@@ -249,7 +249,7 @@ In my case, recall that I had 25 example images. I went with:
 These values impute a step count of **1875**.
 
 <aside>
-❗NOTE: In the `kohya_ss` GUI, you can only specify the `batch_size` and `num_epochs` parameters. The `num_repeats` parameter is implicitely specified by naming your training images folder a certain way: `<repeats>_<token>`. Thus, in my case, I renamed my training folder to `15_anantn`.
+❗NOTE: In the `kohya_ss` GUI, you can only specify the `batch_size` and `num_epochs` parameters. The `num_repeats` parameter is implicitely specified by naming your training images folder a certain way: `<repeats>_<token>`. Thus, in my case, I renamed my folder to `15_anantn`.
 </aside>
 
 ### Learning rates
@@ -279,11 +279,11 @@ A related setting is the `optimizer_type`. The default is `Adam8bit` which works
 
 ### Network Rank & Alpha
 
-This is likely the most controversial setting. The "network rank" (interchangeably called "network dimensions", represented as the `network_dim` parameter) is a proxy for how detailed your fine-tuning model can get. More dimensions mean more layers available to absorb the finer details of your training set. Be warned, too many layers without enough quantity or diversity in your training data could lead to bad results. Network alpha (`network_alpha`)is a dampening effect that controls how quickly the layers absorb new information.
+This is likely the most controversial setting. The "network rank" (interchangeably called "network dimensions", represented as the `network_dim` parameter) is a proxy for how detailed your fine-tuning model can get. More dimensions mean more layers available to absorb the finer details of your training set. Be warned, too many layers without enough quantity or diversity in your training data could lead to bad results. Network alpha (`network_alpha`) is a dampening effect that controls how quickly the layers absorb new information.
 
 This is where the controversy arises. ML theory suggests that you'd normally need only 8 dimensions (small number of layers) with an alpha of 1 (heavy dampening) to achieve good results, and these are in fact the defaults in both the `cloneofsimo` and `kohya` LoRA implementations. These values result in a further dampening effect on the learnings rates we chose above, on the order of `1 / 8 = 0.125`.
 
-In practice, I and others have found these settings to result in extremely weak learning rates resulting in fine-tuned models that don't produce images resembling the training date at all. You could, in theory, counteract this by increasing the learning rates themselves. What I've found works better is instead to crank up the number of dimensions and set an alpha to be *equal* to this number. This results in *NO* dampening effect, but it works since our learning rates were already conservative to begin with. I settled on:
+In practice, I and others have found these settings to result in extremely weak learning rates resulting in fine-tuned models that don't produce images resembling the training data at all. You could, in theory, counteract this by increasing the learning rates themselves. What I've found works better is instead to crank up the number of dimensions and set an alpha to be *equal* to this number. This results in *NO* dampening effect, but it works since our learning rates were already conservative to begin with. I settled on:
 
 * `network_dim` = 128
 * `network_alpha` = 128
@@ -303,9 +303,9 @@ In my experimentation, I found that they settled on a rather low learning rate, 
 </div>
 </div>
 
-Both these optimizers work best with a high network rank, and an alpha equal to rank. However, it seems that optimal settings for these two optimizers require a lot more training steps than a classic `AdamW8bit` optimizer would. This makes a 10-minute training run into a 20 or 30-minute operation, and I just couldn't justify the additional time relative the quality improvement.
+Both these optimizers work best with a high network rank, and an alpha equal to rank. However, it seems that optimal settings for these two optimizers require a lot more training steps than a classic `AdamW8bit` optimizer would. This makes a 10-minute training run into a 20 or 30-minute operation, and I just couldn't justify the additional time relative to the quality improvement.
 
-It's very likely I am missing something though. If you have any insights on getting better results from these optimizers, please share them in the comments! If you want to try these out, keep the following caveats in mind:
+It's very likely I am missing something though. If you have any insights on getting better results from these optimizers, please share them in the comments! If you want to try either of these optimizers out, keep the following caveats in mind:
 
 #### DAdaptation
 
@@ -374,7 +374,7 @@ To recap, here are the hyperparameters I finally settled on. I suggest you start
 </tbody>
 </table>
 
-Recall that you specify the number of `repeats` implicitly by naming your training images folder of the form `<repeats>_<token>`. I recommend sharing the same training data and logs directory across multiple training, while creating a new directory for each new configuration of hyperparameters you want to experiment with. Something like this could work, for example:
+Recall that you specify the number of `repeats` implicitly by naming your training images folder of the form `<repeats>_<token>`. I recommend sharing the same training data and logs directory across multiple training runs, while creating a new directory for each new configuration of hyperparameters you want to experiment with. Something like this could work, for example:
 
 ```
 |- lora
@@ -404,7 +404,7 @@ Now all we have to do is plug these folder paths and hyperparameters into the UI
 [![Kohya Configuration](/images/2023/kohya_ss_config.jpg)](/images/2023/kohya_ss_config.jpg)
 *Hyperparameter configuration*
 
-Double check all the values once, and **don't forget to set the "Caption extension" value to `.txt`**! Click the "Training model" button, and wait for the training to complete. You can follow progress on the terminal where you started `kohya_gui.py`. For 1875 steps on my RTX 4090, this took less than 10 minutes.
+Double check all the values again, and **don't forget to set the "Caption extension" value to `.txt`**! Click the "Train model" button, and wait for the training to complete. You can follow progress on the terminal where you started `kohya_gui.py`. For 1875 steps on my RTX 4090, this took less than 10 minutes.
 
 <aside>
 💡Tip: You can run `tensorboard --logdir /path/to/logs` to pull up useful graphs on how your training went. If your `loss` ever hit `NaN`, it means your fine-tune was burned and you should double check your hyperparameters.
@@ -528,7 +528,7 @@ My friend [Vikrum](https://twitter.com/vikrum5000) had an awesome idea to create
 [![Indian truck art](/images/2023/horn_ok_please.jpg)](/images/2023/horn_ok_please.jpg)
 *Typical art style found on the back of Indian trucks*
 
-We had trouble reproducing this style in Midjourney, but that makes it perfect use-case for LoRAs with Stable Diffusion. Once again, following the process above, we produced a LoRA that can represent any concepts in the style of Indian truck art:
+We had trouble reproducing this style in Midjourney, but that makes it a perfect use-case for LoRAs with Stable Diffusion. Once again, following the process above, we produced a LoRA that can represent any concepts in the style of Indian truck art:
 
 <div class="pure-g">
 <div class="pure-u-1 pure-u-md-1-2 imgholder">
