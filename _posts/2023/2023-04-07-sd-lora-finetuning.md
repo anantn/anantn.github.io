@@ -406,6 +406,10 @@ Now all we have to do is plug these folder paths and hyperparameters into the UI
 
 Double check all the values once, and **don't forget to set the "Caption extension" value to `.txt`**! Click the "Training model" button, and wait for the training to complete. You can follow progress on the terminal where you started `kohya_gui.py`. For 1875 steps on my RTX 4090, this took less than 10 minutes.
 
+<aside>
+💡Tip: You can run `tensorboard --logdir /path/to/logs` to pull up useful graphs on how your training went. If your `loss` ever hit `NaN`, it means your fine-tune was burned and you should double check your hyperparameters.
+</aside>
+
 ## Testing
 
 Now comes the fun part! Let's test our model to see how we did.
@@ -524,7 +528,7 @@ My friend [Vikrum](https://twitter.com/vikrum5000) had an awesome idea to create
 [![Indian truck art](/images/2023/horn_ok_please.jpg)](/images/2023/horn_ok_please.jpg)
 *Typical art style found on the back of Indian trucks*
 
-We had trouble reproducing this style in Midjourney, but that makes it perfect use-case for LoRAs with Stable Diffusion! Once again, following the process above, we produced a LoRA that can represent any concepts in the style of Indian truck art!
+We had trouble reproducing this style in Midjourney, but that makes it perfect use-case for LoRAs with Stable Diffusion. Once again, following the process above, we produced a LoRA that can represent any concepts in the style of Indian truck art:
 
 <div class="pure-g">
 <div class="pure-u-1 pure-u-md-1-2 imgholder">
@@ -536,7 +540,7 @@ We had trouble reproducing this style in Midjourney, but that makes it perfect u
 *Mona Lisa in Indian truck style*
 </div>
 
-This LoRA was trained with only 30 training images of Indian truck art; I suspect we can do substantially better with more training data. Anecdotally, styles transfer best at 100+ training images. Here is [a reddit post](https://www.reddit.com/r/StableDiffusion/comments/11r2shu/i_made_a_style_lora_from_a_photoshop_action_i/) on creating a style LoRA based on the Artist Photoshop effect, which could be another good resource.
+This LoRA was trained with only 30 training images; I suspect we can do substantially better with more training data. Anecdotally, styles transfer best at 100+ training images. Here is [a reddit post](https://www.reddit.com/r/StableDiffusion/comments/11r2shu/i_made_a_style_lora_from_a_photoshop_action_i/) on creating a style LoRA based on the Artist Photoshop effect, which could be another good resource.
 
 ## Summary
 LoRA is a powerful and versatile fine-tuning method to create custom characters, objects, or styles. While the training data and captioning process is rather cumbersome today, I imagine large parts of this process will be automated to a great degree in the coming months. It wouldn't surprise me to see many LoRA-based commercial applications pop up in the near future.
