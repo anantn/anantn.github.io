@@ -4,7 +4,7 @@ comments: true
 layout: post
 slug: quick-sd-install-guide
 title: "Quick guide to installing Stable Diffusion"
-categories: [ai, favorite]
+categories: [ai, favorite, stable-diffusion]
 ---
 
 In my last post ["AI primer: Image Models 101"](/2023/04/01/txt2img/), I recommended Midjourney and Stable Diffusion as my top two choices. If your goal is to make beautiful images and art, Midjourney is the best choice, as they have a very easy to use service and can produce high quality output with minimal effort.

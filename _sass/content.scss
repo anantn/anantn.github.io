@@ -1,6 +1,4 @@
 div.toc {
-  margin-left: 2rem;
-
   @media screen and (max-width: $desktop) {
     display: none;
   }
@@ -8,7 +6,7 @@ div.toc {
   div {
     position: sticky;
     top: 2rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 1rem;
 
     h3 {
