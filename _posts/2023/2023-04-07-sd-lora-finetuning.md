@@ -404,7 +404,11 @@ Now all we have to do is plug these folder paths and hyperparameters into the UI
 [![Kohya Configuration](/images/2023/kohya_ss_config.jpg)](/images/2023/kohya_ss_config.jpg)
 *Hyperparameter configuration*
 
-Double check all the values again, and **don't forget to set the "Caption extension" value to `.txt`**! Click the "Train model" button, and wait for the training to complete. You can follow progress on the terminal where you started `kohya_gui.py`. For 1875 steps on my RTX 4090, this took less than 10 minutes.
+Double check all the values again. Couple of more settings to keep in mind:
+* Don't forget to set the "Caption extension" value to `.txt`!
+* For max resolution, if most of your images are larger than 768x768, then you can set `768,768` as the value. If not, leave it at the default `512,512`.
+
+Click the "Train model" button, and wait for the training to complete. You can follow progress on the terminal where you started `kohya_gui.py`. For 1875 steps on my RTX 4090, this took less than 10 minutes.
 
 <aside>
 💡Tip: You can run `tensorboard --logdir /path/to/logs` to pull up useful graphs on how your training went. If your `loss` ever hit `NaN`, it means your fine-tune was burned and you should double check your hyperparameters.
@@ -541,6 +545,11 @@ We had trouble reproducing this style in Midjourney, but that makes it a perfect
 </div>
 
 This LoRA was trained with only 30 training images; I suspect we can do substantially better with more training data. Anecdotally, styles transfer best at 100+ training images. Here is [a reddit post](https://www.reddit.com/r/StableDiffusion/comments/11r2shu/i_made_a_style_lora_from_a_photoshop_action_i/) on creating a style LoRA based on the Artist Photoshop effect, which could be another good resource.
+
+## LyCORIS (LoCon / LoHa)
+There have been some extensions to the core LoRA algorithm, called "LoCon" and "LoHA", which you might see in the dropdown options in the `kohya_ss` GUI. These are built on the learning algorithms [in this repository](https://github.com/KohakuBlueleaf/LyCORIS).
+
+I gave these a try but was unable to reproduce results that got anywhere close to the quality of the original LoRA &mdash; even with the suggested parameters of <32 dimensions and low alpha (1 or lower). It's worth keeping an eye on these methods as they evolve, but for now I suggest sticking with conventional LoRA.
 
 ## Summary
 LoRA is a powerful and versatile fine-tuning method to create custom characters, objects, or styles. While the training data and captioning process is rather cumbersome today, I imagine large parts of this process will be automated to a great degree in the coming months. It wouldn't surprise me to see many LoRA-based commercial applications pop up in the near future.
