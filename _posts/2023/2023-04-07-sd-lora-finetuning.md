@@ -227,7 +227,7 @@ Remember, the more accurate and descriptive your captions are, the easier it wil
 
 ## Hyperparameter selection
 
-I spent a lot of time playing with the knobs you have at your disposal when fine-tuning. I'll discuss the relevant hyperparameters in a more detail below, but if you're just interested in the optimal configuration I found, jump ahead to the [training & testing section](#training-and-testing).
+I spent a lot of time playing with the knobs you have at your disposal when fine-tuning. I'll discuss the relevant hyperparameters in a more detail below, but if you're just interested in the optimal configuration I found, jump ahead to the [training section](#training). In fact, I'd recommend you do that first, and then come back here to read about the hyperparameters to further refine your LoRA.
 
 ### Training steps
 
