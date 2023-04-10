@@ -510,6 +510,10 @@ A good LoRA will give you good results in a variety of conditions; I encourage y
 
 I'm pretty pleased with the results - this feels like a solid, baked, generalizable LoRA 👍 While I was a happy "Magic Avatars" customer, these results far surpass what I got back from most commercial services offering AI-generated avatars! And I can generate a near-infinite number of these, limited only by my imagination and prompt-writing ability.
 
+<aside>
+💡Tip: If your images come out generally well, except for just one or two elements (like the face), you can fix this using inpainting rather than generating a whole new image with a different seed. Just click the "Send to img2img" button to use the [inpainting feature](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#inpainting).
+</aside>
+
 Keep in mind the work shown in this post took me several tries over several days to achieve successful results. If you didn't get great results on your first attempt, go back to the section on [hyperparameter selection](#hyperparameter-selection) and see if tweaking these values helps. I'd also encourage keeping a training diary to keep track of your experiments and results.
 
 ## Objects & Styles
