@@ -249,8 +249,23 @@ div#scroll-top {
   margin: 0.25rem;
   color: var(--primary-color);
   background-color: var(--background-color);
+  display: inline-flex;
+  align-items: center;
 
   &:focus {
     background-image: none;
+  }
+}
+
+
+.pure-button-accent {
+  background-color: $nord-aurora-4;
+
+  &:hover {
+    background-color: mix($nord-aurora-4, $nord-polar-night-0, 40%);
+  }
+
+  ion-icon {
+    margin-right: 0.5rem;
   }
 }
