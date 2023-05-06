@@ -7,15 +7,20 @@ title: "Building a Hacker News ChatGPT Plugin"
 categories: [ai, favorite, hacker-news]
 ---
 
-I recently received access to develop and use ChatGPT plugins, and embarked on a project to build a Hacker News integration as a learning exercise. My goal was to enable retrieval of content from HN to answer questions and produce insights in conversations with ChatGPT. Here is a short video demo of what the experience looks like:
+I recently received access to develop and use ChatGPT plugins, and embarked on a project to build a Hacker News integration as a learning exercise. My goal was to enable retrieval of content from HN to answer questions and produce insights in conversations with ChatGPT.
+
+You can experience the plugin in one of three ways:
+* Check out the [simple demo](https://hn.kix.in) which approximates parts of the plugin.
+* (or) add 'hn.kix.in' as a plugin &mdash; if you have ChatGPT plugin access.
+* (or) watch this short video:
 
 <video controls src="https://user-images.githubusercontent.com/37190/236521903-da8eb5a6-3b8e-4125-a8c0-64b869d47f55.mp4"></video>
 
-<button class="pure-button pure-button-accent">
+<button class="pure-button pure-button-accent" onclick="window.location.href='https://hn.kix.in'">
     <ion-icon name="bulb"></ion-icon>
     <b>Simple Demo</b>
 </button>
-<button class="pure-button pure-button-accent">
+<button class="pure-button pure-button-accent" onclick="window.location.href='https://github.com/anantn/hn-chatgpt-plugin'">
     <ion-icon name="logo-github"></ion-icon>
     <b>Source Code</b>
 </button>
@@ -255,7 +260,7 @@ To solve this problem, I employed two techniques:
 
 This gave us a good balance between keeping our data updates while not compromising on the machine's ability to respond to incoming queries.
 
-## API server
+## API server + Q&A
 
 All of this is brought together by a [FastAPI server](https://github.com/anantn/hn-chatgpt-plugin/blob/main/api-server/main.py#L54) to implement the API spec we defined earlier. Doing this was pretty easy through use of SQAlchemy.
 
@@ -263,11 +268,24 @@ We run two independent processes, one for the data update and embedder service, 
 
 The first time our embedding server starts, we do a quick "catchup" on any missed stories or embedding updates to keep the database fresh even if the server was offline for any reason.
 
+The final step is to take the text and comments from returned results in the `/items` API call &mdash; and optionally generate an answer using ChatGPT-3.5-turbo. This is pretty simple to do, we just take the text and prompt the model with something like:
+
+```
+Given the following hacker news discussions:
+
+<story titles>
+<comments>
+
+Answer the question: {user-query}
+```
+
+[This functionality](https://github.com/anantn/hn-chatgpt-plugin/blob/main/api-server/utils.py#L114) powers what you see on the simple demo page and is an approximation of the plugin experience right in ChatGPT.
+
 ## Closing thoughts
 
 Hope this was a useful tutorial on building a non-trivial ChatGPT plugin and helped with your understanding of embeddings and semantic search. My advice for anyone dipping their toes in this space is to:
 * **Focus on the first principles of what you are building.** There is a lot of buzz around embeddings and AI, but having a conceptual understanding of these tools will help you navigate the landscape. You don't need to know _how_ these tools work as long you know _what_ they do, and _why_ you need them.
-* **Keep things simple and beware premature optimization!** I've seen a few examples that are built for hyper-scale from day one, but it's usually a better idea to start small and only add layers of complexity as you need them. The entirety of this particular project is around 2500 lines of python code,including boilerplate.
+* **Keep things simple and beware premature optimization!** I've seen a few examples that are built for hyper-scale from day one, but it's usually a better idea to start small and only add layers of complexity as you need them. The entirety of this particular project is around 2500 lines of python code, including boilerplate.
 * **Use ChatGPT liberally.** You'd be surprised at how much this tool can you help you, right from writing API descriptions and specs, to full fledged server code, to helping debug issues when they occur. $20/mo for ChatGPT plus is an absolute bargain.
 
 Happy hacking!
