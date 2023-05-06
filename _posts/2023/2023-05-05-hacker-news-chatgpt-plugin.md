@@ -137,7 +137,7 @@ Next step is to take all this content and generate embeddings from them. To do t
 
 ### Embedder options
 
-There are many ways to construct embeddings from all kinds of data (text, images, even video). Our focus is on text, so a good place to start is by looking at the “Massive Text Embedding Benchmark” (MTEB). You can filter the leaderboard by various criteria to find the right embedder for your use-case.
+There are many ways to construct embeddings from all kinds of data (text, images, even video). Our focus is on text, so a good place to start is by looking at the [“Massive Text Embedding Benchmark” (MTEB)](https://huggingface.co/spaces/mteb/leaderboard). You can filter the leaderboard by various criteria to find the right embedder for your use-case.
 
 Note that some embedding services run in the cloud behind an API call, such as OpenAI’s [ada-002](https://beta.openai.com/docs/guides/embeddings/types-of-embedding-models) or [Cohere](https://docs.cohere.com/docs/embeddings). Most of them can be downloaded and run locally though, normally in python. [LangChain](https://python.langchain.com/en/latest/index.html) is a good way to quickly experiment with different embedders with small datasets.
 
