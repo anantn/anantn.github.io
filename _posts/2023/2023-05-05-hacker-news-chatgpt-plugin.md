@@ -11,7 +11,14 @@ I recently received access to develop and use ChatGPT plugins, and embarked on a
 
 <video controls src="https://user-images.githubusercontent.com/37190/236521903-da8eb5a6-3b8e-4125-a8c0-64b869d47f55.mp4"></video>
 
-If you don't have ChatGPT plugins access, you can play with a watered down version of just the [semantic search part of the project here](https://hn.kix.in). The source code for this project [can be found on Github](https://github.com/anantn/hn-chatgpt-plugin).
+<button class="pure-button pure-button-accent">
+    <ion-icon name="bulb"></ion-icon>
+    <b>Simple Demo</b>
+</button>
+<button class="pure-button pure-button-accent">
+    <ion-icon name="logo-github"></ion-icon>
+    <b>Source Code</b>
+</button>
 
 In this blog post I'll cover the process of building this plugin. If you are interested in learning about how ChatGPT plugins work, the Hacker News API and dataset, or building a semantic search index through use of embeddings &mdash; read on!
 
@@ -107,7 +114,7 @@ I first built a plugin with the [Algolia search API](https://github.com/anantn/h
 
 ## Downloading the dataset
 
-👉 [Download the SQLite DB from HuggingFace](https://huggingface.co/datasets/anantn/hacker-news/tree/main) 🤗
+⬇️ [Download the SQLite DB from HuggingFace](https://huggingface.co/datasets/anantn/hacker-news/tree/main) 🤗
 
 The first step was to download the Hacker News corpus onto my computer. As of April 2023, HN contained just under 36 million items (an item can be a story, comment, job, or poll) and just under 900k users. That’s small enough to download and process on a single computer but large enough to make it a non-trivial and interesting exercise!
 
