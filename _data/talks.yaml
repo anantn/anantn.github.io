@@ -1,3 +1,12 @@
+- id: "2023-llms"
+  year: 2023
+  month: May
+  name: "Innovating with LLMs"
+  url: https://www.truefoundry.com/blog/innovating-with-llms-and-generative-ai-meta
+  video: https://www.youtube.com/embed/D4ZsAnC0LWM
+  location: <a href="https://www.truefoundry.com/blogs/categories/true-ml-talks">True ML</a> Talks
+  categories: ["ai", "llm"]
+
 - id: "2018-kg"
   year: 2018
   month: October
