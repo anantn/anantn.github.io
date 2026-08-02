@@ -26,6 +26,6 @@ As an added bonus, it appears this might be a good way to play songs on the [Por
 
 [![ThinMusic on Portal](/images/2018/thinmusic-portal.png)](/images/2018/thinmusic-portal.png)
 
-Just open the browser app, navigate to [thinmusic.com](https://www.thinmusic.co) and login. Since it is running inside the browser, there is no support for voice control (and who wants to type for extended periods on the Portal), but if you just want to queue up a playlist quickly, this setup can work pretty well.
+Just open the browser app, navigate to [thinmusic.com](https://www.thinmusic.com) and login. Since it is running inside the browser, there is no support for voice control (and who wants to type for extended periods on the Portal), but if you just want to queue up a playlist quickly, this setup can work pretty well.
 
 If you're an Apple Music subscriber, give ThinMusic a whirl and email [support@thinmusic.com](mailto:support@thinmusic.com) with your questions or suggestions!
