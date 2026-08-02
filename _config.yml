@@ -30,5 +30,17 @@ defaults:
       permalink: /:basename:output_ext
 include:
   - _pages
+exclude:
+  - README-dev.md
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 sass:
   style: compressed
