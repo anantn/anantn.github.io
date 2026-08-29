@@ -113,6 +113,17 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('lightbox').style.display = 'none';
         }
     });
+
+    //dismiss the lightbox with escape
+    document.addEventListener("keydown", function(event) {
+        if(event.key == 'Escape') {
+            var lightbox = document.getElementById('lightbox');
+            if(lightbox && lightbox.style.display == 'block') {
+                lightbox.innerHTML = '';
+                lightbox.style.display = 'none';
+            }
+        }
+    });
     
     //add the youtube lightbox on click
     var elements = document.querySelectorAll('a.lightbox-youtube');

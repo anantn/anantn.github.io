@@ -8,8 +8,8 @@
 <div class="tag-cloud" role="group">
     <span>Filter by topic:</span>
     {% for c in categories %}
-        {% if c != "" and c != "favorite" %}
-            <a class="tag">{{ c }}</a>
+        {% if c != "" and c != "favorite" and c != "top" %}
+            <button type="button" class="tag">{{ c }}</button>
         {% endif %}
     {% endfor %}
 </div>

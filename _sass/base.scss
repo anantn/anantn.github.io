@@ -25,12 +25,6 @@ $mobile: 568px;
   box-sizing: border-box;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
 html,
 button,
 input,
@@ -42,7 +36,7 @@ textarea,
 
 body {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.6;
   min-height: 100vh;
   word-wrap: break-word;
 }
@@ -50,7 +44,7 @@ body {
 @mixin codeformat {
   @include mono();
   font-size: 0.9rem;
-  line-height: 1.1rem;
+  line-height: 1.5;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -58,6 +52,11 @@ body {
 pre,
 pre code {
   @include codeformat();
+  white-space: pre;
+}
+
+pre {
+  overflow-x: auto;
 }
 
 .dark p>code,
@@ -81,7 +80,7 @@ abbr {
   font-variant: small-caps;
   font-weight: 600;
   text-transform: lowercase;
-  color: var(---contrast);
+  color: var(--contrast);
 }
 
 abbr[title]:hover {
@@ -115,7 +114,7 @@ h2,
 h3,
 h4 {
   @include heading();
-  font-weight: medium;
+  font-weight: 500;
 }
 
 h5,
@@ -147,6 +146,7 @@ h4,
 h5,
 h6 {
   scroll-margin-top: 2rem;
+  line-height: 1.25;
 }
 
 input,
@@ -192,7 +192,7 @@ aside {
 li::marker {
   @include mono();
   font-size: 0.8rem;
-  font-style: bold;
+  font-weight: bold;
 }
 
 div.inline {
@@ -215,13 +215,10 @@ ul.oneline {
 
     &:after {
       content: ", ";
-      margin-left: -0.1rem;
-      margin-right: 0.1rem;
     }
 
     &:last-child:after {
       content: ".";
-      margin-left: -0.1rem;
     }
   }
 }
@@ -261,11 +258,49 @@ div#scroll-top {
 .pure-button-accent {
   background-color: $nord-aurora-4;
 
+  &,
+  * {
+    color: $accented-black;
+  }
+
   &:hover {
-    background-color: mix($nord-aurora-4, $nord-polar-night-0, 40%);
+    background-color: mix($nord-aurora-4, $nord-snow-storm-2, 85%);
   }
 
   ion-icon {
     margin-right: 0.5rem;
   }
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background-color: var(--bold-bg);
+  color: var(--contrast);
+
+  &:focus {
+    left: 0;
+  }
+}
+
+.content a:not(.pure-button),
+.toc a {
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.content a:not(.pure-button):hover,
+.toc a:hover {
+  color: $nord-frost-1;
+  text-decoration-color: $nord-frost-1;
 }

@@ -1,8 +1,10 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/pure-min.css" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/grids-responsive.min.css" rel="stylesheet" />
 <link href="/css/style.css" rel="stylesheet" />
+{% if page.layout == "post" %}
 <link href="/css/isso.css" rel="stylesheet" />
 <link href="/css/lightbox.css" rel="stylesheet" />
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&family=Lora:ital@1&family=Roboto+Slab&display=swap');
-</style>
+{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;family=Inter:ital,wght@0,400;0,700;1,400&amp;family=Lora:ital@1&amp;family=Roboto+Slab:wght@400;500;700&amp;display=swap" />

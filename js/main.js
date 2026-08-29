@@ -22,7 +22,7 @@ function search(name) {
     }
   });
 
-  var buttons = element.querySelectorAll(".tag-cloud > a");
+  var buttons = element.querySelectorAll(".tag-cloud > button");
   for (var button of buttons) {
     button.addEventListener("click", function (e) {
       var active = "tag-active";

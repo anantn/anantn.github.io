@@ -25,6 +25,10 @@ collections:
   - orgs
 defaults:
   - scope:
+      path: ""
+    values:
+      image: /images/avatar.webp
+  - scope:
       path: "_pages"
     values:
       permalink: /:basename:output_ext

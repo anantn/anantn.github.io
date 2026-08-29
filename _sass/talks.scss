@@ -37,11 +37,14 @@ ul.talks {
 li.talk {
   display: flex;
   padding: 1rem;
-  &:nth-of-type(odd) {
-    background-color: var(--bold-bg);
-  }
-  &:nth-of-type(even) {
-    background-color: var(--hsl-bg);
+  margin-bottom: 0.5rem;
+  background-color: var(--bold-bg);
+  border: 1px solid var(--secondary);
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: $nord-frost-2;
   }
 
   iframe {

@@ -72,6 +72,7 @@
       @include content();
       padding: 0;
       font-size: 4rem;
+      line-height: 0.5;
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
       @media screen and (max-width: $tablet) {
@@ -84,6 +85,7 @@
       @include heading();
       font-size: 1.1rem;
       font-weight: bold;
+      line-height: 1.4;
       @media screen and (max-width: $desktop) {
         font-size: 0.9rem;
       }
@@ -96,6 +98,7 @@
       @include heading();
       font-size: 1rem;
       font-style: italic;
+      line-height: 1.4;
       @media screen and (max-width: $desktop) {
         font-size: 0.75rem;
       }
@@ -137,8 +140,9 @@
       transition: all 0.25s;
 
       &:hover {
-        transform: translate3d(3px, -3px, 0);
-        box-shadow: -3px 3px 0 var(--bold-color);
+        transform: translateY(-2px);
+        border-color: $nord-frost-1;
+        box-shadow: 0 4px 10px rgba(31, 31, 47, 0.3);
       }
 
       @media screen and (max-width: $desktop) {
@@ -147,6 +151,10 @@
         font-size: 15px;
         border-radius: 10px;
       }
+    }
+
+    ion-icon.logo-x {
+      font-size: 0.85em;
     }
   }
 
@@ -162,6 +170,15 @@
     }
     .nav-link {
       display: flex;
+      width: 6.25rem;
+      justify-content: flex-start;
+      border: 1px solid transparent;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+
+      @media screen and (max-width: $tablet) {
+        width: auto;
+      }
+
       ion-icon {
         margin-right: 0.25em;
         vertical-align: middle;
@@ -216,15 +233,11 @@
     transform: translateX(21px);
   }
   .pure-button:hover {
-    background-image: linear-gradient(
-      transparent,
-      rgba(255, 255, 255, 0.05) 40%,
-      rgba(255, 255, 255, 0.1)
-    );
+    background-image: none;
+    background-color: var(--secondary);
   }
   .pure-button-active {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset,
-      0 0 6px rgba(255, 255, 255, 0.2) inset;
-    border-color: #fff;
+    border-color: $nord-frost-2;
+    box-shadow: inset 3px 0 0 $nord-frost-1;
   }
 }

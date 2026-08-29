@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8"/>
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-        <title>{{ page.title }}</title>
         {% seo %}
         <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
         {% feed_meta %}
@@ -11,30 +10,26 @@
         <link href="/favicon.ico" rel="shortcut icon"/>
     </head>
     <body class="dark ">
-        <script>
-            if (localStorage.getItem("theme") === "dark") {
-                document.body.className += "dark";
-            }
-        </script>
-        <script src="/js/main.js"></script>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <script defer src="/js/main.js"></script>
         <div class="pure-g" id="root">
             <div class="sidebar pure-u-1 pure-u-md-1-5">
                 {% include sidebar.html %}
             </div>
-            <div class="content pure-u-1 pure-u-md-4-5 pure-u-lg-3-5">
+            <main id="main-content" class="content pure-u-1 pure-u-md-4-5 pure-u-lg-3-5">
                 {{ content }}
-            </div>
+            </main>
             <div class="toc pure-u-1 pure-u-md-1-5">
                 <div>
                 {% if page.layout == "post" %}
-                    {% include toc.html html=content %}
+                    {% include toc.html html=content h_min=2 %}
                 {% endif %}
                 </div>
             </div>
         </div>
         <footer>
             <div id="scroll-top">
-                <a class="nav-link pure-button" href="#root"><ion-icon name="arrow-up"></ion-icon></a>
+                <a class="nav-link pure-button" href="#root" aria-label="Back to top"><ion-icon name="arrow-up"></ion-icon></a>
             </div>
         </footer>
         {% include scripts.html %}

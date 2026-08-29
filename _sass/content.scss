@@ -6,29 +6,33 @@ div.toc {
   div {
     position: sticky;
     top: 2rem;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-right: 1rem;
+    border-left: 1px solid var(--secondary);
 
     h3 {
       margin-bottom: 0.5rem;
+      font-size: 1.25rem;
     }
 
     ul {
       padding-left: 1rem;
       margin-left: 0;
+      font-size: 0.875rem;
+      line-height: 1.35;
 
       li {
-        margin-top: 0.5rem;
+        margin-top: 0.35rem;
       }
     }
   }
 }
 
-div.content {
+main.content {
   padding: 1rem;
   padding-left: 1.5rem;
   padding-bottom: 5rem;
-  max-width: $tablet;
+  max-width: 42.5rem;
   min-height: 100vh;
   background-color: var(--background-color);
 
@@ -49,7 +53,10 @@ div.content {
       margin-right: 0.5rem;
     }
 
-    a.tag {
+    .tag {
+      background: none;
+      font-family: inherit;
+      color: inherit;
       cursor: pointer;
       text-decoration: none;
       transition: all 0.35s;
@@ -75,6 +82,14 @@ div.content {
   }
 }
 
+.home-section-label {
+  @include heading();
+  margin: 1.1rem 0 0.35rem;
+  color: var(--bold-color);
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
 div.cards {
   display: flex;
   flex-wrap: wrap;
@@ -96,19 +111,21 @@ div.cards {
 
     padding: 0.5rem;
     background-color: var(--bold-bg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--secondary);
     border-radius: 5px;
     margin: 0.5rem;
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.15s ease, border-color 0.15s ease;
 
     @media screen and (max-width: $tablet) {
       margin: 0.5rem;
     }
   }
 
-  .card:hover {
-    transform: translateY(-5px);
+  .card:hover,
+  .card:focus-within {
+    transform: translateY(-2px);
+    border-color: $nord-frost-2;
   }
 
   .card-image {
@@ -220,16 +237,23 @@ div.footnotes {
   .also {
     font-size: 0.9rem;
 
-    ion-icon {
-      vertical-align: middle;
+    .also-label {
+      display: inline-block;
+      font-style: italic;
+      margin-top: 0.5rem;
+      margin-right: 0.25rem;
+
+      ion-icon {
+        vertical-align: -0.125em;
+        margin-right: 0.3rem;
+      }
     }
   }
 }
 
 .date {
   @include mono();
-  font-style: italic;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .post {
@@ -237,20 +261,25 @@ div.footnotes {
   padding-bottom: 2rem;
 
   .post-title {
+    margin: 0;
     @include heading();
-    font-size: 3.5rem;
+    font-size: clamp(2.4rem, 3.8vw, 3.25rem);
     font-weight: bold;
     font-style: italic;
-    line-height: 3.5rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
   }
 
   .post-date {
     @include mono();
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding-top: 0.5rem;
   }
 
   .post-header {
+    margin-bottom: 1.75rem;
+
     @media screen and (max-width: $tablet) {
       text-align: center;
     }
@@ -268,6 +297,9 @@ div.footnotes {
 
   table {
     background-color: var(--background-color);
+    display: block;
+    overflow-x: auto;
+    font-size: 0.875rem;
   }
 
   table>thead {
@@ -276,8 +308,21 @@ div.footnotes {
   }
 
   li {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    @media screen and (max-width: $tablet) {
+      padding-top: 0.15rem;
+      padding-bottom: 0.15rem;
+    }
+
+    > p {
+      margin: 0;
+
+      &:not(:first-child) {
+        margin-top: 0.5em;
+      }
+    }
   }
 
   div.imgholder {
@@ -285,6 +330,31 @@ div.footnotes {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    em {
+      font-size: 0.9rem;
+    }
+  }
+
+  .post-content > p:has(> em:only-child) {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: -0.6em;
+  }
+
+  .post-content {
+    font-size: 1.0625rem;
+
+    > * {
+      margin-top: 0;
+      margin-bottom: 1.25em;
+    }
+
+    > h2,
+    > h3,
+    > h4 {
+      margin: 1.6em 0 0.6em;
     }
   }
 }

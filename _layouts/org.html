@@ -6,19 +6,15 @@
 </div>
 {{ content }}
 <div class="also">
-    <em>See also:</em>
-    <br/>
     {% assign talkEmpty = true %}
     {% for talk in site.data.talks %}
         {% if talk.categories contains page.key %}
             {% if talkEmpty %}
-                <ion-icon name="mic"></ion-icon>
+                <span class="also-label"><ion-icon name="mic"></ion-icon>Related talks:</span>
                 <ul class="oneline">
                     {% assign talkEmpty = false %}
                 {% endif %}
-                <li>
-                    <a href="/talks#{{ talk.id }}">{{ talk.name }}</a>
-                </li>
+                <li><a href="/talks#{{ talk.id }}">{{ talk.name }}</a></li>
             {% endif %}
         {% endfor %}
         {% if talkEmpty == false %}
@@ -29,13 +25,11 @@
     {% for post in site.posts %}
         {% if post.categories contains page.key %}
             {% if postEmpty %}
-                <ion-icon name="document-text"></ion-icon>
+                <span class="also-label"><ion-icon name="document-text"></ion-icon>Related posts:</span>
                 <ul class="oneline">
                     {% assign postEmpty = false %}
                 {% endif %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </li>
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endif %}
         {% endfor %}
         {% if postEmpty == false %}
