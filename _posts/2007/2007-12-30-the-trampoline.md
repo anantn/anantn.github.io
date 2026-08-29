@@ -6,7 +6,7 @@ layout: post
 slug: the-trampoline
 title: The Trampoline
 wordpress_id: 187
-categories: [tech, favorite]
+categories: [tech]
 ---
 
 Most programmers readily make use of recursion - it is indeed a very elegant

@@ -6,10 +6,10 @@ layout: post
 slug: behind-the-mozilla-apps-developer-preview
 title: Behind the Mozilla Apps Developer Preview
 wordpress_id: 1346
-categories: [mozilla, favorite]
+categories: [mozilla, favorite, top]
 ---
 
-On Tuesday, we launched a [developer preview](https://awesomeness.mozilla.org/pub/sf/FormLink?_ri_=X0Gzc2X%3DUQpglLjHJlTQTtQyTQ7c8QABQHAzeQGQ2Q8GJVXMtX%3DUQpglLjHJlTQTtQyTQ7c8QUKQHAzeQzgQaQzg9X&_ei_=.) of the [Mozilla Apps](https://apps.mozillalabs.com/) project, something I've been working on for the better part of the year. We released a suite of tools and documentation aimed at helping developers write, deploy and sell apps built using modern web technologies like HTML5, CSS and JavaScript. Many others have already covered the question of _"why"_ we are doing this: all the major app ecosystems out there are closed, tied to a single vendor, and could certainly use a healthy dose of the openness. There are many great things about Apps, and many great things about the Web, and we want to [bring them together](http://blog.lizardwrangler.com/2011/08/09/the-app-model-and-the-web/).
+On Tuesday, we launched a developer preview of the [Mozilla Apps](https://web.archive.org/web/2012/https://apps.mozillalabs.com/) project, something I've been working on for the better part of the year. We released a suite of tools and documentation aimed at helping developers write, deploy and sell apps built using modern web technologies like HTML5, CSS and JavaScript. Many others have already covered the question of _"why"_ we are doing this: all the major app ecosystems out there are closed, tied to a single vendor, and could certainly use a healthy dose of openness. There are many great things about Apps, and many great things about the Web, and we want to [bring them together](http://blog.lizardwrangler.com/2011/08/09/the-app-model-and-the-web/).
 
 [Tim Berners-Lee agrees!](http://lists.w3.org/Archives/Public/public-webapps/2012JanMar/0464.html)
 
@@ -41,7 +41,7 @@ Now, whenever the install method from the _mozApps_ API is invoked, the user is 
 
 ## The Dashboard
 
-Let's say the user confirms the installation, what next? After a set of sanity checks against the manifest of the app, it is officially installed into the users collection of apps, which we call a _repo_. A Dashboard is the piece of software that is responsible for letting the user manage their _repo_, by allowing them to launch and uninstall their apps. Recall that the `mozApps.mgmt` set of APIs allow a dashboard to do this, and currently the [myapps.mozillalabs.com](https://myapps.mozillalabs.com/) domain is white-listed. In the future we expect people to write dashboards (which is essentially an app to manage apps!) that users can authorize. When a user visits the default Mozilla Labs dashboard, they look at something like this:
+Let's say the user confirms the installation, what next? After a set of sanity checks against the manifest of the app, it is officially installed into the user's collection of apps, which we call a _repo_. A Dashboard is the piece of software that is responsible for letting the user manage their _repo_, by allowing them to launch and uninstall their apps. Recall that the `mozApps.mgmt` set of APIs allow a dashboard to do this, and currently the [myapps.mozillalabs.com](https://myapps.mozillalabs.com/) domain is white-listed. In the future we expect people to write dashboards (which is essentially an app to manage apps!) that users can authorize. When a user visits the default Mozilla Labs dashboard, they look at something like this:
 
 [![App Dashboard](/images/2011/dashboard.png)](/images/2011/dashboard.png)
 
@@ -51,7 +51,7 @@ Clicking on an icon will _launch_ that app. What does launching mean? In the HTM
 
 ## App Runtime for Firefox
 
-For Firefox users, we have the opportunity to provide enhancements to the whole app installation and launch process while we wait for the API to get standardized. We've written an [add-on](https://addons.mozilla.org/en-US/firefox/addon/app-runtime/) that implements the _mozApps_ API, which will override the \_include.js \_HTML5 runtime version (so stores are encouraged to continue including the include.js version to provide the most portable experience for their users). If you have this add-on installed and install an app from any page or store, you will be greeted with a doorhanger that asks you confirm if you really intend to install this app:
+For Firefox users, we have the opportunity to provide enhancements to the whole app installation and launch process while we wait for the API to get standardized. We've written an [add-on](https://addons.mozilla.org/en-US/firefox/addon/app-runtime/) that implements the _mozApps_ API, which will override the _include.js_ HTML5 runtime version (so stores are encouraged to continue including the include.js version to provide the most portable experience for their users). If you have this add-on installed and install an app from any page or store, you will be greeted with a doorhanger that asks you to confirm if you really intend to install this app:
 
 [![App Installation Confirmation](/images/2011/app-confirm.png)](/images/2011/app-confirm.png)
 
@@ -71,13 +71,13 @@ The App Runtime for Android is a native Android application that lets users inst
 
 [![Mozilla App Marketplace on Android](/images/2011/store.png)](/images/2011/store.png)
 
-Installing an app on Android using Soup will create an icon in your home screen, tapping on it will launch the app using our embedded web runtime. Well built web applications can now look and feel just like native android apps!
+Installing an app on Android using Soup will create an icon in your home screen, tapping on it will launch the app using our embedded web runtime. Well built web applications can now look and feel just like native Android apps!
 
 In addition, apps that you installed on the desktop can be automatically synchronized to your phone (and all your other devices) using our Sync functionality, which we will discuss next.
 
 ## Sync
 
-Users shouldn't have to install apps on every device they own once they've purchased it. We've developed an AppSync solution for the HTML5 runtime, Firefox runtime as well as Android. In all three environments, you should be prompted to login with your [BrowserID ](https://browserid.org/)(Mozilla's new federated & distributed Identity system) when you visit the dashboard:
+Users shouldn't have to install apps on every device they own once they've purchased it. We've developed an AppSync solution for the HTML5 runtime, Firefox runtime as well as Android. In all three environments, you should be prompted to login with your [BrowserID](https://browserid.org/) (Mozilla's new federated & distributed Identity system) when you visit the dashboard:
 
 [![Login for AppSync](/images/2011/appsync-login.png)](/images/2011/appsync-login.png)
 
@@ -95,17 +95,17 @@ How do we balance the need for developers to be able to charge for their apps, w
 
 At launch time, the app can ask for the receipt associated with itself using the amInstalled API call, do an integrity check, and send it over the original store that issued the receipt. The store can then verify that the receipt is indeed valid and notify the app, at which point the app can decide whether to let the user run it or not. We've provided a utility function verifyReceipt to help the app developer do all of this.
 
-Do note, however, that this whole scheme is merely intended to help developers who don't want to setup their own payment systems. Developers are free to write apps that use their own (or 3rd party) payment or subscription services. You could, for example, sell your app for free on the AMO store, but ask users to login when the app is launched, or implement your own in-app purchasing system. We will do what we can to help, but in the end, you're in full control of what your users see when they launch your apps!
+Do note, however, that this whole scheme is merely intended to help developers who don't want to set up their own payment systems. Developers are free to write apps that use their own (or 3rd party) payment or subscription services. You could, for example, sell your app for free on the AMO store, but ask users to login when the app is launched, or implement your own in-app purchasing system. We will do what we can to help, but in the end, you're in full control of what your users see when they launch your apps!
 
 ## What's next?
 
-This is just the beginning, we have a lot more work to do before we can realize a flourishing and open app ecosystem for the web. Here are just some of thing we have planned for the next few months:
+This is just the beginning, we have a lot more work to do before we can realize a flourishing and open app ecosystem for the web. Here are just some of the things we have planned for the next few months:
 
-- Building out a "**Web Runtime**", or [WebRT](https://wiki.mozilla.org/Apps/WebRT). We've built an initial prototype of how such a runtime might work in the add-on for Firefox, and we want this to extend this to a more robust system with auto-updates and deeper OS integration.
+- Building out a "**Web Runtime**", or [WebRT](https://wiki.mozilla.org/Apps/WebRT). We've built an initial prototype of how such a runtime might work in the add-on for Firefox, and we want to extend this to a more robust system with auto-updates and deeper OS integration.
 
-- **Capabilities**. In conjunction with the [WebAPI ](https://wiki.mozilla.org/WebAPI)project, we want to provide apps with more device APIs and capabilities than regular web pages, while giving the user an easy way to control and hand out permissions. This includes things like camera access, filesystem APIs and more.
+- **Capabilities**. In conjunction with the [WebAPI](https://wiki.mozilla.org/WebAPI) project, we want to provide apps with more device APIs and capabilities than regular web pages, while giving the user an easy way to control and hand out permissions. This includes things like camera access, filesystem APIs and more.
 
-- **Web Activities**. A while ago we release a prototype of the apps extension that supported what we call [web activities](https://mozillalabs.com/blog/2011/07/web-apps-update-experiments-in-web-activities-app-discovery/), a way for apps to communicate with each other safely and easily. You could use this, for example, to upload a picture to a site from your favorite photo service, or to share a link from an app to all your friends using your favorite social network. The[ Firefox Share add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-share-alpha/) already relies on web activities to do the latter.
+- **Web Activities**. A while ago we released a prototype of the apps extension that supported what we call [web activities](https://mozillalabs.com/blog/2011/07/web-apps-update-experiments-in-web-activities-app-discovery/), a way for apps to communicate with each other safely and easily. You could use this, for example, to upload a picture to a site from your favorite photo service, or to share a link from an app to all your friends using your favorite social network. The [Firefox Share add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-share-alpha/) already relies on web activities to do the latter.
 
 - **Push sync & notifications**. We want users to be able to "push" apps to any of their devices directly from an app store.
 
@@ -117,11 +117,11 @@ Most importantly, we want you to [get involved](https://groups.google.com/group/
 
 I'll end this post with a brief description of all the code behind the various pieces in hopes of attracting contributors. All of our code is hosted on Github and licensed under the MPL/GPL/LGPL tri-license.
 
-The main repository for the Apps project can be [found here](https://github.com/mozilla/openwebapps). It contains the source code for the [HTML5 App Runtime](https://github.com/mozilla/openwebapps/tree/develop/site/jsapi) (include.js and trusted.js are the important pieces), the [App Runtime for Firefox](https://github.com/mozilla/openwebapps/tree/develop/addons/jetpack) and the [Dashboard](https://github.com/mozilla/openwebapps/tree/develop/site) that is currently deployed on [myapps.mozillalabs.com](https://myapps.mozillalabs.com/). The Dashbaord was built using [IconGrid](http://mozilla.github.com/icongrid/), a JavaScript library to build touch friendly scrollable pages. The App Runtime for Firefox is written using the [Add-on SDK](https://addons.mozilla.org/en-US/developers/builder) and shares a few common files with the HTML5 runtime (repo.js, urlparse.js, manifest.js and sync.js).
+The main repository for the Apps project can be [found here](https://github.com/mozilla/openwebapps). It contains the source code for the [HTML5 App Runtime](https://github.com/mozilla/openwebapps/tree/develop/site/jsapi) (include.js and trusted.js are the important pieces), the [App Runtime for Firefox](https://github.com/mozilla/openwebapps/tree/develop/addons/jetpack) and the [Dashboard](https://github.com/mozilla/openwebapps/tree/develop/site) that is currently deployed on [myapps.mozillalabs.com](https://myapps.mozillalabs.com/). The Dashboard was built using [IconGrid](http://mozilla.github.com/icongrid/), a JavaScript library to build touch friendly scrollable pages. The App Runtime for Firefox is written using the [Add-on SDK](https://addons.mozilla.org/en-US/developers/builder) and shares a few common files with the HTML5 runtime (repo.js, urlparse.js, manifest.js and sync.js).
 
 Source code for the Android App Runtime (codenamed 'Soup') can be [found here](https://github.com/mozilla/soup). It is a regular Android application written in Java with an embedded [PhoneGap](http://phonegap.com/) instance to support the marketplace and app launching.
 
-On the server side of things, [Zamboni](https://github.com/mozilla/zamboni) is the code that powers [addons.mozilla.org](https://addons.mozilla.org/), and was extended to support [apps-preview.mozilla.org](https://apps-preview.mozilla.org). It is built on [Django](https://www.djangoproject.com/). The [AppSync ](https://github.com/mozilla/appsync)server is also written in Python (using [Cornice](https://github.com/mozilla-services/cornice)) and is what powers app synchronization across all three runtimes (HTML5, Firefox and Android). The AppSync server in turn talks to [Sauropod](https://github.com/mozilla/sauropod), written in node.js and backed by [HBase](https://hbase.apache.org/). Sauropod is a Mozilla Labs experiment aimed at building a [secure storage system](https://wiki.mozilla.org/Sauropod) for user data. Tarek Ziadé has a more [comprehensive overview](https://tarekziade.wordpress.com/2011/12/14/mozilla-apps-server-side/) of how all the server side pieces fit together, which you should go read!
+On the server side of things, [Zamboni](https://github.com/mozilla/zamboni) is the code that powers [addons.mozilla.org](https://addons.mozilla.org/), and was extended to support [apps-preview.mozilla.org](https://apps-preview.mozilla.org). It is built on [Django](https://www.djangoproject.com/). The [AppSync](https://github.com/mozilla/appsync) server is also written in Python (using [Cornice](https://github.com/mozilla-services/cornice)) and is what powers app synchronization across all three runtimes (HTML5, Firefox and Android). The AppSync server in turn talks to [Sauropod](https://github.com/mozilla/sauropod), written in node.js and backed by [HBase](https://hbase.apache.org/). Sauropod is a Mozilla Labs experiment aimed at building a [secure storage system](https://wiki.mozilla.org/Sauropod) for user data. Tarek Ziadé has a more [comprehensive overview](https://tarekziade.wordpress.com/2011/12/14/mozilla-apps-server-side/) of how all the server side pieces fit together, which you should go read!
 
 [![Apps Architecture Chart](/images/2011/apps-chart.png)](/images/2011/apps-chart.png)
 

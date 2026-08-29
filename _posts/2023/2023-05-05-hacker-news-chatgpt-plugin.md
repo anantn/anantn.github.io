@@ -4,7 +4,7 @@ comments: true
 layout: post
 slug: hacker-news-chatgpt-plugin
 title: "Building a Hacker News ChatGPT Plugin"
-categories: [ai, favorite, hacker-news]
+categories: [ai, favorite, hacker-news, top]
 ---
 
 I recently received access to develop and use ChatGPT plugins, and embarked on a project to build a Hacker News integration as a learning exercise. My goal was to enable retrieval of content from HN to answer questions and produce insights in conversations with ChatGPT.
@@ -33,7 +33,7 @@ In this blog post I'll cover the process of building this plugin. If you are int
 
 The [official documentation](https://platform.openai.com/docs/plugins/introduction) goes into the process of building a plugin in much more detail, but at a high level, you can build a ChatGPT plugin by:
 
-* **Describing an existing (or new) API** to ChatGPT in plain english. The specific format is the “OpenAPI” (formerly Swagger) spec, but the most important fields in the spec are the description fields which ChatGPT will read to understand your API.
+* **Describing an existing (or new) API** to ChatGPT in plain English. The specific format is the “OpenAPI” (formerly Swagger) spec, but the most important fields in the spec are the description fields which ChatGPT will read to understand your API.
 * **Processing API calls** when ChatGPT calls them. The system will decide when to invoke your API given your description and the user’s utterance, it generally does a pretty good job at this. Data returned by your API will then be processed by ChatGPT as part of the “prompt” in order to do whatever the user is asking - whether it is taking an action or answering a question.
 
 There [is a waitlist](https://openai.com/waitlist/plugins) for both using and creating plugins, if you aren't signed up already.
@@ -45,8 +45,8 @@ While in theory you can just "plug and play" an existing API by providing an Ope
 * **Fewer calls with more arguments are better than many calls with fewer arguments**. My initial design for the hacker news API involved individual endpoints for stories, comments, polls, etc. Simplifying it to just `/items` and `/users` with many query parameters to further control the output worked much better.
 * **Learn what functionality to add by iteration**. I found that ChatGPT would sometimes hallucinate parameters for your API that don't exist. My initial API did not have a `sort_order` parameter, but I kept seeing ChatGPT add it for certain types of queries. That was a good hint for me to just implement it! You can (and should) [run a plugin API on localhost](https://platform.openai.com/docs/plugins/getting-started/running-a-plugin) first which makes iteration fairly quick and easy.
 * **Be as terse as possible**. This holds true for both your OpenAPI specification and the actual API responses. You do need to be descriptive but short and to-the-point descriptions actually stuck more than lengthy flowery language. I've noticed that if your actual API responses are too long, it increases chances of hallucinations or the model just ignoring your response. This is likely related to context window limits for the GPT models.
-    * The official documentation states the limit for API respones is 100,000 characters - in practice you'll want to be well below it.
-    * Some plugin authors have found a trick by forgoing JSON as an output format altogether, plain text responses work just as well and saves quite a few characters!
+    * The official documentation states the limit for API responses is 100,000 characters - in practice you'll want to be well below it.
+    * Some plugin authors have found a trick by forgoing JSON as an output format altogether, plain text responses work just as well and save quite a few characters!
 * **Be tolerant of inputs, more than usual**. ChatGPT is a very language driven model and is not as precise when it comes to numbers. Avoid use of things like UNIX timestamps in your APIs, it's often better to receive standardized date formats like ISO8601, and even better to accept natural language.
     * Using parsers like [`dateparser`](https://github.com/scrapinghub/dateparser) in python for processing natural language dates and times can be helpful.
     * ChatGPT often inserts comments into its `POST` requests. If you handle JSON as payload, use a parser like [`json5`](https://json5.org/) to be tolerant of this.
@@ -115,7 +115,7 @@ There are basically two options for building such a search index:
 1. **Traditional keyword search**. This is the classic information retrieval technique refined over a couple of decades, and services like ElasticSearch and Algolia make it easy to create such indexes. Algolia already has a [great HN search index](https://hn.algolia.com) that can “plug and play” with ChatGPT plugins for the most part.
 2. **Semantic search**. With all the attention on AI recently, a fairly old technique called “embeddings” has received renewed interest and enthusiasm. Embeddings are a way to generate an n-dimensional vector for any input content, such that content “similar” to each other will be near each other in this n-dimensional space.
 
-I first built a plugin with the [Algolia search API](https://github.com/anantn/hn-chatgpt-plugin/tree/main/algolia). It performed relatively well, especially when the questions were “keyword-y” in nature, like asking for more information about a specific a project or person. However, there was room for improvement on questions that were more generic in nature or long queries of a conversational style. There is no publicly available API or dataset for embeddings on the HN corpus, so time to roll up my sleeves and build one!
+I first built a plugin with the [Algolia search API](https://github.com/anantn/hn-chatgpt-plugin/tree/main/algolia). It performed relatively well, especially when the questions were “keyword-y” in nature, like asking for more information about a specific project or person. However, there was room for improvement on questions that were more generic in nature or long queries of a conversational style. There is no publicly available API or dataset for embeddings on the HN corpus, so time to roll up my sleeves and build one!
 
 ## Downloading the dataset
 
@@ -209,12 +209,12 @@ With more than a million embeddings the brute force approach breaks down and sta
     * There are small variations of this where you can have a large number of smaller clusters and you compare the vector to everything from a few adjacent clusters. Facebook's [FAISS library](https://github.com/facebookresearch/faiss) has a few implementations of this general type of technique.
 * **Small world graphs**. This is another way to partition your dataset following the intuition that vectors based on real data will follow "small world" clustering rules similar to the real world (e.g. [Six Degrees of Kevin Bacon](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon)).
     * In this technique we navigate the graph finding "small world" clusters. More complex implementations (like HNSW - hierarchical navigable small world) add other techniques to make this more robust. The FAISS library mentioned above also has an HNSW implementation.
-* **Partitioning using trees**. One technique to partition your vectors are to pick two random vectors and split by a plane equidistant between them. This is effectively a random split and can be repeated multiple times until the number of vectors in each leaf node is low enough. One might also construct a "forest" of binary trees with different random split paths taken.
+* **Partitioning using trees**. One technique to partition your vectors is to pick two random vectors and split by a plane equidistant between them. This is effectively a random split and can be repeated multiple times until the number of vectors in each leaf node is low enough. One might also construct a "forest" of binary trees with different random split paths taken.
     * In practice, this works very well when you have a small number of dimensions (less than 100). Spotify's [Annoy library](https://github.com/spotify/annoy) is a popular implementation of this technique.
 
 These strategies are known as "Approximate Nearest Neighbors" or "ANN". I [recommend this guide](https://towardsdatascience.com/comprehensive-guide-to-approximate-nearest-neighbors-algorithms-8b94f057d6b6) if you want to dive deeper on any of these.
 
-One of the primary benefits of a ChatGPT plugin is the ability to access real-time data, so for our use-case we need to consider the ability to update the embedding index with new data periodically. I settled on a simple `IndexIVFFlate` implementation using FAISS. This is a type of clustering based on assigning vectors to a [voronoi cell](https://en.wikipedia.org/wiki/Voronoi_diagram). The cells are determined once at boot based on the initial set of embeddings, new embeddings inserted are assigned to an existing cell.
+One of the primary benefits of a ChatGPT plugin is the ability to access real-time data, so for our use-case we need to consider the ability to update the embedding index with new data periodically. I settled on a simple `IndexIVFFlat` implementation using FAISS. This is a type of clustering based on assigning vectors to a [voronoi cell](https://en.wikipedia.org/wiki/Voronoi_diagram). The cells are determined once at boot based on the initial set of embeddings, new embeddings inserted are assigned to an existing cell.
 
 All embeddings are loaded in-memory, for around 3M embeddings this takes around 16GB of RAM (there is some overhead due to clustering and metadata). FAISS has an option to use a disk-based index, but this was small enough to fit on my 32GB machine.
 
@@ -250,7 +250,7 @@ You can see we give the most importance to the story age, followed by the vector
 
 Moving onto our next piece of the puzzle &mdash; keeping the data updated. Luckily for us, the Firebase API helps us keep things real-time, simply by subscribing to the [changes endpoint](https://github.com/HackerNews/API#changed-items-and-profiles). This endpoint is updated roughly every 15 to 30 seconds and typically has a dozen item and user profile changes.
 
-Fetching these items and profiles on every update, then inserting them into the SQLite table was [fairly straightforward](https://github.com/anantn/hn-chatgpt-plugin/blob/main/embeddings/updater.py#L253). What's more complex is what we do with our embeddings index &mdash; simply adding to the items to the table isn't enough since the API won't be able to find it through a text search.
+Fetching these items and profiles on every update, then inserting them into the SQLite table was [fairly straightforward](https://github.com/anantn/hn-chatgpt-plugin/blob/main/embeddings/updater.py#L253). What's more complex is what we do with our embeddings index &mdash; simply adding the items to the table isn't enough since the API won't be able to find it through a text search.
 
 I refactored the code that did the initial embedding pass to also run on individual documents. Recall that generating an embedding is a single-threaded sequential process (because of my limited VRAM). Generating embeddings every time a story was updated had the chance to completely starve incoming queries from being embedded which would be bad.
 
@@ -258,11 +258,11 @@ To solve this problem, I employed two techniques:
 * While the data updates are processed in real-time, we batch the embedding updates [every 15 minutes](https://github.com/anantn/hn-chatgpt-plugin/blob/main/embeddings/updater.py#L17). This allows us to collect a bunch of changes to an active story (comments are added rapidly and upvoted) and process them together.
 * Implemented a [priority queue](https://github.com/anantn/hn-chatgpt-plugin/blob/main/embeddings/embedder.py#L24) in the embedder service such that we would always process embedding an incoming query over embedding an updated document.
 
-This gave us a good balance between keeping our data updates while not compromising on the machine's ability to respond to incoming queries.
+This gave us a good balance between keeping our data updated while not compromising on the machine's ability to respond to incoming queries.
 
 ## API server + Q&A
 
-All of this is brought together by a [FastAPI server](https://github.com/anantn/hn-chatgpt-plugin/blob/main/api-server/main.py#L54) to implement the API spec we defined earlier. Doing this was pretty easy through use of SQAlchemy.
+All of this is brought together by a [FastAPI server](https://github.com/anantn/hn-chatgpt-plugin/blob/main/api-server/main.py#L54) to implement the API spec we defined earlier. Doing this was pretty easy through use of SQLAlchemy.
 
 We run two independent processes, one for the data update and embedder service, and another for the FastAPI server. The update/embedder service has write locks on the SQLite databases while the FastAPI opens the db in readonly mode.
 
@@ -284,8 +284,8 @@ Answer the question: {user-query}
 ## Closing thoughts
 
 Hope this was a useful tutorial on building a non-trivial ChatGPT plugin and helped with your understanding of embeddings and semantic search. My advice for anyone dipping their toes in this space is to:
-* **Focus on the first principles of what you are building.** There is a lot of buzz around embeddings and AI, but having a conceptual understanding of these tools will help you navigate the landscape. You don't need to know _how_ these tools work as long you know _what_ they do, and _why_ you need them.
+* **Focus on the first principles of what you are building.** There is a lot of buzz around embeddings and AI, but having a conceptual understanding of these tools will help you navigate the landscape. You don't need to know _how_ these tools work as long as you know _what_ they do, and _why_ you need them.
 * **Keep things simple and beware premature optimization!** I've seen a few examples that are built for hyper-scale from day one, but it's usually a better idea to start small and only add layers of complexity as you need them. The entirety of this particular project is around 2500 lines of python code, including boilerplate.
-* **Use ChatGPT liberally.** You'd be surprised at how much this tool can you help you, right from writing API descriptions and specs, to full fledged server code, to helping debug issues when they occur. $20/mo for ChatGPT plus is an absolute bargain.
+* **Use ChatGPT liberally.** You'd be surprised at how much this tool can help you, right from writing API descriptions and specs, to full fledged server code, to helping debug issues when they occur. $20/mo for ChatGPT plus is an absolute bargain.
 
 Happy hacking!

@@ -47,7 +47,6 @@
   name: "Message Passing vs. Data Synchronization"
   url: https://proness.kix.in/talks/realtimeconf13-datasync.pdf
   location: RealtimeConf, Portland
-  video: https://player.vimeo.com/video/77352415
   categories: ["firebase"]
 
 - id: "2013-angularfire"

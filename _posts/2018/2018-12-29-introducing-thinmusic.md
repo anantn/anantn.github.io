@@ -1,10 +1,9 @@
 ---
 layout: post
 comments: true
-category: favorite
 slug: introducing-thinmusic
 title: Introducing ThinMusic
-categories: [tech, favorite]
+categories: [tech]
 ---
 
 At the peak of my career as a software engineer, I spent most of my free time either playing video games or reading books about engineering management. These days, my day job is mostly engineering management, and so I find myself carving out play-time to write some code (and of course, still indulge in video games).

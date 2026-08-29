@@ -6,7 +6,7 @@ layout: post
 slug: project-assemble
 title: Project Assemble
 wordpress_id: 738
-categories: [tech, favorite]
+categories: [tech]
 ---
 
 Ever since I participated in the first [Summer of Code](https://code.google.com/soc/) 4 years ago, I've been using Macs almost exclusively.  I really enjoy using them - they're great machines for developers, and the amazing virtualization options make them practically the only development computer you'll ever need.

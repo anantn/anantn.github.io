@@ -6,6 +6,7 @@ layout: post
 slug: pipasopa-not-good-for-anybodys-health
 title: 'PIPA/SOPA: Not good for anybody''s health'
 wordpress_id: 1402
+categories: [favorite]
 ---
 
 Wikipedia, Google, Reddit and several other major sites are [protesting the PIPA/SOPA legislation](http://sopastrike.com/) by either completely blacking out their sites or by modifying their front pages to inform their visitors of this harmful legislation that the [MPAA ](http://mpaa.org/contentprotection/roguewebsites)is trying get the U.S. Congress to pass. I'm proud that Mozilla will be also be [participating](https://blog.mozilla.com/blog/2012/01/17/mozilla-to-join-tomorrows-virtual-protests-of-pipasopa/) in the 'internet strike' tomorrow!

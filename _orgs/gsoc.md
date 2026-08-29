@@ -10,4 +10,4 @@ short: Mentor for Gentoo and Plan 9
 
 In 2008 and 2009, I mentored four student projects: [Setting Beacon Afloat](https://developers.google.com/open-source/gsoc/2008/#gentoo), [PHP Bindings for Cairo](https://developers.google.com/open-source/gsoc/2008/#php), [Web-based Image Builder](https://www.google-melange.com/archive/gsoc/2009/orgs/gentoo/projects/eitan.html), and [Implement per-process Namespaces](https://www.google-melange.com/archive/gsoc/2009/orgs/plan9/projects/psharma.html).
 
-The Summer of Code is a wonderful program and I'm very grateful to Google for having run it and keeping it going for all these years. If you are eligible and interested in software development or open source, I highly [recommend applying](https://summerofcode.withgoogle.com/)!
+The Summer of Code is a wonderful program and I'm very grateful to Google for starting it and keeping it going all these years. If you are eligible and interested in software development or open source, I highly [recommend applying](https://summerofcode.withgoogle.com/)!

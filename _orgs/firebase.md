@@ -13,5 +13,5 @@ real-time database and developer tooling to make app development easy. I wore a 
 for developer evangelism and support.
 
 I built pivotal integrations with frameworks like <a href="https://github.com/angular/angularfire">AngularJS</a>,
-and bootstrapped a static hosting service. Firebase was acquired by Google in 2014 has continued to grow as part
-of their cloud platform, now serving over 3 million developers worldwide.
+and bootstrapped a static hosting service. Firebase was acquired by Google in 2014 and has continued to grow as part
+of Google's cloud platform, now serving over 3 million developers worldwide.

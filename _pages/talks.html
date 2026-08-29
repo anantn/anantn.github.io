@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Talks by Anant Narayanan
+description: >-
+  Talks given by Anant Narayanan since 2006, on WebRTC, Firebase, knowledge
+  graphs, and LLMs, with slides and video where available.
 buttontitle: Talks
 order: 3
 icon: mic
 ---
 <p>
-    Here's a list of talks I've given, in reverse chronological order. Links to
-    slide decks and videos are linked where possible. Slides for most of these
+    Here's a list of talks I've given, in reverse chronological order. Slide
+    decks and videos are linked where possible. Slides for most of these
     presentations are also available on
     <a href="https://www.slideshare.net/anantn/">SlideShare</a>
     and
@@ -32,7 +35,7 @@ icon: mic
                     <a href="{{ talk.url }}" class="list-item">{{ talk.name }}</a>
                     <span class="date">({{ talk.month }}, {{ year }})</span>
                 </span>
-                {% else if talk.urls %}
+                {% elsif talk.urls %}
                 <span>
                     <span>{{ talk.name }}</span>
                     <span class="date">({{ talk.month }}, {{ year }})</span><br />
@@ -50,12 +53,12 @@ icon: mic
                 {% if talk.video %}
                 <br />
                 {% if talk.video contains "youtube" %}
-                <iframe class="video no-lightbox" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
-                {% else if talk.video contains "vimeo" %}
-                <iframe class="no-lightbox" src="{{ talk.video }}" class="video vimeo" frameborder="0"
+                <iframe class="video no-lightbox" title="{{ talk.name }} video" loading="lazy" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+                {% elsif talk.video contains "vimeo" %}
+                <iframe class="video vimeo no-lightbox" title="{{ talk.name }} video" loading="lazy" src="{{ talk.video }}" frameborder="0"
                     webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 {% else %}
-                <iframe class="no-lightbox" src="{{ talk.video }}" class="video"></iframe>
+                <iframe class="video no-lightbox" title="{{ talk.name }} video" loading="lazy" src="{{ talk.video }}"></iframe>
                 {% endif %}
                 {% endif %}
             </div>

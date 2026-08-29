@@ -8,9 +8,11 @@ short: Smart Glasses, Assistant, Knowledge Graph
 company: true
 ---
 
-I'm currently employed by [Meta](https://www.meta.com/) (née Facebook) as an Engineering Director.
-I oversee and support a global set of engineering teams, helping bring exciting new product experiences to life
-on our next-generation [smart glasses](https://tech.facebook.com/2023/2/the-making-of-ray-ban-stories/).
+I'm currently at [Meta](https://www.meta.com/) (née Facebook), where I joined Meta Superintelligence
+Labs to build AI products hands-on. Before that I spent three years as an Engineering Director in
+Reality Labs, leading a global organization of 220+ engineers bringing new product experiences to
+life on our next-generation
+[smart glasses](https://tech.facebook.com/2023/2/the-making-of-ray-ban-stories/).
 
 Prior to my current role I led the engineering teams responsible for building our
 [voice assistant](https://www.vox.com/recode/22948097/mark-zuckerberg-voice-assistant-metaverse-ai-announcement)

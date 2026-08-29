@@ -3,12 +3,12 @@ layout: default
 title: Plan 9
 ---
 
-[Plan 9](http://plan9.bell-labs.com/plan9/) is a research system developed at the [Bell Labs](http://en.wikipedia.org/wiki/Bell_labs).
+[Plan 9](https://9p.io/plan9/) is a research system developed at [Bell Labs](http://en.wikipedia.org/wiki/Bell_labs).
 Designed to be the successor for the UNIX operating system, it makes up for many of the mistakes that UNIX made -
 offering a completely new way of looking at operating and distributed systems. Plan 9 was written from scratch,
-and emphasizes on high code quality with minimal complexity.
+and emphasizes high code quality with minimal complexity.
 
-Plan 9's latest release is it's fourth edition. This site is a mirror for the
+Plan 9's latest release is its fourth edition. This site is a mirror for the
 [Plan 9 ISO](http://proness.kix.in/plan9/mirror/plan9.iso.bz2), the
 [Plan 9 Raspberry Pi image](http://proness.kix.in/plan9/mirror/9pi.img.gz) and
 [sources](http://proness.kix.in/plan9/mirror/sources/).
@@ -27,8 +27,8 @@ Here are some more places where you can find software for Plan 9, although they 
 And a few other links that may be of interest:
 
 - [Glenda Goodies](http://www.cafepress.com/9fans/)
-- [The Plan 9 Wiki](http://plan9.bell-labs.com/wiki/plan9/)
-- [The 9Fans Mailing List](https://lists.cse.psu.edu/mailman/listinfo/9fans)
+- [The Plan 9 Wiki](https://9p.io/wiki/plan9/)
+- [The 9Fans Mailing List](https://9fans.topicbox.com/groups/9fans)
 - [Inferno](http://www.vitanuova.com/inferno/)
 - [Plan9Port](http://swtch.com/plan9port/)
 - [9P Resources](http://9p.cat-v.org/)

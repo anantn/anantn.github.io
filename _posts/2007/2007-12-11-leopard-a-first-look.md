@@ -6,7 +6,7 @@ layout: post
 slug: leopard-a-first-look
 title: 'Leopard: A first look'
 wordpress_id: 1111
-categories: [mac, favorite]
+categories: [mac]
 ---
 
 I couldn't help but notice that close to 70% of developers who attended

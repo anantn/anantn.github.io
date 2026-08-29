@@ -6,7 +6,7 @@ layout: post
 slug: an-alternative-to-shared-libraries
 title: An alternative to shared libraries
 wordpress_id: 1137
-categories: [plan9, favorite]
+categories: [plan9, favorite, top]
 ---
 
 There are few people I've met who found the experience of dealing with shared libraries pleasant. Personally, I really despise them. The whole idea of "shared code" is great and all, but the implementations in the Unix and Windows worlds are not something I would like to deal with. I would like to go as far as saying, "shared libraries suck", but that would mean a lot of people are going to flame me - just because they are extremely prevalent and that they're "working" for a vast majority of cases.
@@ -52,3 +52,7 @@ But since `libcrypto` is a small and awesomely written cryptography library, _Ap
 Now, what about versioning? That is, after all, why shared libraries began to suck. With filesystems, it's trivial to add functionality without breaking applications depending on older versions of your FS. That's because all the compiler sees is a bunch of `fopen`/`fread`/`fwrite`s and is not going to complain if the version of the filesystem changes because it doesn't know. Alternatively, if you're thinking of modifying the behavior of your filesystem; consider providing a `version` file in the root of your FS right from the beginning. Applications would then write the version number they expect to be working with in that file as a way of initializing the filesystem - and multiple versions of the filesystem can live in harmony if your system implements per-process namespaces (Plan 9 has them, Linux does too thanks to `CLONE_NEWNS`) because every application "sees" its own private copy of the CryptoFS file hierarchy.
 
 In summary, the answer is to write lean, efficient and small pieces of code (a very difficult task if you're thinking of using the GNU toolchain!) and use filesystems in place of shared libraries. Plan 9 has been using it successfully for years, and I think we should learn something and try to apply the philosophy to other systems we love as well: Firefox extensions, COM models for Games, Plugin systems; anywhere we make extensive used of shared libraries and dynamic loading. Let me know what you think, and whether you would consider this approach for your next project! I know I certainly will.
+
+---
+
+*Postscript, 2026: seventeen years on, shared libraries are still everywhere and synthetic filesystems did not replace them — this prediction aged badly, and the ecosystem solved the pain differently (static linking made cheap again by Go and Rust). I'm leaving the post up as written: the underlying itch — that the dependency graph between programs is a filesystem-shaped problem — still feels right to me, even though the answer wasn't.*

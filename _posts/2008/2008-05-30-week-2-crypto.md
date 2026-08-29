@@ -6,7 +6,7 @@ layout: post
 slug: week-2-crypto
 title: 'Week 2: Crypto'
 wordpress_id: 210
-categories: [mozilla, javascript, favorite]
+categories: [mozilla, javascript]
 ---
 
 It's almost the end of my second week, and for the last 4 days I've been really frustrated trying to write some crypto code in Javascript. Just now, however, I got the 800-line beast to run successfully, and man, am I happy!

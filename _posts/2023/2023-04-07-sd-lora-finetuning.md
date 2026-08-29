@@ -4,7 +4,7 @@ comments: true
 layout: post
 slug: sd-lora-finetuning
 title: "Fine-tuning with LoRA: create your own avatars & styles!"
-categories: [ai, favorite, stable-diffusion]
+categories: [ai, favorite, stable-diffusion, top]
 ---
 
 Remember [Magic Avatars](https://land.prisma-ai.com/magic-avatars/) in the Lensa app that were all the rage a few months ago? The custom AI generated avatars from just a few photos of your face were a huge hit!

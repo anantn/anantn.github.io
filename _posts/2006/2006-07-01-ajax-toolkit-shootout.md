@@ -6,7 +6,7 @@ layout: post
 slug: ajax-toolkit-shootout
 title: AJAX Toolkit Shootout
 wordpress_id: 16
-categories: [javascript, favorite]
+categories: [javascript]
 ---
 
 [Stuart](http://www.stuartherbert.com/) inspired me to do an objective

@@ -6,7 +6,7 @@ layout: post
 slug: aes-256-using-php-mcrypt
 title: AES-256 using PHP-mcrypt
 wordpress_id: 1142
-categories: [mozilla, php, favorite]
+categories: [mozilla, php]
 ---
 
 PHP is sometimes really dumb.

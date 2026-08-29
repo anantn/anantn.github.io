@@ -6,12 +6,12 @@ layout: post
 slug: the-firebase-public-beta
 title: The Firebase Public Beta
 wordpress_id: 1618
-categories: [firebase]
+categories: [firebase, favorite, top]
 ---
 
 Today, [we announced](https://www.firebase.com/blog/2013-02-13-firebase-opens-beta-to-all-developers.html) the opening of Firebase Beta to the public!
 
-It's been a few months since I [joined the team](http://kix.in/2012/11/25/a-new-beginning/), and it's been one hell of a ride. Working at a start-up was everything I imagined it would be, and more. I can easily say that I've never been as productive as this before, and that there's a lot of joy in putting a product that you played a critical role in building, out in the world for every one to see. The best thing about working in a small team who are all in the same room is the speed at which everything moves. It took me an evening to implement [Persona support for Firebase](https://www.firebase.com/docs/security/simple-login-persona.html), but it took even lesser time to get the feature out to our users. That's when I learned that the amount of time elapsed between making something and shipping it can play a huge role in motivating me, and I suspect many other developers feel the same way.
+It's been a few months since I [joined the team](http://kix.in/2012/11/25/a-new-beginning/), and it's been one hell of a ride. Working at a start-up was everything I imagined it would be, and more. I can easily say that I've never been as productive as this before, and that there's a lot of joy in putting a product that you played a critical role in building, out in the world for everyone to see. The best thing about working in a small team who are all in the same room is the speed at which everything moves. It took me an evening to implement [Persona support for Firebase](https://www.firebase.com/docs/security/simple-login-persona.html), but it took even less time to get the feature out to our users. That's when I learned that the amount of time elapsed between making something and shipping it can play a huge role in motivating me, and I suspect many other developers feel the same way.
 
 Last night the entire team was in the office until midnight, polishing and tweaking everything to make sure we were ready for today's release. Bugs were found and fixed in minutes. We even managed to implement an entire feature that we decided was important to have. The dedication and caliber of my colleagues continues to amaze me.
 
