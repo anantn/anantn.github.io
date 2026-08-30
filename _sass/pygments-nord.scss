@@ -1,6 +1,6 @@
 /* Nord/Pygments theme, with variables. */
 .highlight .c {
-  color: #{$nord-3-bright};
+  color: #{#98a3bb};
 } /* Comment */
 .highlight .err {
   color: var(--primary-color);
@@ -27,13 +27,13 @@
   color: var(--primary-color);
 } /* Punctuation */
 .highlight .cm {
-  color: #{$nord-3-bright};
+  color: #{#98a3bb};
 } /* Comment.Multiline */
 .highlight .cp {
   color: #{$nord-aurora-3};
 } /* Comment.Preproc */
 .highlight .c1 {
-  color: #{$nord-3-bright};
+  color: #{#98a3bb};
 } /* Comment.Single */
 .highlight .cs {
   color: #{$nord-aurora-3};

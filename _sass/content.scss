@@ -255,6 +255,11 @@ div.footnotes {
   }
 }
 
+.comments-heading {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem;
+}
+
 .date {
   @include mono();
   font-size: 0.8rem;

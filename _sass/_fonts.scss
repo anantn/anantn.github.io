@@ -1,0 +1,79 @@
+/* Self-hosted latin subsets (variable fonts) plus metric-matched local
+   fallbacks so the swap from fallback to webfont causes no layout shift. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/roboto-slab.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/fonts/fira-code.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/lora-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  size-adjust: 107.01%;
+  ascent-override: 90.53%;
+  descent-override: 22.54%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Inter Fallback";
+  font-style: italic;
+  src: local("Arial Italic");
+  size-adjust: 107.58%;
+  ascent-override: 90.05%;
+  descent-override: 22.42%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Roboto Slab Fallback";
+  src: local("Georgia");
+  size-adjust: 106.6%;
+  ascent-override: 98.29%;
+  descent-override: 25.42%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Fira Code Fallback";
+  src: local("Courier New");
+  size-adjust: 99.98%;
+  ascent-override: 99.02%;
+  descent-override: 32.21%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Lora Fallback";
+  font-style: italic;
+  src: local("Georgia Italic");
+  size-adjust: 100.4%;
+  ascent-override: 100.2%;
+  descent-override: 27.29%;
+  line-gap-override: 0%;
+}

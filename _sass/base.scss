@@ -4,19 +4,19 @@ $tablet: 767px;
 $mobile: 568px;
 
 @mixin heading {
-  font-family: "Roboto Slab", "Palatino", "Garamond", serif;
+  font-family: "Roboto Slab", "Roboto Slab Fallback", Georgia, serif;
 }
 
 @mixin content {
-  font-family: "Inter", "Roboto", "Helvetica", sans-serif;
+  font-family: "Inter", "Inter Fallback", Arial, sans-serif;
 }
 
 @mixin mono {
-  font-family: "Fira Code", "Courier New", "Courier", monospace;
+  font-family: "Fira Code", "Fira Code Fallback", "Courier New", monospace;
 }
 
 @mixin blockquote {
-  font-family: "Lora", "Garamond", serif;
+  font-family: "Lora", "Lora Fallback", Georgia, serif;
 }
 
 * {
@@ -303,4 +303,10 @@ button:focus-visible {
 .toc a:hover {
   color: $nord-frost-1;
   text-decoration-color: $nord-frost-1;
+}
+
+ion-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
 }

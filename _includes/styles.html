@@ -1,13 +1,8 @@
+<link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/roboto-slab.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/fira-code.woff2" as="font" type="font/woff2" crossorigin />
 <style>{% capture criticalcss %}{% include critical.scss %}{% endcapture %}{{ criticalcss | scssify }}</style>
 {% if page.layout == "post" %}
 <link href="/css/isso.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
 <link href="/css/lightbox.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
 {% endif %}
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" media="print" onload="this.media='all'"
-    href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;family=Inter:ital,wght@0,400;0,700;1,400&amp;family=Lora:ital@1&amp;family=Roboto+Slab:wght@400;500;700&amp;display=swap" />
-<noscript>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;family=Inter:ital,wght@0,400;0,700;1,400&amp;family=Lora:ital@1&amp;family=Roboto+Slab:wght@400;500;700&amp;display=swap" />
-</noscript>

@@ -210,3 +210,7 @@
     text-align: right;
   }
 }
+
+.isso-thread-heading {
+  display: none;
+}
