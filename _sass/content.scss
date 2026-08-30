@@ -135,7 +135,11 @@ div.cards {
   }
 
   .card-title {
+    @include heading();
+    display: block;
     font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25;
     margin: 0.2rem;
     color: var(--contrast);
   }
