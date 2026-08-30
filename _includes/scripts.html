@@ -1,6 +1,6 @@
 {% if page.layout == "post" %}
 <script defer data-isso-css="false" data-isso-avatar="false" data-isso="https://comments.kix.in/" src="https://comments.kix.in/js/embed.min.js"></script>
-<script defer src="/js/lightbox.js"></script>
+<script defer src="/js/lightbox.js?v={{ site.time | date: '%s' }}"></script>
 {% endif %}
 {% if page.buttontitle == "Blog" or page.buttontitle == "Talks" %}
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>

@@ -1,9 +1,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/pure-min.css" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/grids-responsive.min.css" rel="stylesheet" />
-<link href="/css/style.css" rel="stylesheet" />
+<link href="/css/style.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
 {% if page.layout == "post" %}
-<link href="/css/isso.css" rel="stylesheet" />
-<link href="/css/lightbox.css" rel="stylesheet" />
+<link href="/css/isso.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
+<link href="/css/lightbox.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
 {% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
