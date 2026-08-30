@@ -337,7 +337,7 @@ div.footnotes {
     }
   }
 
-  .post-content > p:has(> em:only-child) {
+  .post-content > p:has(img) + p:has(> em:only-child) {
     text-align: center;
     font-size: 0.9rem;
     margin-top: -0.6em;
