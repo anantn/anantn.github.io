@@ -1,4 +1,4 @@
-<link href="/css/style.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
+<style>{% capture criticalcss %}{% include critical.scss %}{% endcapture %}{{ criticalcss | scssify }}</style>
 {% if page.layout == "post" %}
 <link href="/css/isso.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
 <link href="/css/lightbox.css?v={{ site.time | date: '%s' }}" rel="stylesheet" />
